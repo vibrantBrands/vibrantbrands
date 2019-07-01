@@ -1,0 +1,24 @@
+$red: #f00;
+$black: #000000;
+$white: #FFFFFF;
+
+$base-font-size: 16px;
+
+//spectrum colors
+
+$pink: #c13c8d;
+$orange: #f29925;
+$yellow: #fff000;
+$light-green: #56b747;
+$dark-green: #12b193;
+$light-blue: #0BAEB9;
+$dark-blue: #2A72AF;
+
+$background-gradient: linear-gradient(90deg, $pink, $orange, $yellow, $light-green, $dark-green, $light-blue, $dark-blue, $dark-green, $light-green, $yellow, $orange, $pink);
+
+// Breakpoints
+
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1200px;

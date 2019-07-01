@@ -1,0 +1,63 @@
+
+
+// Font Awesome
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/fa-solid.scss";
+@import "fontawesome/fa-brands.scss";
+
+@import "core/normalize";
+@import "core/variables";
+
+@import "site/header";
+@import "site/footer";
+@import "site/homepage";
+@import "site/internal";
+
+
+
+body.vibrant {
+	@import "core/base";
+	@import "site/header";
+
+	background: $black;
+	color: $white;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: $base-font-size;
+	text-align: center;
+
+	.logo {
+		display: flex;
+		align-items: center;
+
+		div {
+			clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+
+			span {
+				display: block;
+				transition: 1s margin ease-out;
+			}
+		}
+
+		img {
+			width: 70px;
+		}
+
+		&.folded {
+
+			.vibrant {
+				margin-right: -140px;
+			}
+			.brands {
+				margin-left: -140px;
+			}
+		}
+	}
+
+	.border {
+		background: $background-gradient;
+		display: block;
+		height: 0.5px;
+		padding: 0;
+		width: 100%;
+	}
+}
