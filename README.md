@@ -10,5 +10,5 @@ from the command line.  Once installed, run
 
 `gulp`
 
-The gulp command should run the SASS process and set up a watch for any changes to the .SCSS file
+The gulp command should run the SASS process and set up a watch for any changes to the .SCSS files
 
