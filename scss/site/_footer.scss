@@ -2,7 +2,8 @@
 footer {
 	text-align: left;
 
-	>div {
+	.topbar {
+		
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -20,10 +21,25 @@ footer {
 		}
 	}
 
+	.logo {
+		margin-left: 40px;
+	}
+
 	.bottombar {
 		background: $white;
 		color: $black;
-		padding: 30px;
+		display: block;
+		padding: 30px 0;
+		text-align: center;
+		line-height: 1.8;
+
+		.social {
+			a {
+				color: black;
+				font-size: 1.2rem;
+				margin: 0 5px;
+			}
+		}
 	}
 	
 	.arrow {

@@ -2,19 +2,37 @@ $red: #f00;
 $black: #000000;
 $white: #FFFFFF;
 
-$base-font-size: 16px;
+// site-specific colors
+
+$text-color: #000104;
+$baby-blue: #ddf0ff;
 
 //spectrum colors
 
 $pink: #c13c8d;
 $orange: #f29925;
-$yellow: #fff000;
-$light-green: #56b747;
+$yellow: #efc000;
+$light-green: #89c53f;
 $dark-green: #12b193;
 $light-blue: #0BAEB9;
 $dark-blue: #2A72AF;
 
-$background-gradient: linear-gradient(90deg, $pink, $orange, $yellow, $light-green, $dark-green, $light-blue, $dark-blue, $dark-green, $light-green, $yellow, $orange, $pink);
+$rainbow-gradient: linear-gradient(90deg, $pink, $orange, $yellow, $light-green, $dark-green, $light-blue, $dark-blue, $dark-green, $light-green, $yellow, $orange, $pink);
+$green-gradient: linear-gradient(90deg, $dark-green, $light-green, $yellow, $light-green, $dark-green);
+$pink-gradient: linear-gradient(90deg, $pink, $orange, $orange, $pink);
+
+// Fonts
+
+$base-font-size: 16px;
+$header-font: 'Josefin Sans', sans-serif;
+$text-font: 'Open Sans', sans-serif;
+$text-font-size: 1.2rem;
+
+$width-limit: 1100px;
+
+// Proper
+$website-bg-height: 400px;
+
 
 // Breakpoints
 
@@ -22,3 +40,6 @@ $sm-breakpoint: 576px;
 $md-breakpoint: 768px;
 $lg-breakpoint: 992px;
 $xl-breakpoint: 1200px;
+
+
+$client-box-padding: 0 20px;

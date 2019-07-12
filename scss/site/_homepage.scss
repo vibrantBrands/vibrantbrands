@@ -1,8 +1,8 @@
 
 
-.tagline {
-	height: 700px;
-	font-size: 3.5rem;
+.tagline,
+.branding {
+	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -14,22 +14,24 @@
 	  100% { background-position: 0 0; }
 	}
 
-	p {
-		background: $background-gradient;
-		background-size: 130%;
-		background-clip: text;
-		-webkit-background-clip: text;
-		line-height: 3.8rem;
-		color: rgba(0,0,0,.1);
+	h1 {
 		animation: movebackground 20s linear infinite alternate;
+		background-size: 130%;
+		background: $rainbow-gradient;
+		color: rgba(0,0,0,.1);
+		font-size: 4rem;
+		line-height: 4.5rem;
+		background-clip: text;
+		margin-top: 200px;
+		-webkit-background-clip: text;
 	}
 
 	ul {
 		display: flex;
 		font-size: 1.2rem;
+		margin: 80px 0;
 		padding: 0;
 		list-style-type: none;
-		margin-top: 60px;
 
 		@media only screen and (max-width: $sm-breakpoint) {
 			font-size: 0.9rem;
@@ -51,8 +53,26 @@
 	}
 }
 
+.branding {
+	height: 320px;
+
+	ul {
+		margin-top: 30px;
+	}
+
+	h1 {
+		margin: 10px 0;
+	}
+
+	p {
+		width: 80%;
+		font-size: 1em;
+		line-height: 1.5;
+	}
+}
+
 .container {
-	max-width: 1242px;
+	max-width: $width-limit;
 	margin: 0 auto;
 	text-align: center;
 
@@ -77,6 +97,8 @@
 	>div {
 		width: 32.8%;
 		margin: 5px 0;
+		max-width: 500px;
+		overflow: hidden;
 		position: relative;
 
 		@media only screen and (max-width: $md-breakpoint) {
@@ -88,16 +110,23 @@
 		}
 
 		.info {
-			align-items: center;
-			background: rgba(47, 175, 90, 0.5);
-			color: white;
+			align-items: flex-start;
+			background: #4bc928; /* Old browsers */
+		background: -webkit-linear-gradient(left, #4bc928 0%, #fcfc46 100%);
+		background: -o-linear-gradient(left, #4bc928 0%, #fcfc46 100%);
+		background: linear-gradient(to right, #4bc928 0%, #fcfc46 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4bc928', endColorstr='#fcfc46',GradientType=1 ); /* IE6-9 */
+		
+		
+			border: 10px solid white;
+			color: $black;
 			display: flex;
 			flex-direction: column;
-			height: 100%;
+			height: 96%;
 			justify-content: center;
 			position: absolute;
 			opacity: 0;
-			width: 100%;
+			width: 95%;
 			z-index: 2;
 			top: 0;
 			left: 0;
@@ -105,14 +134,19 @@
 
 		&:hover {
 			.info {
-				opacity: 1;
+				opacity: 0.8;
 				transition: all 0.4s ease-out;
 			}	
+		}
+
+		h3 {
+			padding: 0 20px;
+			margin-bottom: 0;
 		}
 	}
 
 	h2 {
-		background: $background-gradient;
+		background: $pink-gradient;
 		background-size: 130%;
 		background-clip: text;
 		-webkit-background-clip: text;
@@ -146,21 +180,23 @@
 	p {
 		font-size: 1.3rem;
 		font-weight: 200;
-		line-height: 2rem;
-		margin: 50px 0 0 40px;
+		line-height: 1.5rem;
 		text-align: left;
+		padding: 0 40px;
 
-		@media only screen and (max-width: $xl-breakpoint) {
-	    	font-size: 1rem;
-	    	line-height: 1.4rem;
-	    	margin: 0;
-	    	padding: 10px;
-		}
+		&.save-text {
+			@media only screen and (max-width: $xl-breakpoint) {
+		    	font-size: 1rem;
+		    	line-height: 1.4rem;
+		    	margin: 0;
+		    	padding: 10px;
+			}
 
-		@media only screen and (max-width: $md-breakpoint) {
-			font-size: 1.3rem;
-	    	margin: 30px 50px;
-	    	line-height: 1.5rem;
-		}
+			@media only screen and (max-width: $md-breakpoint) {
+					font-size: 1.3rem;
+			    	margin: 30px 50px;
+			    	line-height: 1.5rem;
+				}
+			}
 	}
 }

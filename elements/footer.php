@@ -12,7 +12,7 @@
 			<div>
 				<div class="logo">
 		  			<span>VIBRANT</span>
-				    	<img src="<?php echo $this->getThemePath(); ?>/images/mark-full-color.svg" alt="Vibrant Logo" class="logo">
+				    	<img src="<?php echo $this->getThemePath(); ?>/images/vibrant-logo.png" alt="Vibrant Logo">
 				    <span>BRANDS</span>
 		  		</div>
 			</div>
@@ -22,21 +22,16 @@
 			</div>
 		</div>
 		<div class="bottombar">
-			<div>
-				<strong>Albany, NY</strong><br />
-				316 Delaware Ave, Delmar, NY 12054
-			</div>
-			<div>
-				<strong>Placida, FL</strong><br />
-				199 State St., Binghamton, NY 13901
-			</div>
-			<div>
-				<strong>Richmond, VA</strong><br />
-				409 E Main St #200, Richmond, VA 23219
-			</div>
+			<strong>Albany, NY</strong><br />
+				543 Louden Road, Albany, NY 12211<br />
+				<div class="social">
+					<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-vimeo-v"></i></a>
+					<a href=""><i class="fab fa-linkedin-in"></i></a>
+				</div>
 		</div>
 	</footer>
-
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 		<script src="<?php echo $this->getThemePath(); ?>/script/main.js"></script>
 	</div>

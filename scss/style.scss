@@ -18,24 +18,57 @@
 body.vibrant {
 	@import "core/base";
 	@import "site/header";
+	@import "site/internal";
+
 
 	background: $black;
 	color: $white;
-	font-family: "Josefin Sans", sans-serif;
+	font-family: $text-font;
 	font-size: $base-font-size;
 	text-align: center;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $header-font;
+	}
+
+	h3 {
+		font-size: 1.7em;
+		margin: 10px 0;
+		text-align: left;
+	}
+
+	p {
+		font-size: $text-font-size;
+	}
 
 	.logo {
 		display: flex;
 		align-items: center;
+		font-family: $header-font;
+		position: relative;
 
 		div {
 			clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+			-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+			position: relative;
+
+			&:first-child {
+				left: 0px;	
+				height: 23px;
+				width: 145px;
+			}
+			&:nth-child(3) {
+			    left: 0px;
+			    height: 23px;
+				width: 145px;
+			}	
 
 			span {
+				left: 0px;
 				display: block;
-				transition: 1s margin ease-out;
+				position: absolute;
 				transform: translate3d(0,0,0);
+				transition: .5s all ease-out;
 			}
 		}
 
@@ -46,7 +79,7 @@ body.vibrant {
 		&.folded {
 
 			.vibrant {
-				margin-right: -140px;
+				left: 150px;
 			}
 			.brands {
 				margin-left: -140px;
@@ -55,9 +88,9 @@ body.vibrant {
 	}
 
 	.border {
-		background: $background-gradient;
+		background: $rainbow-gradient;
 		display: block;
-		height: 0.5px;
+		height: 1px;
 		padding: 0;
 		width: 100%;
 	}
