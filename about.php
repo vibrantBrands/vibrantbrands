@@ -2,6 +2,8 @@
 
 <?php $this->inc('elements/header.php'); ?>
 
+<div class="about">
+
 <div class="page-header">
     <?php
        $page = Page::getCurrentPage();
@@ -28,6 +30,8 @@
         $a->display($c);
     ?>
 </article>
+</div>
+
 </div>
 
 

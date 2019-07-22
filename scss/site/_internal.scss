@@ -6,6 +6,10 @@
 
     .container {
         text-align: left;
+
+        @media only screen and (max-width: $lg-breakpoint) {
+			width: 90%;
+		}
     }
 
 	.hero {
@@ -15,6 +19,7 @@
 		margin-top: 85px;
 		height: 400px;
 		width: 100%;
+		overflow: hidden;
 
 		>div {
 			display: flex;
@@ -76,6 +81,21 @@
                 }
 			}
 		}
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			flex-direction: column;
+			height: auto;
+
+			>div {
+
+				&.slogan {
+					width: auto;
+				}
+				&.description {
+					width: auto;
+				}
+			}
+		}
 	}
 
 	.case-study-logo {
@@ -124,8 +144,17 @@
     		padding-left: 90px;
     		justify-content: space-around;
 
+    		@media only screen and (max-width: $lg-breakpoint) {
+				flex-direction: column;
+				padding: 0;
+			}
+
     		img {
     			align-self: center;
+
+    			@media only screen and (max-width: $lg-breakpoint) {
+					width: auto;
+				}
     		}
     	}
     }
@@ -137,12 +166,24 @@
     	margin: 80px 0;
     	height: 250px;
 
+    	@media only screen and (max-width: $lg-breakpoint) {
+			height: auto;
+		}
+
 		.container {
 			display: flex;
 			align-items: center;
 
+			@media only screen and (max-width: $lg-breakpoint) {
+				flex-direction: column;
+			}
+
 			>div {
 				width: 50%;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					width: auto;
+				}
 			}
 
 			img {
@@ -158,8 +199,18 @@
 			justify-content: space-between;
 			display: flex;
 
+			@media only screen and (max-width: $lg-breakpoint) {
+				flex-direction: column;
+			}
+
+
 			>div {
+				margin-top: 20px;
 				width: 47%;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					width: auto;
+				}
 
 				img {
 					border-bottom: 10px solid $light-green;
@@ -201,9 +252,19 @@
 			display: flex;
 			width: 100%;
 
+			@media only screen and (max-width: $lg-breakpoint) {
+				flex-direction: column;
+
+				img {
+					width: auto;
+				}
+			}
+
 			div {
+				margin-top: 60px;
 				padding: 0 5%;
 			}
+
 			p {
 				font-size: 1rem;
 			}
@@ -217,6 +278,52 @@
 				color: $yellow;
 				font-size: 2rem;
 			}
+		}
+	}
+
+	img {
+		
+		@media only screen and (max-width: $lg-breakpoint) {
+			width: 100%;
+		}
+	}
+
+	.case-study-logo {
+
+		img {
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 60%;
+			}
+		}
+	}
+}
+
+
+.about {
+
+	.input-sample {
+		margin: 80px;
+
+		#{$all-text-inputs} {
+			color: $black;
+			-webkit-box-shadow: inset 0px -14px 8px -14px rgba(0,0,0,0.34);
+-moz-box-shadow: inset 0px -14px 8px -14px rgba(0,0,0,0.34);
+box-shadow: inset 0px -14px 8px -14px rgba(0,0,0,0.34);
+			border-radius: 6px;
+			margin-top: 5px;
+			padding: 10px;
+		}
+
+		#{$all-buttons} {
+			background: none;
+			border: 1px solid $white;
+			margin-top: 15;
+			padding: 8px 30px;
+		}
+
+		label, input {
+			display: block;
 		}
 	}
 }

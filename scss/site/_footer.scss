@@ -19,10 +19,27 @@ footer {
 				text-align: center;
 			}
 		}
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			flex-direction: column;
+
+			>div {
+				margin: 15px auto;
+				text-align: center;
+
+				&:last-child {
+					text-align: center;
+				}
+			}
+		}
 	}
 
 	.logo {
 		margin-left: 40px;
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			margin-left: 0;
+		}
 	}
 
 	.bottombar {
@@ -44,7 +61,7 @@ footer {
 	
 	.arrow {
 		float: right;
-		margin: -2px 0 0 5px;
+		margin: 3px 0 0 5px;
 
 		.fa-caret-right {
 			font-size: 1.3rem;

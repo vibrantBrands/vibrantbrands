@@ -5,6 +5,17 @@
 @import "fontawesome/fa-solid.scss";
 @import "fontawesome/fa-brands.scss";
 
+//Bourbon 
+
+@import "bourbon/bourbon";
+
+// Animate.scss
+
+//@import '~@chancedigital/animate.scss/animate';
+
+// AOS animation library: http://michalsnik.github.io/aos/
+@import "vendor/aos/aos.scss";
+
 @import "core/normalize";
 @import "core/variables";
 
@@ -14,18 +25,20 @@
 @import "site/internal";
 
 
-
 body.vibrant {
 	@import "core/base";
 	@import "site/header";
 	@import "site/internal";
 
-
 	background: $black;
 	color: $white;
 	font-family: $text-font;
 	font-size: $base-font-size;
-	text-align: center;
+	overflow-x: hidden;
+
+	&.menu-open {
+		overflow: hidden;
+	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: $header-font;
@@ -47,6 +60,10 @@ body.vibrant {
 		font-family: $header-font;
 		position: relative;
 
+		@media only screen and (max-width: $sm-breakpoint) {
+			font-size: 1.3rem;
+		}
+
 		div {
 			clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
 			-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
@@ -56,6 +73,10 @@ body.vibrant {
 				left: 0px;	
 				height: 23px;
 				width: 145px;
+
+				@media only screen and (max-width: $sm-breakpoint) {
+					width: 115px;
+				}
 			}
 			&:nth-child(3) {
 			    left: 0px;
@@ -92,6 +113,7 @@ body.vibrant {
 		display: block;
 		height: 1px;
 		padding: 0;
+		position: relative;
 		width: 100%;
 	}
 }

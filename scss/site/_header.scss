@@ -3,9 +3,159 @@
 header {
 	position: fixed;
 	width: 100%;
+	top: 0;
 	z-index: 3;
 
-	nav {
+	.menu-toggle {
+			cursor: pointer;
+			width: 30px;
+			height: 26px;
+			position: absolute;
+			top: 27px;
+			left: 30px;
+			z-index: 5;
+
+			.bg {
+				display: block;
+				width: 100%;
+				height: 30px;
+				position: absolute;
+				
+			}
+
+			.bar {
+				background: $white;
+				display: block;
+				height: 2px;
+				position: absolute;
+				width: 100%;
+				top: 10%;
+
+				&:nth-child(2){
+					top: 50%;
+				}
+				&:nth-child(3){
+					top: 90%;
+				}
+			}
+
+			&.active {
+
+				.bar {
+					transition: $menu-transition;
+					
+					&:first-child {
+						background: $yellow;
+						transform: rotate(-45deg);
+						top: 50%;
+					}
+
+					&:nth-child(2) {
+						opacity: 0;
+					}
+
+					&:nth-child(3) {
+						background: $yellow;
+						transform: rotate(45deg);
+						top: 50%;
+					}
+				}
+			}
+
+			&.inactive {
+
+				.bar {
+					transition: $menu-transition;
+					
+					&:first-child {
+						background: $white;
+						transform: rotate(0);
+						top: 10%;
+					}
+
+					&:nth-child(2) {
+						opacity: 1;
+					}
+
+					&:nth-child(3) {
+						background: $white;
+						transform: rotate(0);
+						top: 90%;
+					}
+				}
+			}
+		}
+
+		nav {
+			position: fixed;
+			max-height: 0px;
+			overflow: hidden;
+			width: 100%;
+			z-index: 1;
+
+
+			&.active {
+				max-height: 100%;
+					
+				li {
+					transform: rotateY(0deg);
+					opacity: 1;
+				}
+			}
+
+			&.inactive {
+				max-height: 0px;
+				transition: max-height .3s ease-out;
+				transition-delay: 1s;
+					
+				li {
+					transform: rotateY(130deg);
+					opacity: 0;
+				}
+			}
+
+			ul {
+				display: flex;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+
+				li {
+					align-items: center;
+					background: $black;
+					cursor: pointer;
+					display: flex;
+					font-size: 2em;
+					height: 100vh;
+					justify-content: center;
+					transition: $menu-transition;
+					width: 33.3%;
+
+					a {
+						color: $white;
+						text-decoration: none;
+					}
+
+					&:hover {
+						animation: movebackground 20s linear infinite alternate;
+						color: red;
+					}
+				}
+
+
+				@media only screen and (max-width: $md-breakpoint) {
+				    flex-direction: column;
+
+				    li {
+				    	height: 33.3vh;
+				    	width: 100%;
+				    }
+				}
+			}
+
+		}
+
+	.logo-container {
 		align-items: center;
 		background: $black;
 		display: flex;
@@ -13,5 +163,19 @@ header {
 		height: 85px;
 		justify-content: center;
 		letter-spacing: 3px;
+		z-index: 3;	
+		position: relative;
+
+		@media only screen and (max-width: $sm-breakpoint) {
+			justify-content: flex-end;
+		}
+
+		a {
+			color: $white;
+		}
+	}
+
+	.border {
+		z-index: 3;
 	}
 }

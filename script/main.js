@@ -2,8 +2,17 @@
 
 $( document ).ready(function() {
 
+	//Initialize AOL animation library
+
+	AOS.init({
+		duration: 1000,
+		easing: 'ease-out'
+	});
+
 	var vibrant_functions = {
 		init : function() {
+
+			vibrant_functions.addHandlers();
 
 			$(window).bind('scroll',function(e){
 		        var scrolled = $(window).scrollTop();
@@ -18,6 +27,17 @@ $( document ).ready(function() {
 			if (scrolled > 400) {
                 $('.logo').addClass('folded');
             }
+		},
+
+		addHandlers : function() {
+
+			$('.menu-toggle').click(function(){
+				$(this).toggleClass('active');
+				$(this).toggleClass('inactive');
+				$('.nav').toggleClass('active');
+				$('.nav').toggleClass('inactive');
+				$('body').toggleClass('menu-open');
+			});
 		}
 	}
 
