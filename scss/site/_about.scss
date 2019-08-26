@@ -1,0 +1,171 @@
+/**  About page styles **/
+
+.about-image-block {
+	display: flex;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	@media only screen and (max-width: $lg-breakpoint) {
+		flex-direction: column;
+	}
+}
+
+.left-text-block {
+	display: flex;
+
+	h2,
+	strong {
+		width: 100%;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	>div {
+
+		&:first-child {
+			padding: 0 40px 0 70px;
+			width: 40%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: left;
+			flex-direction: column;
+
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 90%;
+				padding: 40px;
+			}
+
+		}
+		&:nth-child(2) {
+			width: 60%;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 100%;
+			}
+		}
+
+
+	}
+
+	@media only screen and (max-width: $lg-breakpoint) {
+		flex-direction: column;
+	}
+}
+
+.right-text-block {
+	display: flex;
+
+	h2,
+	strong {
+		width: 100%;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	>div {
+
+		&:nth-child(2){
+			padding: 0 40px 0 70px;
+			width: 40%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: left;
+			flex-direction: column;
+
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 90%;
+				padding: 40px;
+			}
+
+		}
+		&:first-child {
+			width: 60%;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 100%;
+			}
+		}
+
+
+	}
+
+	@media only screen and (max-width: $lg-breakpoint) {
+		flex-direction: column;
+	}
+}
+
+.our-clients {
+	padding: 60px 0 110px 0;
+
+	.container {
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		h2 {
+			@media only screen and (max-width: $lg-breakpoint) {
+				margin-left: -30px;
+			}
+		}
+	}
+
+	img {
+		margin: 50px 50px 0 0;
+	}
+}
+
+.team {
+
+	.container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 60px 0;
+		text-align: center;
+
+		p {
+			margin: 0;
+			line-height: 20px;
+
+		}
+
+		strong {
+			margin: 20px 0 5px;
+		}
+
+		>div {
+			display: flex;
+			flex-wrap: flex;
+			flex-direction: column;
+			margin: 50px 20px 0 0 ;
+		}
+	}
+}
+
+.full-wrapper {
+	position: relative;
+
+	.results-icon {
+		width: 220px;
+		height: auto;
+		position: absolute;
+		right: -50px;
+		top: -10px;
+	}
+}

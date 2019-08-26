@@ -20,6 +20,41 @@ $dark-blue: #2A72AF;
 $rainbow-gradient: linear-gradient(90deg, $pink, $orange, $yellow, $light-green, $dark-green, $light-blue, $dark-blue, $dark-green, $light-green, $yellow, $orange, $pink);
 $green-gradient: linear-gradient(90deg, $dark-green, $light-green, $yellow, $light-green, $dark-green);
 $pink-gradient: linear-gradient(90deg, $pink, $orange, $orange, $pink);
+$orange-gradient: linear-gradient(90deg, $yellow, $orange, $orange, $yellow);
+$bluegreen-gradient: linear-gradient(90deg, $dark-green, $light-green, $light-blue, $dark-blue, $light-blue, $light-green, $dark-green);
+
+// Case Study Styles
+
+$case-study-teal: #00aab8;
+$case-study-orange: #f17530;
+$case-study-cream: #fce57c;
+$case-study-maroon: #8a2332;
+$case-study-gray: #97babd;
+$case-study-sunmark-gray: #D4DAE2;
+$case-study-lt-gray: #E8ECF0;
+$case-study-belvedere-gray: #a2bdc2;
+$case-study-beige: #F9F5E7;
+$case-study-gold: #c79213;
+$case-study-yellow: #f4b335;
+$case-study-dark-yellow: #FDBA30;
+$case-study-green: #075f2b;
+$case-study-light-green: $light-green;
+$case-study-orange: #f69331;
+$case-study-blue: #290c54;
+$case-study-lt-blue: #D2EFF7;
+$case-study-aqua: #C4EBEB;
+$case-study-plum: #ad0875;
+$case-study-navy: #092f57;
+$case-study-aqua: #00a8d0;
+$case-study-lt-aqua: #2cbcdb;
+$case-study-cfds-blue: #EBF8F8;
+$case-study-cfds-dark-blue: #6acbcf;
+
+
+
+
+$case-study-h1: 36px;
+$case-study-h2: 32px;
 
 // Fonts
 
@@ -31,7 +66,7 @@ $text-font-size: 1.2rem;
 $width-limit: 1100px;
 
 // Proper
-$website-bg-height: 400px;
+$website-bg-height: 350px;
 
 // Menu 
 

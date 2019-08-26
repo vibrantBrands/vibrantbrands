@@ -1,0 +1,1020 @@
+
+.case-study {
+    background: $white;
+    color: $text-color;
+    font-size: 0;
+    margin-top: 85px;
+
+    h1 {
+    	font-size: $case-study-h1;
+    }
+
+    h2 {
+    	font-size: $case-study-h2;
+    }
+    .hero {
+    	//margin-top: 80px;
+
+    	img {
+    		width: 100%;
+    		height: auto;
+    	}
+    }
+
+    .container {
+        text-align: left;
+
+        @media only screen and (max-width: $lg-breakpoint) {
+			width: 90%;
+		}
+
+		&.sunmark-logo {
+			display: flex;
+			justify-content: center;
+			margin: 60px auto;
+		}
+    }
+
+	.description {
+        color: $white;
+		display: flex;
+		margin-top: 0;
+		height: auto;
+		overflow: hidden;
+
+		&.pathfinder {
+			
+			.tagline {
+				background: $case-study-maroon;
+			}
+			.client-info {
+				color: $text-color;
+				background: $white;
+			}
+		}
+
+		&.sfcu {
+			
+			.tagline {
+				background: $case-study-light-green;
+			}
+			.client-info {
+				background: $baby-blue;
+			}
+		}
+
+		&.uhr {
+			
+			.tagline {
+				background: $case-study-teal;
+			}
+			.client-info {
+				background: $case-study-gray;
+			}
+		}
+
+		&.nepa {
+			
+			.tagline {
+				background: $case-study-green;
+			}
+			.client-info {
+				background: $baby-blue;
+			}
+		}
+
+		&.cfds {
+			
+			.tagline {
+				background: $case-study-blue;
+			}
+			.client-info {
+				background: $case-study-cfds-blue;
+			}
+		}
+
+		>div {
+			display: flex;
+			align-items: center;
+			text-align: left;
+
+			&:first-child{
+				width: 30%;
+			}
+			&:nth-child(2){
+				width: 70%;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					width: auto;
+				}
+			}
+
+			&.tagline {
+				justify-content: center;
+				font-family: $header-font;
+				padding: 50px;
+				font-size: 2.8rem;
+				font-weight: 700;
+
+				&.light-green {
+					background: $light-green;
+				}
+				&.dark-green {
+					background: $dark-green;
+				}
+				&.maroon {
+					background: $case-study-maroon;
+				}
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					width: 90%;
+					padding: 50px;
+				}
+			}
+
+			&.client-info {
+				color: $text-color;
+				font-family: $text-font;
+				padding: 20px 60px;
+				align-items: flex-start;
+				flex-direction: column;
+
+				h1 {
+					margin: 50px 0 0;
+				}
+
+                h2 {
+                    font-size: 1.3rem;
+                    margin: 0;
+                }
+	
+				p {
+                    line-height: 1.3;
+				}
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 1rem;
+                    padding: 0;
+                    margin: 0 0 20px;
+
+                    @media only screen and (max-width: $md-breakpoint) {
+						flex-direction: column;
+                    }
+
+                    li {
+                        margin-left: 30px;
+
+                        &:first-child {
+                            list-style-type: none;
+                            margin-left: 0;
+
+                            @media only screen and (max-width: $md-breakpoint) {
+								list-style-type: disc;
+								margin-left: 30px;
+                    		}
+                        }
+                    }
+                }
+			}
+		}
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			flex-direction: column;
+			height: auto;
+
+			>div {
+
+				&.slogan {
+					width: auto;
+				}
+				&.description {
+					width: auto;
+				}
+			}
+		}
+	}
+
+	.case-study-logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 345px;
+
+		img {
+			width: 300px;
+			height: auto;
+		}
+
+		&.pathfinder {
+			background: $case-study-beige;
+		}
+		&.uhr {
+			color: $case-study-teal;
+			justify-content: center;
+			font-size: 1.5rem;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				flex-direction: column;
+				height: auto;
+			}
+			
+			div {
+				min-width: 100px;
+				margin: 0 30px;
+			}
+		}
+	}
+
+	.picture {
+
+		img {
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+    .approach {
+	 	padding-bottom: 70px;
+
+	 	.container {
+
+	 		.statbox {
+	 			width: 100%;
+	 			margin-top: 60px;
+	 			display: flex;
+
+	 			.picture {
+	 				
+	 				img {
+	 					width: 100%;
+	 					height: auto;
+	 				}
+
+	 			}
+
+
+
+	 			@media only screen and (max-width: $lg-breakpoint) {
+					flex-direction: column;
+				}
+
+				>div {
+					width: 50%;
+					min-height: 400px;
+
+	 				@media only screen and (max-width: $lg-breakpoint) {
+						width: 100%;
+					}
+
+					>div {
+						width: 50%;
+					}
+				}
+
+	 			div {
+
+	 				
+	 			}
+	 		}
+
+	 		.boxes {
+	 			display: flex;
+	 			flex-wrap: wrap;
+	 			font-size: 16px;
+
+	 			span {
+	 				font-size: 3.5em;
+	 				font-weight: 600;
+
+	 				&.teal {
+	 					color: $case-study-teal;
+	 				}
+
+	 				&.orange {
+	 					color: $case-study-orange;
+	 				}
+
+	 				&.maroon {
+		 				color: $case-study-maroon;
+		 			}
+	 			}
+
+	 			div {
+	 				align-items: center;
+	 				display: flex;
+	 				flex-direction: column;
+	 				justify-content: center;
+	 				text-align: center;
+	 			}
+
+	 			p {
+	 				width: 60%;
+	 			}
+	 		}
+	 	}
+
+        h2 {
+            margin-top: 80px;
+        }
+    }
+
+    .website-design {
+    	position: relative;
+
+    	.website-design-bg {
+    		height: $website-bg-height;
+    		margin-top: -8px;
+    		width: 100%;
+
+    		img {
+    			width: 100%;
+    			height: auto;
+    		}
+    	}
+
+    	&.pathfinder {
+    		margin-top: 350px;
+    	}
+
+    	img {
+
+    		@media only screen and (max-width: $lg-breakpoint) {
+				height: auto;
+    			width: 100%;
+			}
+    	}
+
+    	h2 {
+    		color: $white;
+    	}
+
+    	p {
+    		margin: 80px auto;
+    	}
+
+    	.container {
+    		margin-top: -350px;
+    		text-align: center;
+
+    		p {
+    			text-align: left;
+    		}
+    	}
+
+    	.icons {
+    		margin: 80px 0;
+    	}
+
+    	.icon-row {
+    		display: flex;
+    		justify-content: space-between;
+    		margin: 50px auto;
+
+    		img {
+    			align-self: center;
+    		}
+
+    		/*@media only screen and (max-width: $md-breakpoint) {
+				flex-direction: column;
+				padding: 0;
+			}*/
+    	}
+
+    	.mobile-devices {
+    		display: flex;
+    		padding-left: 90px;
+    		justify-content: space-around;
+
+    		@media only screen and (max-width: $lg-breakpoint) {
+				flex-direction: column;
+				padding: 0;
+			}
+
+    		img {
+    			align-self: center;
+
+    			@media only screen and (max-width: $lg-breakpoint) {
+					width: auto;
+				}
+
+				&.nepa_tablet {
+					@media only screen and (max-width: $lg-breakpoint) {
+						width: 100%;
+					}
+				}
+
+				&:nth-child(2) {
+					@media only screen and (max-width: $lg-breakpoint) {
+						width: 100%;
+						height: auto;
+					}
+				}
+    		}
+    	}
+    }
+
+    .online-marketing,
+    .cfds-subranding {
+    	align-items: center;
+    	background: gray;
+    	display: flex;
+    	margin: 180px 0;
+    	height: 250px;
+
+    	&.belvedere-bg {
+    		height: 362px;
+
+    		@media only screen and (max-width: $lg-breakpoint) {
+				height: auto;
+			}
+
+
+    		h2 {
+    			margin-top: 35px;
+    		}
+    	}
+
+
+    	@media only screen and (max-width: $lg-breakpoint) {
+			height: auto;
+		}
+
+		.container {
+			display: flex;
+			align-items: center;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				flex-direction: column;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+				margin-top: 80px;
+
+				&.fca-mobile {
+					width: 175px;
+				}
+			}
+
+			>div {
+				width: 50%;
+				padding: 30px;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					width: auto;
+				}
+			}
+		}
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			background: none !important;
+		}
+	}
+
+	.cfds-subranding {
+		height: auto;
+
+		.container {
+
+			>div {
+				display: flex;
+				flex-direction: column;
+
+				&:nth-child(2) {
+					align-items: center;
+				}
+			}
+
+			img {
+				margin-top: 0;
+				width: 350px !important;
+			}
+		}
+	}
+
+	.sunmark-marketing {
+		display: flex;
+		width: 100%;
+
+		>div {
+			max-height: 530px;
+			overflow: hidden;
+
+			&:first-child {
+				width: 70%;
+			}
+			&:nth-child(2) {
+				background: $case-study-dark-yellow;
+				width: 30%;
+			}
+		}
+	}
+
+	.ad-cards {
+		margin: 150px 0;
+
+		.container {
+			justify-content: space-between;
+			display: flex;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				flex-direction: column;
+			}
+
+
+			>div {
+				margin-top: 20px;
+				width: 47%;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					width: auto;
+				}
+
+				img {
+					width: 100%;
+					height: auto;
+
+					&.green-border {
+						border-bottom: 10px solid $light-green;
+					}
+				}
+			}
+		}
+	}
+
+	.company-image {
+
+		img {
+			width: 100%;
+			height: auto;
+
+			/*@media only screen and (max-width: $lg-breakpoint) {
+				width: auto;
+			}*/
+		}
+	}
+
+	.testimonial {
+		padding: 80px 0;
+
+		.container {
+			text-align: center;
+
+			span {
+				margin-top: 40px;
+			}
+		}
+	}
+
+	.results {
+		color: $white;
+		background: $black;
+		padding: 30px 0;
+
+		.container {
+			text-align: center;
+		}
+
+		.stats {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			img {
+				width: 90px;
+				height: auto;
+			}
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				flex-direction: column;
+
+				/*img {
+					width: auto;
+				}*/
+			}
+
+			>div {
+				width: 30%;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					width: 100%;
+				}
+			}
+
+			p {
+				font-size: 1rem;
+			}
+		}
+
+		.cta-box {
+			font-weight: 800;
+			margin-top: 50px;
+
+			span {
+				color: $yellow;
+				font-size: 2rem;
+			}
+
+			a {
+				color: $yellow;
+				text-decoration: none;
+				position: relative;
+
+				/*&:after {
+					content:'';
+					background: $yellow;
+					display: block;
+					height: 5px;
+					width: 100%;
+				}*/
+			}
+		}
+	}
+
+	.col3 {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		//margin: 50px auto;
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			flex-direction: column;
+		}
+
+		>div {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			width: 33.3%;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 100%;
+			}
+		}
+
+		&.cfds {
+
+			img {
+				width: 100%;
+				//margin-right: 20px;
+				height: auto;
+			}
+
+			>div {
+				margin-right: 30px;
+				margin-top: 20px;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					margin-right: 0;
+				}
+			}
+		}
+
+		&.pathfinder {
+
+			>div {
+				margin: 20px auto;
+				height: 100px;
+			}
+		}
+
+		&.belvedere {
+			padding-bottom: 60px;
+
+			>div {
+				margin-right: 30px;
+				margin-top: 60px;
+			}
+		}
+	}
+
+	.col4 {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			flex-direction: column;
+		}
+
+		div {
+			width: 25%;
+			margin-top: 20px;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 100%;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	.videoblock {
+		min-height: 900px;
+	}
+
+	.vidblurb {
+		color: $white;
+		margin-top: 50px;
+		padding: 20px 0;
+
+		h2 {
+			margin-top: 20px;
+		}
+
+		&.cfds {
+			background: $case-study-plum;
+		}
+
+		&.pathfinder {
+			background: $case-study-maroon;
+		}
+	}
+
+	.divider {
+		display: flex;
+		width: 100%;
+		height: 7px;
+
+		>div {
+			width: 33.3%;
+
+			&:first-child {
+				background: $case-study-gray;
+			}
+
+			&:nth-child(2) {
+				background: $case-study-gold;
+			}
+
+			&:nth-child(3) {
+				background: $case-study-maroon;
+			}
+		}
+	}
+
+	.colorbar {
+    	width: 100%;
+    }
+
+	.fca-image {
+		
+		img {
+			height: auto;
+			margin-bottom: 50px;
+			width: 100%;
+		}
+	}
+
+	.cfds-logo {
+		text-align: center;
+
+		img {
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 80%;
+				height: auto;
+			}
+		}
+	}
+
+	.cfds-logo-study {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin: 50px auto;
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			flex-direction: column;
+		}
+
+	}
+
+	.cfds-slider {
+		width: 350px;
+		height: 150px;
+	}
+
+	.cfds-marketing {
+		background: #eee;
+		margin-bottom: 50px;
+
+		img {
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	.full-width {
+		height: auto;
+		width: 100%;
+	}
+
+	.half {
+		padding: 30px 0;
+		margin-top: -7px;
+		position: relative;
+		display: flex;
+		margin-bottom: 30px;
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			flex-direction: column;
+		}
+		
+		&:after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+
+		>div {
+			float: left;
+			width: 45%;
+			margin-right: 30px;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 100%;
+			}
+		}
+
+		&.pathfinder {
+			margin: 0;
+			padding: 0;
+
+			>div {
+				margin: 0;
+				padding: 0;
+				width: 50%;
+			}
+		}
+	}
+
+	//background colors 
+
+	.teal-bg {
+	 	background: $case-study-teal;
+	}
+	.orange-bg {
+		background: $case-study-orange;
+	}
+	.maroon-bg {
+		background: $case-study-maroon;
+	}
+	.gray-bg {
+		background: $case-study-gray;
+	}
+	.sunmark-gray-bg {
+		background: $case-study-sunmark-gray;
+	}
+	.lt-gray-bg {
+		background: $case-study-lt-gray;
+	}
+	.gold-bg {
+		background: $case-study-gold;
+	}
+	.green-bg {
+		background: $light-green;
+	}
+	.cream-bg {
+		background: $case-study-cream;
+	}
+	.blue-bg {
+		background: $light-blue;
+	}
+	.yellow-bg {
+		background: $case-study-yellow;
+	}
+	.dark-yellow-bg {
+		background: $case-study-dark-yellow;
+	}
+	.orange-bg {
+		background: $case-study-orange;
+	}
+	.aqua-bg {
+		background: $case-study-aqua;
+	}
+	.plum-bg {
+		background: $case-study-plum;
+	}
+	.navy-bg {
+		background: $case-study-navy;
+	}
+	.aqua-bg {
+		background: $case-study-aqua;
+	}
+	.lt-aqua-bg {
+		background: $case-study-lt-aqua;
+	}
+	.lt-blue-bg {
+		background: $case-study-lt-blue;
+	}
+	.belvedere-bg {
+		background: $case-study-belvedere-gray;
+	}
+	.cfds-bg {
+		background: $case-study-cfds-blue;
+	}
+	.cfds-dark-bg {
+		background: $case-study-cfds-dark-blue;
+	}
+	.black-bg {
+		background: $black;
+		color: $white;
+
+		span {
+			animation: movebackground 20s linear infinite alternate;
+			background: $orange-gradient;
+			background-size: 130%;
+			color: rgba(0,0,0,.1);
+			background-clip: text;
+			-webkit-background-clip: text;
+			width: 100%;
+		}
+	}
+
+
+
+
+	//text colors 
+
+	.teal-text {
+	 	color: $case-study-teal;
+	}
+	.orange-text {
+		color: $case-study-orange;
+	}
+	.maroon-text {
+	 	color: $case-study-maroon;
+	}
+	.gold-text {
+		color: $case-study-gold;
+	}
+	.plum-text {
+		color: $case-study-plum;
+	}
+	.aqua-text {
+		color: $case-study-aqua;
+	}
+	.dark-yellow-text {
+		color: $case-study-dark-yellow;
+	}
+	.white-text {
+		color: $white;
+	}
+	.belvedere-gray {
+		color: $case-study-belvedere-gray;
+	}
+
+	.bright-futures {
+		width: 110px;
+		height: auto;
+	}
+}
+
+.belvedere-material {
+
+	 img {
+	 	width: 50%;
+	 	height: auto;
+	 }
+}
+
+
+.about {
+
+	.input-sample {
+		margin: 80px;
+
+		#{$all-text-inputs} {
+			color: $black;
+			-webkit-box-shadow: inset 0px -14px 8px -14px rgba(0,0,0,0.34);
+-moz-box-shadow: inset 0px -14px 8px -14px rgba(0,0,0,0.34);
+box-shadow: inset 0px -14px 8px -14px rgba(0,0,0,0.34);
+			border-radius: 6px;
+			margin-top: 5px;
+			padding: 10px;
+		}
+
+		#{$all-buttons} {
+			background: none;
+			border: 1px solid $white;
+			margin-top: 15;
+			padding: 8px 30px;
+		}
+
+		label, input {
+			display: block;
+		}
+	}
+}

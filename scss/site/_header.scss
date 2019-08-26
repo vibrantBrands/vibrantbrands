@@ -1,19 +1,30 @@
 // Header styles fof the Vibrant rebrand //
 
 header {
+	background: $black;
 	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 3;
 
+	.toggle-wrapper {
+		display: flex;
+		flex-direction: column;
+		width: 30px;
+		height: 26px;
+		position: fixed;
+		top: 30px;
+		left: 30px;
+		z-index: 5;
+
+		p {
+			font-size: 0.7em;
+			margin: 32px 0 0 -1px;
+		}
+	}
+
 	.menu-toggle {
-			cursor: pointer;
-			width: 30px;
-			height: 26px;
-			position: absolute;
-			top: 27px;
-			left: 30px;
-			z-index: 5;
+			cursor: pointer;			
 
 			.bg {
 				display: block;
@@ -70,7 +81,7 @@ header {
 					&:first-child {
 						background: $white;
 						transform: rotate(0);
-						top: 10%;
+						top: 20%;
 					}
 
 					&:nth-child(2) {
@@ -80,7 +91,7 @@ header {
 					&:nth-child(3) {
 						background: $white;
 						transform: rotate(0);
-						top: 90%;
+						top: 80%;
 					}
 				}
 			}
@@ -91,7 +102,7 @@ header {
 			max-height: 0px;
 			overflow: hidden;
 			width: 100%;
-			z-index: 1;
+			z-index: 3;
 
 
 			&.active {
@@ -129,7 +140,7 @@ header {
 					height: 100vh;
 					justify-content: center;
 					transition: $menu-transition;
-					width: 33.3%;
+					width: 33.6%;
 
 					a {
 						color: $white;
@@ -145,6 +156,7 @@ header {
 
 				@media only screen and (max-width: $md-breakpoint) {
 				    flex-direction: column;
+				    margin-top: 50px;
 
 				    li {
 				    	height: 33.3vh;
@@ -155,23 +167,41 @@ header {
 
 		}
 
+		.logo div span {
+
+			@media only screen and (max-width: $sm-breakpoint) {
+				display: none;
+			}
+		}	
+
 	.logo-container {
 		align-items: center;
 		background: $black;
 		display: flex;
 		font-size: 1.7em;
-		height: 85px;
+		height: 120px;
 		justify-content: center;
 		letter-spacing: 3px;
 		z-index: 3;	
 		position: relative;
 
 		@media only screen and (max-width: $sm-breakpoint) {
-			justify-content: flex-end;
+			margin-left: 25px;
 		}
 
 		a {
 			color: $white;
+			text-decoration: none;
+		}
+
+		.date {
+			letter-spacing: 1px;
+			font-size: 11px;
+			text-align: center;
+
+			@media only screen and (max-width: $sm-breakpoint) {
+				margin-left: -30px;
+			}
 		}
 	}
 

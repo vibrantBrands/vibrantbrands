@@ -25,13 +25,19 @@
 		margin-top: 200px;
 		-webkit-background-clip: text;
 	}
+}
+
+.service-filters {
+	display: flex;
+	flex-direction: column;
 
 	ul {
 		display: flex;
 		font-size: 1.2rem;
-		margin: 80px 0;
+		margin: 10px auto;
 		padding: 0;
 		list-style-type: none;
+		z-index: 200;
 
 		@media only screen and (max-width: $sm-breakpoint) {
 			font-size: 0.9rem;
@@ -42,34 +48,133 @@
 			padding: 13px 20px;
 			background-position: 0 0;
 
+
 			&:hover {
 				cursor: pointer;
-				background: linear-gradient(90deg, $light-green, $dark-green);
+				background: $green-gradient;
 				background-size: 150%;
 				background-position: 120px 0;
+				transform: translate3d(0, 0, 0);
 				transition: all .5s ease-out;
+			}
+
+			&:first-child {
+
+				&:hover {
+					background: $pink-gradient;
+					background-size: 150%;
+					background-position: 120px 0;
+					transition: all .5s ease-out;
+				}		
+			}
+			&:nth-child(2) {
+
+				&:hover {
+					background: $bluegreen-gradient;
+					background-size: 150%;
+					background-position: 120px 0;
+					transition: all .5s ease-out;
+				}	
+			}
+			&:nth-child(3) {
+
+				&:hover {
+					background: $orange-gradient;
+					background-size: 150%;
+					background-position: 120px 0;
+					transition: all .5s ease-out;
+				}
 			}
 		}
 	}
 }
 
-.branding {
-	height: 320px;
+.service-description {
 
-	ul {
-		margin-top: 30px;
-	}
+	>div {
+		//display: none;
+		//opacity: 0;
+		//max-height: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		display: none;
 
-	h1 {
-		margin: 10px 0;
-	}
+		/*&.inactive {
+			opacity: 0;
+			max-height: 0px;
+			transition: all .5s ease-out;
+		}*/
 
-	p {
-		width: 80%;
-		font-size: 1em;
-		line-height: 1.5;
+		&.active {
+			opacity: 1;
+			max-height: 400px;
+			transition: all .5s ease-out;
+		}
+
+		h3 {
+			text-align: center;
+		}
+
+		p {
+			margin: 0 auto 20px;
+		}
+
+
+		h2 {
+			animation: movebackground 20s linear infinite alternate;
+			background: $green-gradient;
+			background-size: 130%;
+			color: rgba(0,0,0,.1);
+			background-clip: text;
+			-webkit-background-clip: text;
+		}
+
+		&:first-child {
+
+			h2 {
+				background: $pink-gradient;
+				background-clip: text;
+				-webkit-background-clip: text;
+			}
+		}
+
+		&:nth-child(3) {
+			
+			h2 {
+				background: $orange-gradient;
+				background-clip: text;
+				-webkit-background-clip: text;
+			}
+		} 
+
+		&:nth-child(2) {
+			
+			h2 {
+				background: $bluegreen-gradient;
+				background-clip: text;
+				-webkit-background-clip: text;
+			}
+		} 
+
+		ul {
+			margin-top: 30px;
+		}
+
+		h1 {
+			margin: 10px 0;
+		}
+
+		p {
+			width: 85%;
+			font-size: 1em;
+			line-height: 1.5;
+		}
 	}
 }
+
+
 
 .container {
 	max-width: $width-limit;
@@ -90,7 +195,7 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin: 0 auto;
+	margin: 50px auto 0;
 
 	@media only screen and (max-width: $md-breakpoint) {
 	    flex-direction: column;
@@ -99,7 +204,7 @@
 
 	>div {
 		width: 32.8%;
-		margin: 5px 0;
+		margin: 2px 0;
 		max-width: 500px;
 		overflow: hidden;
 		position: relative;
@@ -116,16 +221,17 @@
 			align-items: flex-start;
 			border: 10px solid white;
 			color: $white;
+			cursor: pointer;
 			display: flex;
 			flex-direction: column;
 			height: 93%;
 			justify-content: center;
-			position: absolute;
+			left: 0;
 			opacity: 0;
+			position: absolute;
+			top: 0;
 			width: 94%;
 			z-index: 2;
-			top: 0;
-			left: 0;
 
 			.info-bg {
 					opacity: .8;
@@ -140,8 +246,12 @@
 			}
 
 			@media only screen and (max-width: $md-breakpoint) {
-	    		height: 96%;
+	    		height: 95.5%;
 	    		width: 96%;
+			}
+			@media only screen and (max-width: $sm-breakpoint) {
+	    		height: 94%;
+	    		width: 95%;
 			}
 
 		}
@@ -154,12 +264,14 @@
 		}
 
 		h3 {
-			padding: 0 20px;
-			margin-bottom: 0;
+			text-align: center;
+			width: 100%;
+			padding: 0;
 		}
 
 		h3, p {
 			z-index: 3;
+			text-align: center;
 		}
 	}
 
@@ -203,18 +315,29 @@
 		padding: 0 40px;
 
 		&.save-text {
+			text-align: left;
+
+			a {
+				color: $yellow;
+				text-decoration: none;
+
+				&:hover {
+					font-weight: bold;
+				}
+			}
+
 			@media only screen and (max-width: $xl-breakpoint) {
 		    	font-size: 1rem;
 		    	line-height: 1.4rem;
 		    	margin: 0;
 		    	padding: 10px;
-		    	text-align: center;
 			}
 
 			@media only screen and (max-width: $md-breakpoint) {
 					font-size: 1.3rem;
 			    	margin: 30px 50px;
 			    	line-height: 1.5rem;
+			    	text-align: center;
 				}
 			}
 	}

@@ -19,16 +19,15 @@
 @import "core/normalize";
 @import "core/variables";
 
-@import "site/header";
-@import "site/footer";
-@import "site/homepage";
-@import "site/internal";
-
 
 body.vibrant {
 	@import "core/base";
 	@import "site/header";
 	@import "site/internal";
+	@import "site/homepage";
+	@import "site/case-study";
+	@import "site/footer";
+	@import "site/about";
 
 	background: $black;
 	color: $white;
@@ -44,69 +43,85 @@ body.vibrant {
 		font-family: $header-font;
 	}
 
+	h1 {
+		font-size: 2.2em;
+	}
+
+	h2 {
+		font-size: 40px;
+		margin: 50px 0 10px;
+	}
+
 	h3 {
-		font-size: 1.7em;
-		margin: 10px 0;
+		font-size: 1.4em;
+		margin: 10px 0 0;
 		text-align: left;
 	}
 
-	p {
+	p,
+	strong {
 		font-size: $text-font-size;
 	}
 
 	.logo {
-		display: flex;
-		align-items: center;
-		font-family: $header-font;
-		position: relative;
-
-		@media only screen and (max-width: $sm-breakpoint) {
-			font-size: 1.3rem;
-		}
-
-		div {
-			clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
-			-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+			display: flex;
+			align-items: center;
+			font-family: $header-font;
 			position: relative;
 
-			&:first-child {
-				left: 0px;	
-				height: 23px;
-				width: 145px;
+			@media only screen and (max-width: $sm-breakpoint) {
+				font-size: 1.3rem;
+			}
 
-				@media only screen and (max-width: $sm-breakpoint) {
-					width: 115px;
+			div {
+				clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+				-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+				position: relative;
+
+				&:first-child {
+					left: 0px;	
+					height: 23px;
+					width: 145px;
+
+					@media only screen and (max-width: $sm-breakpoint) {
+						width: 115px;
+					}
+				}
+				&:nth-child(3) {
+				    left: 0px;
+				    height: 23px;
+					width: 145px;
+				}
+
+
+				span {
+					left: 0px;
+					display: block;
+					position: absolute;
+					transform: translate3d(0,0,0);
+					transition: .5s all ease-out;
 				}
 			}
-			&:nth-child(3) {
-			    left: 0px;
-			    height: 23px;
-				width: 145px;
-			}	
 
-			span {
-				left: 0px;
-				display: block;
-				position: absolute;
-				transform: translate3d(0,0,0);
-				transition: .5s all ease-out;
+			img {
+				width: 70px;
+			}
+
+			&.folded {
+
+				.vibrant, 
+				.brands {
+					font-size: 1.2rem;
+				}
+
+				.vibrant {
+					left: 40px;
+				}
+				/*.brands {
+					margin-left: -140px;
+				}*/
 			}
 		}
-
-		img {
-			width: 70px;
-		}
-
-		&.folded {
-
-			.vibrant {
-				left: 150px;
-			}
-			.brands {
-				margin-left: -140px;
-			}
-		}
-	}
 
 	.border {
 		background: $rainbow-gradient;
