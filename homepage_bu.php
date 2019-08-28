@@ -1,9 +1,9 @@
 <?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 <?php $this->inc('elements/header.php'); ?>
-	
+
 <div class="container">
-	
+
 	<section class="tagline">
     	<h1>Building brands you love.</h1>
     </section>
@@ -40,11 +40,11 @@
                 <h3>Services Include:</h3>
                 <p>Testimonial Videos, Training Videos, HD Video Shoots, Green Screen Shoots, Editing, Visual FX Compositing Lighting, TV Commercials, Web Video, Corporate Video, Animation, Event Videography, Spherical Images, Drone Camera</p>
             </div>
-            
+
         </div>
     </section>
 
-     
+
     <section class="clients">
         <div>
             <a href="/case-studies/cfds">
@@ -52,7 +52,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Center for Disability Services</h3>
-                    <p></p>
+                    <p>"Vibrant helped us...broadcast our message in a modern way, leading to amazing new opportunities for the future."</p>
                 </div>
             </a>
         </div>
@@ -62,7 +62,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Belvedere Health Services</h3>
-                    <p></p>
+                    <p>"Vibrant always provides insights into marketing and positioning that we didn’t even know we should be paying attention to."</p>
                 </div>
             </a>
         </div>
@@ -102,7 +102,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>NE PA</h3>
-                    <p></p>
+                    <p>"With their support, we can focus on what we do best—serving our members."</p>
                 </div>
             </a>
     	</div>
@@ -122,13 +122,13 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Pathfinder Village</h3>
-                    <p></p>
+                    <p>"We have been able to reach more people than ever before and truly build our awareness."</p>
                 </div>
             </a>
         </div>
     	<div>
             <h2>We're saving this spot for you.</h2>
-            <p class="save-text">Create an accurate and consistent voice that resonates with your audience.  Call us today 855.946.2773</p>
+            <p class="save-text">Create an accurate and consistent voice that resonates with your audience.  Call us today: <a href="tel:8559462773">(855) 946-2773</a></p>
     	</div>
     	<!-- <div>
     		<img src="<?php echo $this->getThemePath(); ?>/images/client_10.jpg" alt="client 10">
@@ -150,9 +150,9 @@
     		<h2>We're saving this spot for you.</h2>
     		<p class="save-text">Create an accurate and consistent voice that resonates with your audience.  Call us today 855.946.2773</p>
     	</div> -->
-    </section> 
+    </section>
 
 </div>
-	
+
 
 <?php $this->inc('elements/footer.php'); ?>

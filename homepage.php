@@ -42,9 +42,10 @@
             </div>
 
         </div>
+
     </section>
-
-
+    
+    <small class="click-below">Click on the stories below to learn more.</small>
     <section class="clients">
         <div>
             <a href="/case-studies/cfds">
