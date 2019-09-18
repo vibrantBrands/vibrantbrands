@@ -1,6 +1,7 @@
 
 .internal {
 	background: $white;
+	padding: 150px 0 50px;
 
 	.container {
 		@media only screen and (max-width: $lg-breakpoint) {
@@ -9,14 +10,15 @@
 	}
 
 		.page-header {
-	    	background: $black;
-	    	margin-top: 20px;
-	    	padding: 180px 0 40px;
+	    	background: $white;
+	    	margin-top: 80px;
+	    	padding: 0;
 	    	color: $white;
 
 	    	h1 {
-	    		background: $black;
-	    		color: $white;
+	    		margin-top: 80px;
+	    		/*background: $black;
+	    		color: $white;*/
 	    	}
 	    }
 

@@ -24,18 +24,37 @@
 		line-height: 6rem;
 		background-clip: text;
 		-webkit-background-clip: text;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			font-size: 3.5rem;
+			line-height: 3.9rem;
+		}
 	}
 }
 
 .hero-video {
 	position: relative;
-	//min-height: 500px;
+	min-height: 500px;
 	max-height: 800px;
 	overflow: hidden;
+	margin-top: -20px;
+
+	@media only screen and (max-width: $md-breakpoint) {
+		padding-top: 100px;
+	}
 
 	.video-container {
 		top: 0;
 		left: 0;
+		width: 100%;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			display: none;
+		}
+
+		video {
+			width: 100%;
+		}
 	}
 
 	.textbox {
@@ -59,11 +78,11 @@
 
 .service-filters {
 	display: flex;
-	margin-top: 80px;
 	flex-direction: column;
 
 	ul {
 		display: flex;
+		justify-content: center;
 		font-size: 1.2rem;
 		margin: 10px auto;
 		padding: 0;
@@ -72,12 +91,20 @@
 
 		@media only screen and (max-width: $sm-breakpoint) {
 			font-size: 0.9rem;
+			width: 96%;
 		}
 
 		li {
 			border: 1px solid $white;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			padding: 13px 20px;
 			background-position: 0 0;
+
+			@media only screen and (max-width: $sm-breakpoint) {
+				padding: 10px;
+			}
 
 
 			&:hover {

@@ -140,7 +140,7 @@ header {
 					height: 100vh;
 					justify-content: center;
 					transition: $menu-transition;
-					width: 33.6%;
+					width: 25%;
 
 					a {
 						color: $white;
@@ -148,18 +148,22 @@ header {
 					}
 
 					&:hover {
-						animation: movebackground 20s linear infinite alternate;
-						color: red;
+
+						a {
+							color: $yellow;
+							transition: color .5s ease-out;
+						}
+
 					}
 				}
 
 
 				@media only screen and (max-width: $md-breakpoint) {
 				    flex-direction: column;
-				    margin-top: 50px;
+				    margin-top: 110px;
 
 				    li {
-				    	height: 33.3vh;
+				    	height: 20vh;
 				    	width: 100%;
 				    }
 				}

@@ -18,10 +18,10 @@
 <div class="container">
     <section class="service-filters">
     	<ul class="filter-buttons">
-    		<li>branding</li>
-    		<li>marketing</li>
-    		<li>website design</li>
-    		<li>video</li>
+    		<li>Branding</li>
+    		<li>Marketing</li>
+    		<li>Websites</li>
+    		<li>Videos</li>
     	</ul>
         <div class="service-description">
             <div class="branding">
@@ -37,13 +37,13 @@
                 <p>Advertising Campaigns, Marketing Plans, Video Production, Marketing Strategy, Marketing Consulting, Brochure Design, Graphic Design, Copywriting</p>
             </div>
             <div class="website">
-                <h2>We are website design.</h2>
+                <h2>Website development.</h2>
                 <p>Your website is the cornerstone of your marketing. We treat it that way. Our websites are a creative collaboration. We go beyond looking good. From video to copywriting to landing pages, Vibrant websites move the needle.</p>
                 <h3>Services Include:</h3>
-                <p>Website Design, Social Media Strategy & Training, Online Marketing (AdWords), Google Grant Administration, Search Engine Optimization (SEO), Online Store Setup, Responsive Design</p>
+                <p>Website Design, Social Media Strategy & Training, Online Marketing (AdWords), Google Grant Administration, Search Engine Optimization (SEO), ADA Compliance, Online Store Setup, Responsive Design</p>
             </div>
             <div class="video">
-                <h2>We are video.</h2>
+                <h2>Video production.</h2>
                 <p>Nothing tells a better and more comprehensive story than video. We build video into everything we do. We incorporate video into your websites, presentations and even printed materials.</p>
                 <h3>Services Include:</h3>
                 <p>Testimonial Videos, Training Videos, HD Video Shoots, Green Screen Shoots, Editing, Visual FX Compositing Lighting, TV Commercials, Web Video, Corporate Video, Animation, Event Videography, Spherical Images, Drone Camera</p>
@@ -147,80 +147,88 @@
 
     <section class="video-section hidden">
         <div>
-            <a data-lity href="https://vimeo.com/168243252">
+            <a data-lity href="https://vimeo.com/313568562">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Video 1</h3>
-                    <p>"Video 1 text stuff"</p>
+                    <h3>Center for Disability Services</h3>
+                    <p></p>
                 </div>
             </a>
         </div>
         <div>
-            <a data-lity href="https://vimeo.com/168243252">
+            <a data-lity href="https://vimeo.com/340198357">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Video 2</h3>
-                    <p>"Video 2 text stuff."</p>
+                    <h3>QSAC Gala 2019</h3>
+                    <p></p>
                 </div>
             </a>
         </div>
         <div>
-            <a data-lity href="https://vimeo.com/168243252">
+            <a data-lity href="https://vimeo.com/268978063">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Video 3</h3>
+                    <h3>KCC</h3>
                     <p>"Video 3 text stuff"</p>
                 </div>
             </a>
         </div>
         <div>
-            <a data-lity href="https://vimeo.com/168243252">
+            <a data-lity href="https://vimeo.com/188699159">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Video 4</h3>
-                    <p>"Video 4 text stuff"</p>
+                    <h3>Pathfinder Community</h3>
+                    <p></p>
                 </div>
             </a>
         </div>
         <div>
-            <a data-lity href="https://vimeo.com/168243252">
+            <a data-lity href="https://vimeo.com/233693035">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Video 4</h3>
-                    <p>"Video 4 text stuff"</p>
+                    <h3>Heaven's Hands</h3>
+                    <p>Overview</p>
                 </div>
             </a>
         </div>
         <div>
-            <a data-lity href="https://vimeo.com/168243252">
+            <a data-lity href="https://vimeo.com/239825585">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Video 4</h3>
-                    <p>"Video 4 text stuff"</p>
+                    <h3>Heaven's Hands</h3>
+                    <p>Employment</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/291110242">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Greystone</h3>
+                    <p>Art Program</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/286351696">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>FLAME</h3>
+                    <p>Art Program</p>
                 </div>
             </a>
         </div>
     </section>
 
-    <iframe src="https://www.w3schools.com"></iframe>
-
-    <section class="website-section hidden">
-        <div>
-            <a data-lity href="//www.google.com">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">
-                <div class="info">
-                    <div class="info-bg"></div>
-                    <h3>Video 1</h3>
-                    <p>"Video 1 text stuff"</p>
-                </div>
-            </a>
-        </div>
+    <section class="website-section hidden">  
         <div>
             <a href="/case-studies/belvedere">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">

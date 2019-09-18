@@ -3,13 +3,6 @@
 <?php $this->inc('elements/header.php'); ?>
 
 <div class="internal">
-
-<div class="page-header">
-     <?php
-          $a = new Area('Page Header');
-          $a->display($c);
-      ?>        
-</div>
 <div class="content-wrapper">
   <div class="container">
   <article class="content">

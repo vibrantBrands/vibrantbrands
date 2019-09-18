@@ -35,15 +35,15 @@ $( document ).ready(function() {
 			$('.service-description div').slideUp('500');
 			$('.service-description div').eq(index).slideDown('500');
 
-			switch(index) {
+			/*switch(index) {
 				  case 0:
 				  case 1:
 				    $('.video-section, .website-section').addClass('hidden');
 				    $('.clients').removeClass('hidden');
 				  break;
 				  case 2:
-				    $('.video-section, .clients').addClass('hidden');
-				    $('.website-section').removeClass('hidden');
+				    $('.video-section').addClass('hidden');
+				    //$('.website-section').removeClass('hidden');
 				  break;
 				  case 3:
 				    $('.website-section, .clients').addClass('hidden');
@@ -51,7 +51,7 @@ $( document ).ready(function() {
 				  break;
 				  default:
 				    // code block
-				}
+				}*/
 		},
 		addHandlers : function() {
 			var _this = this;
