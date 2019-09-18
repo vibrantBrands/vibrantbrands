@@ -31,11 +31,27 @@ $( document ).ready(function() {
             }
 		},
 
-		showDescription: function(index) {
-			//$('.service-description div').removeClass('active').addClass('inactive');
-			//$('.service-description div').eq(index).addClass('active');
+		filterTheBoxes: function(index) {
 			$('.service-description div').slideUp('500');
 			$('.service-description div').eq(index).slideDown('500');
+
+			switch(index) {
+				  case 0:
+				  case 1:
+				    $('.video-section, .website-section').addClass('hidden');
+				    $('.clients').removeClass('hidden');
+				  break;
+				  case 2:
+				    $('.video-section, .clients').addClass('hidden');
+				    $('.website-section').removeClass('hidden');
+				  break;
+				  case 3:
+				    $('.website-section, .clients').addClass('hidden');
+				    $('.video-section').removeClass('hidden');
+				  break;
+				  default:
+				    // code block
+				}
 		},
 		addHandlers : function() {
 			var _this = this;
@@ -49,7 +65,7 @@ $( document ).ready(function() {
 			});
 
 			$('.service-filters li').click(function(e){
-				_this.showDescription($(this).index());
+				_this.filterTheBoxes($(this).index());
 			});
 		},
 

@@ -1,5 +1,6 @@
 
 
+.hero-video,
 .tagline,
 .branding {
 	
@@ -18,17 +19,47 @@
 		animation: movebackground 20s linear infinite alternate;
 		background-size: 130%;
 		background: $rainbow-gradient;
-		color: rgba(0,0,0,.1);
-		font-size: 4rem;
-		line-height: 4.5rem;
+		color: rgba(0,0,0,.05);
+		font-size: 5rem;
+		line-height: 6rem;
 		background-clip: text;
-		margin-top: 200px;
 		-webkit-background-clip: text;
+	}
+}
+
+.hero-video {
+	position: relative;
+	//min-height: 500px;
+	max-height: 800px;
+	overflow: hidden;
+
+	.video-container {
+		top: 0;
+		left: 0;
+	}
+
+	.textbox {
+		text-align: center;
+		position: absolute;
+		width: 100%;
+	}
+
+	h1, h2 {
+		z-index: 2;
+	}
+
+	h1 {
+		margin: 0;
+	}
+
+	h2 {
+		margin: 10px auto 40px;
 	}
 }
 
 .service-filters {
 	display: flex;
+	margin-top: 80px;
 	flex-direction: column;
 
 	ul {
@@ -194,7 +225,9 @@
 	}
 }
 
-.clients {
+.clients,
+.video-section,
+.website-section {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -203,6 +236,10 @@
 	@media only screen and (max-width: $md-breakpoint) {
 	    flex-direction: column;
 	    width: 80%;
+	}
+
+	&.hidden {
+		display: none;
 	}
 
 	>div {
@@ -345,3 +382,8 @@
 			}
 	}
 }
+
+/*.video-section,
+.website-section {
+	display: none;
+}*/

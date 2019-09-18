@@ -2,15 +2,23 @@
 
 <?php $this->inc('elements/header.php'); ?>
 
+<section class="hero-video">
+        <div class="textbox">
+            <h1>Branding for Good.</h1>
+            <h2>Doing great work for great people.</h2>
+        </div>
+        <div class="video-container">
+            <video muted autoplay loop>
+                <source src="<?php echo $this->getThemePath(); ?>/video/VibrantBrands.mp4" type="video/mp4"> Your browser does not support the video tag.
+            </video>
+        </div>
+</section>
+
+
 <div class="container">
-
-	<section class="tagline">
-    	<h1>Building brands you love.</h1>
-    </section>
-
     <section class="service-filters">
-    	<ul>
-    		<li><div>branding</div></li>
+    	<ul class="filter-buttons">
+    		<li>branding</li>
     		<li>marketing</li>
     		<li>website design</li>
     		<li>video</li>
@@ -46,6 +54,10 @@
     </section>
     
     <small class="click-below">Click on the stories below to learn more.</small>
+    <p>
+        <i class="fas fa-arrow-down"></i>
+    </p>
+
     <section class="clients">
         <div>
             <a href="/case-studies/cfds">
@@ -131,27 +143,136 @@
             <h2>We're saving this spot for you.</h2>
             <p class="save-text">Create an accurate and consistent voice that resonates with your audience.  Call us today: <a href="tel:8559462773">(855) 946-2773</a></p>
     	</div>
-    	<!-- <div>
-    		<img src="<?php echo $this->getThemePath(); ?>/images/client_10.jpg" alt="client 10">
-            <div class="info">
-                <div class="info-bg"></div>
-                <h3>Lorem ipsum dolor sit amet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id lobortis justo. Aliquam vel leo pretium, placerat nibh vel, eleifend nulla. Duis vitae arcu at quam sagittis tincidunt.</p>
-            </div>
-    	</div>
-    	<div>
-    		<img src="<?php echo $this->getThemePath(); ?>/images/client_11.jpg" alt="client 11">
-            <div class="info">
-                <div class="info-bg"></div>
-                <h3>Lorem ipsum dolor sit amet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id lobortis justo. Aliquam vel leo pretium, placerat nibh vel, eleifend nulla. Duis vitae arcu at quam sagittis tincidunt.</p>
-            </div>
-    	</div>
-    	<div>
-    		<h2>We're saving this spot for you.</h2>
-    		<p class="save-text">Create an accurate and consistent voice that resonates with your audience.  Call us today 855.946.2773</p>
-    	</div> -->
     </section>
+
+    <section class="video-section hidden">
+        <div>
+            <a data-lity href="https://vimeo.com/168243252">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Video 1</h3>
+                    <p>"Video 1 text stuff"</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/168243252">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Video 2</h3>
+                    <p>"Video 2 text stuff."</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/168243252">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Video 3</h3>
+                    <p>"Video 3 text stuff"</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/168243252">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Video 4</h3>
+                    <p>"Video 4 text stuff"</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/168243252">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Video 4</h3>
+                    <p>"Video 4 text stuff"</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/168243252">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Video 4</h3>
+                    <p>"Video 4 text stuff"</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <iframe src="https://www.w3schools.com"></iframe>
+
+    <section class="website-section hidden">
+        <div>
+            <a data-lity href="//www.google.com">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Video 1</h3>
+                    <p>"Video 1 text stuff"</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="/case-studies/belvedere">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Video 2</h3>
+                    <p>"Video 2 text stuff."</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="/case-studies/sunmark">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Video 3</h3>
+                    <p>"Video 3 text stuff"</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="/case-studies/united-hospice-rockland">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Video 4</h3>
+                    <p>"Video 4 text stuff"</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="/case-studies/united-hospice-rockland">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Video 4</h3>
+                    <p>"Video 4 text stuff"</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="/case-studies/united-hospice-rockland">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Video 4</h3>
+                    <p>"Video 4 text stuff"</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
 
 </div>
 
