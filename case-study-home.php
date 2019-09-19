@@ -2,56 +2,9 @@
 
 <?php $this->inc('elements/header.php'); ?>
 
-<section class="hero-video">
-        <div class="textbox">
-            <h1>Branding for Good.</h1>
-            <h2>Doing great work for great people.</h2>
-        </div>
-        <div class="video-container">
-            <video muted autoplay loop>
-                <source src="<?php echo $this->getThemePath(); ?>/video/VibrantBrands.mp4" type="video/mp4"> Your browser does not support the video tag.
-            </video>
-        </div>
-</section>
-
-
+<div class="internal black">
 <div class="container">
-    <section class="service-filters">
-    	<ul class="filter-buttons">
-    		<li>Branding</li>
-    		<li>Marketing</li>
-    		<li>Websites</li>
-    		<li>Videos</li>
-    	</ul>
-        <div class="service-description">
-            <div class="branding">
-                <h2>We are branding.</h2>
-                <p>Your Brand is the foundation of your marketing. Everything we create, from your website to your advertising, is a transmission of your brand. We enhance how you are perceived. We have a rock solid process for renaming, rebranding and building your brand. We are branding.</p>
-                <h3>Services Include:</h3>
-                <p>Brand Launch Strategy, Branding Surveys, Branding & Brand Design, Rebranding, Logo Development, Taglines, Naming Services</p>
-            </div>
-            <div class="marketing">
-                <h2>We are marketing.</h2>
-                <p>The targeting power of Facebook, YouTube and Google are unmatched by any other form of advertising. We have mastered these tools and are Google Certified. We combine online with offline campaigns for impressive results.</p>
-                <h3>Services Include:</h3>
-                <p>Advertising Campaigns, Marketing Plans, Video Production, Marketing Strategy, Marketing Consulting, Brochure Design, Graphic Design, Copywriting</p>
-            </div>
-            <div class="website">
-                <h2>Website development.</h2>
-                <p>Your website is the cornerstone of your marketing. We treat it that way. Our websites are a creative collaboration. We go beyond looking good. From video to copywriting to landing pages, Vibrant websites move the needle.</p>
-                <h3>Services Include:</h3>
-                <p>Website Design, Social Media Strategy & Training, Online Marketing (AdWords), Google Grant Administration, Search Engine Optimization (SEO), ADA Compliance, Online Store Setup, Responsive Design</p>
-            </div>
-            <div class="video">
-                <h2>Video production.</h2>
-                <p>Nothing tells a better and more comprehensive story than video. We build video into everything we do. We incorporate video into your websites, presentations and even printed materials.</p>
-                <h3>Services Include:</h3>
-                <p>Testimonial Videos, Training Videos, HD Video Shoots, Green Screen Shoots, Editing, Visual FX Compositing Lighting, TV Commercials, Web Video, Corporate Video, Animation, Event Videography, Spherical Images, Drone Camera</p>
-            </div>
-
-        </div>
-
-    </section>
+    <h1>Case Studies</h1>
     
     <small class="click-below">Click on the stories below to learn more.</small>
     <p>
@@ -288,8 +241,7 @@
             </a>
         </div>
     </section>
-
-
+    </div>
 </div>
 
 

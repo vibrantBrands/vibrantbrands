@@ -3,6 +3,10 @@
 	background: $white;
 	padding: 150px 0 50px;
 
+	&.black {
+		background: $black;
+	}
+
 	.container {
 		@media only screen and (max-width: $lg-breakpoint) {
 	    	width: 90%;

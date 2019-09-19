@@ -4266,9 +4266,9 @@ body.vibrant {
         @media only screen and (max-width: 768px) {
           body.vibrant header nav ul {
             flex-direction: column;
-            margin-top: 110px; }
+            margin-top: 120px; }
             body.vibrant header nav ul li {
-              height: 20vh;
+              height: 10vh;
               width: 100%; } }
     @media only screen and (max-width: 576px) {
       body.vibrant header .logo div span {
@@ -4301,6 +4301,8 @@ body.vibrant {
   body.vibrant .internal {
     background: #FFFFFF;
     padding: 150px 0 50px; }
+    body.vibrant .internal.black {
+      background: #000000; }
     @media only screen and (max-width: 992px) {
       body.vibrant .internal .container {
         width: 90%; } }
@@ -4448,12 +4450,7 @@ body.vibrant {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: none;
-    /*&.inactive {
-			opacity: 0;
-			max-height: 0px;
-			transition: all .5s ease-out;
-		}*/ }
+    display: none; }
     body.vibrant .service-description > div.active {
       opacity: 1;
       max-height: 400px;
@@ -4559,12 +4556,12 @@ body.vibrant {
         body.vibrant .clients > div .info .info-bg,
         body.vibrant .video-section > div .info .info-bg,
         body.vibrant .website-section > div .info .info-bg {
-          opacity: .8;
-          background: linear-gradient(to right, #4bc928 0%, #fcfc46 100%);
+          opacity: .9;
+          background: linear-gradient(to right, #c13c8d 0%, #f29925 100%);
           /* FF3.6-15 */
           /* Chrome10-25,Safari5.1-6 */
           /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4bc928', endColorstr='#fcfc46',GradientType=1 );
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4bc928', endColorstr=$orange,GradientType=1 );
           /* IE6-9 */
           position: absolute;
           width: 100%;
@@ -4587,6 +4584,22 @@ body.vibrant {
       body.vibrant .website-section > div:hover .info {
         opacity: 1;
         transition: all 0.4s ease-out; }
+        body.vibrant .clients > div:hover .info .fas,
+        body.vibrant .video-section > div:hover .info .fas,
+        body.vibrant .website-section > div:hover .info .fas {
+          font-size: 25px;
+          margin-left: 5px; }
+        body.vibrant .clients > div:hover .info .cta-prompt,
+        body.vibrant .video-section > div:hover .info .cta-prompt,
+        body.vibrant .website-section > div:hover .info .cta-prompt {
+          display: flex;
+          font-size: 1.1em;
+          font-weight: bold;
+          -webkit-transform: translateX(32%);
+                  transform: translateX(32%);
+          transition: -webkit-transform .5s ease-out;
+          transition: transform .5s ease-out;
+          transition: transform .5s ease-out, -webkit-transform .5s ease-out; }
       body.vibrant .clients > div h3,
       body.vibrant .video-section > div h3,
       body.vibrant .website-section > div h3 {

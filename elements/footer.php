@@ -27,7 +27,6 @@
 				<div class="social">
 					<a href="https://www.facebook.com/vibrantbrands/"><i class="fab fa-facebook-f"></i></a>
 					<a href="https://vimeo.com/user3665286"><i class="fab fa-vimeo-v"></i></a>
-					<a href="https://www.linkedin.com/company/vibrant-creative/about/"><i class="fab fa-linkedin-in"></i></a>
 				</div>
 		</div>
 	</footer>
