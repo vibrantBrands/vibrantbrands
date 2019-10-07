@@ -4595,8 +4595,8 @@ body.vibrant {
           display: flex;
           font-size: 1.1em;
           font-weight: bold;
-          -webkit-transform: translateX(32%);
-                  transform: translateX(32%);
+          -webkit-transform: translateX(27%);
+                  transform: translateX(27%);
           transition: -webkit-transform .5s ease-out;
           transition: transform .5s ease-out;
           transition: transform .5s ease-out, -webkit-transform .5s ease-out; }

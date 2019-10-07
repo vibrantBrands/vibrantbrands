@@ -53,7 +53,7 @@
 
     </section>
     
-    <small class="click-below">Visit the stories below to learn more.</small>
+    <small class="click-below">Choose a story below to learn more.</small>
     <p>
         <i class="fas fa-arrow-down"></i>
     </p>
@@ -66,7 +66,7 @@
                     <div class="info-bg"></div>
                     <h3>Center for Disability Services</h3>
                     <p>"Vibrant helped us broadcast our message in a modern way, leading to amazing new opportunities for the future."</p>
-                    <p class="cta-prompt">View the story <i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
         </div>
@@ -77,7 +77,7 @@
                     <div class="info-bg"></div>
                     <h3>Belvedere Health Services</h3>
                     <p>"Vibrant always provides insights into marketing and positioning that we didn’t even know we should be paying attention to."</p>
-                    <p class="cta-prompt">View the story <i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
         </div>
@@ -88,7 +88,7 @@
                     <div class="info-bg"></div>
                     <h3>Sunmark</h3>
                     <p>"With Vibrant, we’re separating ourselves from the pack and growing."</p>
-                    <p class="cta-prompt">View the story <i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
     	</div>
@@ -99,7 +99,7 @@
                     <div class="info-bg"></div>
                     <h3>United Hospice of Rockland</h3>
                     <p>"Vibrant’s work helped us resonate with the community and deliver our mission"</p>
-                    <p class="cta-prompt">View the story <i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
     	</div>
@@ -110,7 +110,7 @@
                     <div class="info-bg"></div>
                     <h3>FCA</h3>
                     <p>"Thanks to Vibrant, FCA has an overall broader impact."</p>
-                    <p class="cta-prompt">View the story <i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
     	</div>
@@ -121,7 +121,7 @@
                     <div class="info-bg"></div>
                     <h3>NE PA</h3>
                     <p>"With their support, we can focus on what we do best—serving our members."</p>
-                    <p class="cta-prompt">View the story <i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
     	</div>
@@ -132,7 +132,7 @@
                     <div class="info-bg"></div>
                     <h3>sfcu</h3>
                     <p>"Vibrant has helped build our brand. We have grown to provide more services to more members in more areas."</p>
-                    <p class="cta-prompt">View the story <i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
         </div>
@@ -143,7 +143,7 @@
                     <div class="info-bg"></div>
                     <h3>Pathfinder Village</h3>
                     <p>"We have been able to reach more people than ever before and truly build our awareness."</p>
-                    <p class="cta-prompt">View the story <i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
         </div>
