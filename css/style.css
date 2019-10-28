@@ -4146,10 +4146,6 @@ th {
   padding: 0; }
 
 body.vibrant {
-  /*.video-section,
-.website-section {
-	display: none;
-}*/
   /**  About page styles **/
   background: #000000;
   color: #FFFFFF;
@@ -4399,6 +4395,7 @@ body.vibrant {
       margin: 10px auto 40px; }
   body.vibrant .service-filters {
     display: flex;
+    margin-top: -30px;
     flex-direction: column; }
     body.vibrant .service-filters ul {
       display: flex;
@@ -4686,6 +4683,23 @@ body.vibrant {
             margin: 30px 50px;
             line-height: 1.5rem;
             text-align: center; } }
+  body.vibrant .video-section p,
+  body.vibrant .website-section p {
+    text-align: center;
+    width: 100%;
+    padding: 0; }
+  body.vibrant .video-section .fas,
+  body.vibrant .website-section .fas {
+    color: white;
+    font-size: 2.5em;
+    opacity: 0.5;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3; }
+  body.vibrant .video-section > div:hover .fas,
+  body.vibrant .website-section > div:hover .fas {
+    opacity: 1; }
   body.vibrant .case-study {
     background: #FFFFFF;
     color: #000104;

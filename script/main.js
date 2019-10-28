@@ -1,6 +1,7 @@
 // A $( document ).ready() block.
 
 $( document ).ready(function() {
+	console.log('updated script ye');
 
 	//Initialize AOL animation library
 
@@ -10,16 +11,24 @@ $( document ).ready(function() {
 	});
 
 	var vibrant_functions = {
+		hashArray : ["branding","marketing","websites","video"],
 		init : function() {
+			_this = this;
 
 			vibrant_functions.addHandlers();
 
 			vibrant_functions.startSlickSlider();
 
+			_this.filterTheBoxes(window.location.hash);
+
 			$(window).bind('scroll',function(e){
 		        var scrolled = $(window).scrollTop();
 		        vibrant_functions.scrollWatch(scrolled);
 		    });
+
+			$(window).bind('hashchange', function(e) {
+				_this.filterTheBoxes(window.location.hash);
+			});
 		},
 
 		scrollWatch : function(scrolled) {
@@ -31,27 +40,38 @@ $( document ).ready(function() {
             }
 		},
 
-		filterTheBoxes: function(index) {
-			$('.service-description div').slideUp('500');
-			$('.service-description div').eq(index).slideDown('500');
+		filterTheBoxes: function(hash) {
 
-			/*switch(index) {
-				  case 0:
-				  case 1:
+			$('.service-description div').slideUp('500');
+			$('.click-below').text('Visit the stories below to learn more.');
+
+			switch(hash) {
+				  case "#branding":
+					$('.video-section, .website-section').addClass('hidden');
+				    $('.clients').removeClass('hidden');
+				    $('.service-description div').eq(0).slideDown('500');
+				  break;
+				  case "#marketing":
 				    $('.video-section, .website-section').addClass('hidden');
 				    $('.clients').removeClass('hidden');
+				    $('.service-description div').eq(1).slideDown('500');
 				  break;
-				  case 2:
-				    $('.video-section').addClass('hidden');
-				    //$('.website-section').removeClass('hidden');
+				  case "#websites":
+				    /*$('.video-section').addClass('hidden');
+				    $('.clients').removeClass('hidden');*/
+				    $('.video-section, .clients').addClass('hidden');
+				    $('.website-section').removeClass('hidden');
+				    $('.service-description div').eq(2).slideDown('500');
 				  break;
-				  case 3:
+				  case "#video":
 				    $('.website-section, .clients').addClass('hidden');
 				    $('.video-section').removeClass('hidden');
+				    $('.service-description div').eq(3).slideDown('500');
+				    $('.click-below').text('Visit the stories below to learn more.');
 				  break;
 				  default:
 				    // code block
-				}*/
+				}
 		},
 		addHandlers : function() {
 			var _this = this;
@@ -65,7 +85,11 @@ $( document ).ready(function() {
 			});
 
 			$('.service-filters li').click(function(e){
-				_this.filterTheBoxes($(this).index());
+				window.location.hash = _this.hashArray[$(this).index()];
+
+				$('html, body').animate({
+            		scrollTop: $('.service-filters').offset().top - 130
+        		}, 500);
 			});
 		},
 
@@ -96,10 +120,6 @@ $( document ).ready(function() {
 		}
 	}
 
-	vibrant_functions.init();
-    
-    $('.ccm-image-block').hover(function(){
-    	console.log($(this).attr('alt'));
-    });    
+	vibrant_functions.init();  
 
 });

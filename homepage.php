@@ -21,7 +21,7 @@
     		<li>Branding</li>
     		<li>Marketing</li>
     		<li>Websites</li>
-    		<li>Videos</li>
+    		<li>Video</li>
     	</ul>
         <div class="service-description">
             <div class="branding">
@@ -53,7 +53,7 @@
 
     </section>
     
-    <small class="click-below">Choose a story below to learn more.</small>
+    <small class="click-below">Visit the stories below to learn more.</small>
     <p>
         <i class="fas fa-arrow-down"></i>
     </p>
@@ -66,7 +66,7 @@
                     <div class="info-bg"></div>
                     <h3>Center for Disability Services</h3>
                     <p>"Vibrant helped us broadcast our message in a modern way, leading to amazing new opportunities for the future."</p>
-                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
         </div>
@@ -77,7 +77,7 @@
                     <div class="info-bg"></div>
                     <h3>Belvedere Health Services</h3>
                     <p>"Vibrant always provides insights into marketing and positioning that we didn’t even know we should be paying attention to."</p>
-                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
         </div>
@@ -88,7 +88,7 @@
                     <div class="info-bg"></div>
                     <h3>Sunmark</h3>
                     <p>"With Vibrant, we’re separating ourselves from the pack and growing."</p>
-                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
     	</div>
@@ -99,7 +99,7 @@
                     <div class="info-bg"></div>
                     <h3>United Hospice of Rockland</h3>
                     <p>"Vibrant’s work helped us resonate with the community and deliver our mission"</p>
-                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
     	</div>
@@ -110,7 +110,7 @@
                     <div class="info-bg"></div>
                     <h3>FCA</h3>
                     <p>"Thanks to Vibrant, FCA has an overall broader impact."</p>
-                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
     	</div>
@@ -121,7 +121,7 @@
                     <div class="info-bg"></div>
                     <h3>NE PA</h3>
                     <p>"With their support, we can focus on what we do best—serving our members."</p>
-                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
     	</div>
@@ -132,7 +132,7 @@
                     <div class="info-bg"></div>
                     <h3>sfcu</h3>
                     <p>"Vibrant has helped build our brand. We have grown to provide more services to more members in more areas."</p>
-                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
         </div>
@@ -143,7 +143,7 @@
                     <div class="info-bg"></div>
                     <h3>Pathfinder Village</h3>
                     <p>"We have been able to reach more people than ever before and truly build our awareness."</p>
-                    <p class="cta-prompt">See their story<i class="fas fa-arrow-right"></i></p>
+                    <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
         </div>
@@ -153,50 +153,68 @@
     	</div>
     </section>
 
+    <!-- End Case Studies / Start Video Section -->
+
     <section class="video-section hidden">
         <div>
-            <a data-lity href="https://vimeo.com/313568562">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
+            <a data-lity href="https://vimeo.com/200995267">
+                <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/bfairdirectcare.png" alt="B Fair Direct Care">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Center for Disability Services</h3>
-                    <p></p>
+                    <h3>#bFair2DirectCare</h3>
+                    <p>Overview</p>
                 </div>
             </a>
         </div>
         <div>
-            <a data-lity href="https://vimeo.com/340198357">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
+            <a data-lity href="https://vimeo.com/142750575">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/itmatterstome.png" alt="It Matters to Me">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>QSAC Gala 2019</h3>
+                    <h3>It Matters to Me</h3>
                     <p></p>
                 </div>
             </a>
         </div>
         <div>
             <a data-lity href="https://vimeo.com/268978063">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/kennedy.png" alt="KCC">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>KCC</h3>
-                    <p>"Video 3 text stuff"</p>
+                    <h3>Kennedy Children's Center</h3>
+                    <p>Overview</p>
                 </div>
             </a>
         </div>
         <div>
             <a data-lity href="https://vimeo.com/188699159">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/pathfinder.png" alt="Pathfinder Community">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Pathfinder Community</h3>
-                    <p></p>
+                    <p>Overview</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/338145427">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/sunmark-goodvibes2.png" alt="Sunmark">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Sunmark</h3>
+                    <p>Good Vibes</p>
                 </div>
             </a>
         </div>
         <div>
             <a data-lity href="https://vimeo.com/233693035">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/heavenshands.png" alt="Heaven's Hands">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Heaven's Hands</h3>
@@ -205,18 +223,9 @@
             </a>
         </div>
         <div>
-            <a data-lity href="https://vimeo.com/239825585">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder2">
-                <div class="info">
-                    <div class="info-bg"></div>
-                    <h3>Heaven's Hands</h3>
-                    <p>Employment</p>
-                </div>
-            </a>
-        </div>
-        <div>
             <a data-lity href="https://vimeo.com/291110242">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/greystone.png" alt="Greystone">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Greystone</h3>
@@ -226,7 +235,8 @@
         </div>
         <div>
             <a data-lity href="https://vimeo.com/286351696">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder2.png" alt="Placeholder">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/flame.png" alt="FLAME">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>FLAME</h3>
@@ -234,56 +244,186 @@
                 </div>
             </a>
         </div>
+        <div>
+            <a data-lity href="hhttps://vimeo.com/322035627">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/sunmark.png" alt="Sunmark Testimonials">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Sunmark</h3>
+                    <p>Testimonials</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/332074883">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/herkimer.png" alt="Herkimer">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Herkimer</h3>
+                    <p>College Tour</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/338145577">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/sunmark-mortgage.png" alt="Sunmark Mortgages">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Sunmark</h3>
+                    <p>Mortgages</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/281901623">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/pv-clark.png" alt="Pathfinder Village">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Pathfinder Village</h3>
+                    <p>Laura Clark</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/239825585">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/heavenshands-employment.png" alt="Heaven's Hands Employment">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Heaven's Hands</h3>
+                    <p>Employment</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/337826737">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/stjohn.png" alt="St. John's Men's Health">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>St. John's Men's Health</h3>
+                    <p>Men's Health Month</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a data-lity href="https://vimeo.com/296469413">
+                 <i class="fas fa-play-circle"></i>
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/UPS.png" alt="Unique People Services">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Unique People's Services</h3>
+                    <p>Award Intro</p>
+                </div>
+            </a>
+        </div>
+
     </section>
+
+    <!-- End Video Section / Start Website Section -->
 
     <section class="website-section hidden">  
         <div>
-            <a href="/case-studies/belvedere">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">
+           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/pathfinder-village.html" data-lity data-lity-desc="Pathfinder Village">
+                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Video 2</h3>
-                    <p>"Video 2 text stuff."</p>
+                    <h3>Pathfinder Village</h3>
+                    <p>Web Site</p>
                 </div>
             </a>
         </div>
         <div>
-            <a href="/case-studies/sunmark">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">
+           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/cfds.html" data-lity data-lity-desc="CFDS Screenshot">
+                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Video 3</h3>
-                    <p>"Video 3 text stuff"</p>
+                    <h3>Center for Disability Services</h3>
+                    <p>Web Site</p>
                 </div>
             </a>
         </div>
         <div>
-            <a href="/case-studies/united-hospice-rockland">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">
+           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/hospice-rockland.html" data-lity data-lity-desc="Hospice of Rockland">
+                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Hospice of Rockland">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Video 4</h3>
-                    <p>"Video 4 text stuff"</p>
+                    <h3>Hospice of Rockland</h3>
+                    <p>Web Site</p>
                 </div>
             </a>
         </div>
         <div>
-            <a href="/case-studies/united-hospice-rockland">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">
+           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/licadd.html" data-lity data-lity-desc="LICADD">
+                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Video 4</h3>
-                    <p>"Video 4 text stuff"</p>
+                    <h3>Long Island Council on Alcoholism and Drug Dependence</h3>
+                    <p>Web Site</p>
                 </div>
             </a>
         </div>
         <div>
-            <a href="/case-studies/united-hospice-rockland">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/placeholder.png" alt="Placeholder">
+           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/nonotuck.html" data-lity data-lity-desc="Nonotuck">
+                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Video 4</h3>
-                    <p>"Video 4 text stuff"</p>
+                    <h3>Nonotuck</h3>
+                    <p>Web Site</p>
+                </div>
+            </a>
+        </div>
+        <div>
+           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/lisefcu.html" data-lity data-lity-desc="lisefcu">
+                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Long Island State Employees FCU</h3>
+                    <p>Web Site</p>
+                </div>
+            </a>
+        </div>
+        <div>
+           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/one-hope.html" data-lity data-lity-desc="one hope">
+                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>One Hope United</h3>
+                    <p>Web Site</p>
+                </div>
+            </a>
+        </div>
+        <div>
+           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/pathfinder-village.html" data-lity data-lity-desc="one hope">
+                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Pathfinder Village</h3>
+                    <p>Web Site</p>
+                </div>
+            </a>
+        </div>
+        <div>
+           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/sfcu.html" data-lity data-lity-desc="SFCU">
+                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>SFCU</h3>
+                    <p>Web Site</p>
+                </div>
+            </a>
+        </div>
+        <div>
+           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/solutions.html" data-lity data-lity-desc="Solutions">
+                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Solutions</h3>
+                    <p>Web Site</p>
                 </div>
             </a>
         </div>
