@@ -329,7 +329,7 @@
     <section class="website-section hidden">  
         <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/pathfinder-village.html" data-lity data-lity-desc="Pathfinder Village">
-                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/pv_img-grid_web.png" alt="Pathfinder Village thumbnail">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Pathfinder Village</h3>
@@ -339,7 +339,7 @@
         </div>
         <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/cfds.html" data-lity data-lity-desc="CFDS Screenshot">
-                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/cfds_img-grid_web.png" alt="CFDS thumbnail">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Center for Disability Services</h3>
@@ -349,7 +349,7 @@
         </div>
         <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/hospice-rockland.html" data-lity data-lity-desc="Hospice of Rockland">
-                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Hospice of Rockland">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/uhr_img-grid_web.png" alt="Hospice of Rockland thumbnail">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Hospice of Rockland</h3>
@@ -359,7 +359,7 @@
         </div>
         <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/licadd.html" data-lity data-lity-desc="LICADD">
-                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/licadd_img-grid_web.png" alt="LICAAD thumbnail">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Long Island Council on Alcoholism and Drug Dependence</h3>
@@ -369,7 +369,7 @@
         </div>
         <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/nonotuck.html" data-lity data-lity-desc="Nonotuck">
-                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/nonotuck_img-grid_web.png" alt="nonotuck thumbnail">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Nonotuck</h3>
@@ -379,7 +379,7 @@
         </div>
         <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/lisefcu.html" data-lity data-lity-desc="lisefcu">
-                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/lisefcu_img-grid_web.png" alt="LISEFCU thumbnail">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Long Island State Employees FCU</h3>
@@ -389,7 +389,7 @@
         </div>
         <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/one-hope.html" data-lity data-lity-desc="one hope">
-                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/onehope_img-grid_web.png" alt="Placeholder">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>One Hope United</h3>
@@ -398,18 +398,8 @@
             </a>
         </div>
         <div>
-           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/pathfinder-village.html" data-lity data-lity-desc="one hope">
-                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
-                <div class="info">
-                    <div class="info-bg"></div>
-                    <h3>Pathfinder Village</h3>
-                    <p>Web Site</p>
-                </div>
-            </a>
-        </div>
-        <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/sfcu.html" data-lity data-lity-desc="SFCU">
-                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/sfcu_img-grid_web.png" alt="LISEFCU thumbnail">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>SFCU</h3>
@@ -419,7 +409,7 @@
         </div>
         <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/solutions.html" data-lity data-lity-desc="Solutions">
-                <img src="<?php echo $this->getThemePath(); ?>/images/placeholder.png" alt="Placeholder">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/solutions_img-grid_web.png" alt="Solutions thumbnail">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Solutions</h3>
@@ -428,8 +418,17 @@
             </a>
         </div>
     </section>
-
-
+    <section class="linkedin-feed">
+        <div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6592764044535443457" height="594" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+        <div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6592437785683083264" height="461" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+        <div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6588078670307446784" height="537" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+    </section>
 </div>
 
 
