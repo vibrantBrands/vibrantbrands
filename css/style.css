@@ -4448,6 +4448,8 @@ body.vibrant {
     align-items: center;
     justify-content: center;
     display: none; }
+    body.vibrant .service-description > div:last-child {
+      display: block; }
     body.vibrant .service-description > div.active {
       opacity: 1;
       max-height: 400px;
@@ -5465,6 +5467,10 @@ body.vibrant {
       position: absolute;
       right: -50px;
       top: -10px; }
+  body.vibrant .blog-list {
+    color: #000000; }
+    body.vibrant .blog-list .blog-entry {
+      text-align: left; }
   body.vibrant.menu-open {
     overflow: hidden; }
   body.vibrant h1, body.vibrant h2, body.vibrant h3, body.vibrant h4, body.vibrant h5, body.vibrant h6 {

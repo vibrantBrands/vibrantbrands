@@ -26,27 +26,31 @@
         <div class="service-description">
             <div class="branding">
                 <h2>We are branding.</h2>
-                <p>Your Brand is the foundation of your marketing. Everything we create, from your website to your advertising, is a transmission of your brand. We enhance how you are perceived. We have a rock solid process for renaming, rebranding and building your brand. We are branding.</p>
+                <p>Vibrant Brands helps organizations of all sizes and industries, from non-profits to businesses, experience the power of branding. Branding is your organization’s identity — and branding design and strategy is behind success. Vibrant’s branding and marketing solutions help organizations stand out from the crowd, delivering value with every impression. Let us explain what branding is, and how brand identity can be the anchor of your success.</p>
                 <h3>Services Include:</h3>
                 <p>Brand Launch Strategy, Branding Surveys, Branding & Brand Design, Rebranding, Logo Development, Taglines, Naming Services</p>
             </div>
             <div class="marketing">
                 <h2>We are marketing.</h2>
-                <p>The targeting power of Facebook, YouTube and Google are unmatched by any other form of advertising. We have mastered these tools and are Google Certified. We combine online with offline campaigns for impressive results.</p>
+                <p>Digital marketing is a powerful extension of your branding. At Vibrant Brands, we develop marketing strategies that reach the right audience and deliver value every day for our clients. We don’t provide cookie-cutter solutions, simply because you are unique, so your marketing plan should also be unique. It’s why our clients get results — we invest the time in developing marketing strategies that are consistent with branding and provide value.</p>
                 <h3>Services Include:</h3>
                 <p>Advertising Campaigns, Marketing Plans, Video Production, Marketing Strategy, Marketing Consulting, Brochure Design, Graphic Design, Copywriting</p>
             </div>
             <div class="website">
                 <h2>Website development.</h2>
-                <p>Your website is the cornerstone of your marketing. We treat it that way. Our websites are a creative collaboration. We go beyond looking good. From video to copywriting to landing pages, Vibrant websites move the needle.</p>
+                <p>Your digital presence is crucial in delivering your branding. Vibrant Brands creates websites that deliver value. Our website design services are second to none, but a Vibrant website is much more than just visually attractive. We create websites that are engaging, informative, and consistent with your overall branding strategy. When you ask why your website is important, the answer is the Vibrant difference. </p>
                 <h3>Services Include:</h3>
                 <p>Website Design, Social Media Strategy & Training, Online Marketing (AdWords), Google Grant Administration, Search Engine Optimization (SEO), ADA Compliance, Online Store Setup, Responsive Design</p>
             </div>
             <div class="video">
                 <h2>Video production.</h2>
-                <p>Nothing tells a better and more comprehensive story than video. We build video into everything we do. We incorporate video into your websites, presentations and even printed materials.</p>
+                <p>Tell your story in a compelling way that is engaging, informative and on-brand. Vibrant’s video services include video marketing strategy aimed at communicating emotion and urgency, and highlighting the unique stories surrounding your brand and your customer’s journey. Video marketing is one powerful way Vibrant Brands brings your brand to life.</p>
                 <h3>Services Include:</h3>
                 <p>Testimonial Videos, Training Videos, HD Video Shoots, Green Screen Shoots, Editing, Visual FX Compositing Lighting, TV Commercials, Web Video, Corporate Video, Animation, Event Videography, Spherical Images, Drone Camera</p>
+            </div>
+            <div class="intro">
+                <h2>Vibrant Brands</h2>
+                <p>Vibrant Brands delivers full-service branding and marketing services. Founded in 2002, Vibrant Brands implements branded solutions that get results. More than just websites. More than advertising campaigns. Vibrant Brands combines all of these and more, bringing your organization to life. Put our experience in branding, marketing, and digital design to work for you, and experience the power of branding for good.</p>
             </div>
 
         </div>
@@ -416,17 +420,6 @@
                     <p>Web Site</p>
                 </div>
             </a>
-        </div>
-    </section>
-    <section class="linkedin-feed">
-        <div>
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6592764044535443457" height="594" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-        </div>
-        <div>
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6592437785683083264" height="461" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-        </div>
-        <div>
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6588078670307446784" height="537" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
         </div>
     </section>
 </div>

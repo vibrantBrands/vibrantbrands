@@ -1,8 +1,6 @@
 // A $( document ).ready() block.
 
 $( document ).ready(function() {
-	console.log('updated script ye');
-
 	//Initialize AOL animation library
 
 	AOS.init({
@@ -57,8 +55,6 @@ $( document ).ready(function() {
 				    $('.service-description div').eq(1).slideDown('500');
 				  break;
 				  case "#websites":
-				    /*$('.video-section').addClass('hidden');
-				    $('.clients').removeClass('hidden');*/
 				    $('.video-section, .clients').addClass('hidden');
 				    $('.website-section').removeClass('hidden');
 				    $('.service-description div').eq(2).slideDown('500');
@@ -70,6 +66,8 @@ $( document ).ready(function() {
 				    $('.click-below').text('Visit the stories below to learn more.');
 				  break;
 				  default:
+				  		$('.intro').slideDown('500');
+				  break;
 				    // code block
 				}
 		},

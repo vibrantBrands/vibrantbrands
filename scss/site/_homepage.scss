@@ -157,6 +157,10 @@
 		justify-content: center;
 		display: none;
 
+		&:last-child {
+			display: block;
+		}
+
 		&.active {
 			opacity: 1;
 			max-height: 400px;
@@ -446,6 +450,4 @@
 	}
 }
 
-.linkedin-feed {
-	display: flex;
-}
+
