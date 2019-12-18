@@ -4,5 +4,29 @@
 
 	.blog-entry {
 		text-align: left;
+
+		h2 {
+			margin-bottom: 0;
+		}
+
+		a {
+			color: $yellow;
+
+			&:hover {
+				color: $orange;
+			}
+		}
+
+		.date {
+			margin-bottom: 10px;
+		}
 	}
+}
+
+.blog-post {
+
+	.container {
+		text-align: left;
+		width: 800px;
+	}	
 }

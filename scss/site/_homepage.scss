@@ -281,7 +281,7 @@
 		}
 
 		.info {
-			align-items: flex-start;
+			align-items: center;
 			border: 10px solid white;
 			color: $white;
 			cursor: pointer;
@@ -349,6 +349,10 @@
 		h3, p {
 			z-index: 3;
 			text-align: center;
+		}
+
+		p {
+			width: 90%;
 		}
 	}
 
@@ -446,6 +450,41 @@
 			.fas {
 				opacity: 1;
 			}
+		}
+	}
+}
+
+.badges {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto 90px;
+	justify-content: space-around;
+	width: 100%;
+
+	img {
+		height: auto;
+		width: 140px;
+	}
+
+	.divider {
+		background: $white;
+		display: block;
+		width: 1px;
+		height: 120px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			display: none;
+		}
+	}
+
+	>div {
+		margin-top: 10px;
+
+		&:after {
+			background: $white;
+			display: block;
+			height: 100px;
+			width: 10px;
 		}
 	}
 }

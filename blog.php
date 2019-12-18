@@ -6,32 +6,49 @@
 <div class="content-wrapper">
   <div class="container">
 	<div class="blog-list">
+		<h1>Blog</h1>
       <?php  
 	  $pl = new PageList();
 	  $pl->filterByCollectionTypeHandle('blog_post');
 	  $pl->sortByDisplayOrder('alpha_asc'); // Sort alphebetically
 	 
 	  $pages = $pl->get(); 
+	  
 
 	  // Display Page Name and Description
 	  foreach ($pages as $page){  ?>
-		<div class="blog-entry">
-			<?php echo $page->getAttribute('thumbnail') ?>
 
-			<h1>
+	  	<?php
+	  		$thumbnail = $page->getAttribute('thumbnail');
+	  		$url = $page->getCollectionLink();
+	  	?>
+
+
+		<div class="blog-entry">
+			<?php if (is_object($thumbnail)) {
+                        ?>
+                            <?php
+                            $img = Core::make('html/image', array($thumbnail));
+                            $tag = $img->getTag();
+                            echo $tag; ?>
+                        <?php
+                    } ?>
+			<h2>
 				<?php  	
 				    echo $page->getCollectionName();
-				?>
-			</h1>
-			<span class="date">
+				?> 
+			</h2>
+			<div class="date">
 				<?php 
 				$datePublic = $page->getCollectionDatePublicObject()->format('j F, Y');
 				echo $datePublic ?>
-			</span>
-			<p>
+			</div>
+	
 				<?php  	
 				    echo $page->getCollectionDescription();
 				?>
+
+				<p><a href='<?php echo h($url) ?>'>Read more</a> ></p>
 			</p>
 		</div>
 

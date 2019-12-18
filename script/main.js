@@ -27,6 +27,32 @@ $( document ).ready(function() {
 			$(window).bind('hashchange', function(e) {
 				_this.filterTheBoxes(window.location.hash);
 			});
+
+			/*var el1 = document.querySelector('.counter1');
+			var el2 = document.querySelector('.counter2');
+			var el3 = document.querySelector('.counter3');
+
+			od = new Odometer({
+			  el: el1,
+			  value: 0,
+			  theme: 'default'
+			});
+
+			od = new Odometer({
+			  el: el2,
+			  value: 0,
+			  theme: 'default'
+			});
+
+			od = new Odometer({
+			  el: el3,
+			  value: 0,
+			  theme: 'default'
+			});
+
+			el1.innerHTML = 5552340;
+			el2.innerHTML = 467;
+			el3.innerHTML = 78948;*/
 		},
 
 		scrollWatch : function(scrolled) {
@@ -42,6 +68,12 @@ $( document ).ready(function() {
 
 			$('.service-description div').slideUp('500');
 			$('.click-below').text('Visit the stories below to learn more.');
+
+			if(hash !== '') {
+				$('html, body').animate({
+            		scrollTop: $('.service-filters').offset().top - 130
+        		}, 500);
+			}
 
 			switch(hash) {
 				  case "#branding":
@@ -84,10 +116,6 @@ $( document ).ready(function() {
 
 			$('.service-filters li').click(function(e){
 				window.location.hash = _this.hashArray[$(this).index()];
-
-				$('html, body').animate({
-            		scrollTop: $('.service-filters').offset().top - 130
-        		}, 500);
 			});
 		},
 

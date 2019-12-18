@@ -31,6 +31,7 @@
 		</div>
 	</footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+		<!-- <script src="<?php echo $this->getThemePath(); ?>/script/vendor/odometer.min.js"></script>  -->
 		<script src="<?php echo $this->getThemePath(); ?>/script/vendor/lity.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 		<script src="<?php echo $this->getThemePath(); ?>/script/vendor/aos.js"></script>

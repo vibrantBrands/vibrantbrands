@@ -135,6 +135,86 @@
 	}
 }
 
+.leadership,
+.targeted {
+	color: $black;
+	display: flex;
+	height: auto;
+	margin-top: 0;
+	overflow: hidden;
+
+	@media only screen and (max-width: $lg-breakpoint) {
+		flex-direction: column;
+	}
+
+	>div {
+
+		&:first-child {
+			padding: 10px 70px;
+			width: 32%;
+
+			p {
+				margin-top: 0;
+			}
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 70%;
+			}
+		}
+
+		&:nth-child(2){
+			width: 68%;
+
+			img {
+				height: auto;
+				width: 100%;
+			}
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.targeted {
+
+	@media only screen and (max-width: $lg-breakpoint) {
+		flex-direction: column-reverse;
+	}
+
+	>div {
+
+		&:first-child {
+			padding: 0;
+			width: 60%;
+
+			img {
+				height: auto;
+				width: 100%;
+			}
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 100%;
+			}
+		}
+
+		&:nth-child(2){
+			padding: 20px 40px;
+			width: 40%;
+
+			img {
+				height: auto;
+				width: 100%;
+			}
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 70%;
+			}
+		}
+	}
+}
+
 .team {
 
 	.container {
@@ -159,6 +239,32 @@
 			flex-wrap: flex;
 			flex-direction: column;
 			margin: 50px 20px 0 0 ;
+		}
+	}
+}
+
+.collaborative {
+	padding: 40px 0;
+}
+
+.results-driven {
+	padding: 70px 0;
+
+	p {
+		width: 50%;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			width: 80%;
+		}
+	}
+
+	img {
+		position: absolute;
+		top: 20px;
+		right: -180px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			display: none;
 		}
 	}
 }

@@ -14,6 +14,24 @@
         </div>
 </section>
 
+<section class="badges">
+    <div>
+        <img src="<?php echo $this->getThemePath(); ?>/images/badges/badge1.png" alt="Breakthrough Business">
+    </div>
+    <div class="divider"></div>
+    <div>
+        <img src="<?php echo $this->getThemePath(); ?>/images/badges/badge2.png" alt="Best in Show Genesis Award">
+    </div>
+    <div class="divider"></div>
+    <div>
+        <img src="<?php echo $this->getThemePath(); ?>/images/badges/badge3.png" alt="First in Web Cast Awards">
+    </div>
+    <div class="divider"></div>
+    <div>
+        <img src="<?php echo $this->getThemePath(); ?>/images/badges/badge4.png" alt="Best Places to Work, Albany Business Journal">
+    </div>
+</section>
+
 
 <div class="container">
     <section class="service-filters">
@@ -65,7 +83,7 @@
     <section class="clients">
         <div>
             <a href="/case-studies/cfds">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/Vibrant_cfds-thumbs_mcl082019.jpeg" alt="CDFS Case Study">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/cfds-hmpg-img-grid3.png" alt="CDFS Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Center for Disability Services</h3>
@@ -167,7 +185,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>#bFair2DirectCare</h3>
-                    <p>Overview</p>
+                    <p>"Vibrant helped us to communicate a sense of urgency about an important topic, while offering a window into the typical day at work for a Direct Support professional."</p>
                 </div>
             </a>
         </div>
@@ -178,7 +196,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>It Matters to Me</h3>
-                    <p></p>
+                    <p>"Vibrant’s video tells the story of how our Direct Support Professionals enrich the lives of others."</p>
                 </div>
             </a>
         </div>
@@ -189,7 +207,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Kennedy Children's Center</h3>
-                    <p>Overview</p>
+                    <p>"Vibrant created a broad and engaging overview video that truly captured the experience of serving our preschool students and their families."</p>
                 </div>
             </a>
         </div>
@@ -200,7 +218,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Pathfinder Community</h3>
-                    <p>Overview</p>
+                    <p>"We needed an overview video that did more than display our services. Vibrant delivered this through engaging stories and images that show why Pathfinder is a community."</p>
                 </div>
             </a>
         </div>
@@ -211,7 +229,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Sunmark</h3>
-                    <p>Good Vibes</p>
+                    <p>"Vibrant’s videos showed how membership at Sunmark can make life better, with stories and images that echo and reinforce our branding."</p>
                 </div>
             </a>
         </div>
@@ -222,7 +240,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Heaven's Hands</h3>
-                    <p>Overview</p>
+                    <p>"Vibrant helped us use video to tell compelling stories, to document the hard work, smiling faces, and greater community inclusion."</p>
                 </div>
             </a>
         </div>
@@ -233,7 +251,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Greystone</h3>
-                    <p>Art Program</p>
+                    <p>"Vibrant produced a video that helped us show how our arts program positively impacts the lives of many through images of joy and accomplishment."</p>
                 </div>
             </a>
         </div>
@@ -244,7 +262,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>FLAME</h3>
-                    <p>Art Program</p>
+                    <p>"The Flame is all about excitement and joy through music. Vibrant captured that feeling and wove in uplifting band member stories, helping spread hope and inspiration."</p>
                 </div>
             </a>
         </div>
@@ -255,7 +273,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Sunmark</h3>
-                    <p>Testimonials</p>
+                    <p>"Vibrant created a video spot that really drove home our message and branding."</p>
                 </div>
             </a>
         </div>
@@ -266,7 +284,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Herkimer</h3>
-                    <p>College Tour</p>
+                    <p>"Vibrant’s video helped us communicate the Herkimer experience to prospective students and their families — Vibrant brought Herkimer to life!"</p>
                 </div>
             </a>
         </div>
@@ -277,18 +295,18 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Sunmark</h3>
-                    <p>Mortgages</p>
+                    <p>"Vibrant added exciting graphical elements to the video, adding depth and information that reinforce the Sunmark difference."</p>
                 </div>
             </a>
         </div>
         <div>
             <a data-lity href="https://vimeo.com/281901623">
-                 <i class="fas fa-play-circle"></i>
+                <i class="fas fa-play-circle"></i>
                 <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/pv-clark.png" alt="Pathfinder Village">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Pathfinder Village</h3>
-                    <p>Laura Clark</p>
+                    <p>"Vibrant created a family member testimonial video that truly captured the joy of community and independence."</p>
                 </div>
             </a>
         </div>
@@ -299,7 +317,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Heaven's Hands</h3>
-                    <p>Employment</p>
+                    <p>"We needed to convey that working at Heaven’s Hands is rewarding. Vibrant’s video showed the importance of our employees and how working in this field can be a great choice."</p>
                 </div>
             </a>
         </div>
@@ -310,7 +328,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>St. John's Men's Health</h3>
-                    <p>Men's Health Month</p>
+                    <p>"Vibrant helped us deliver a crucial message on the importance of men’s health, and how simple it is to step onto the path to wellness."</p>
                 </div>
             </a>
         </div>
@@ -321,7 +339,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Unique People's Services</h3>
-                    <p>Award Intro</p>
+                    <p>"Vibrant’s video helped us highlight the good work of a positive member of a community we serve."</p>
                 </div>
             </a>
         </div>
@@ -337,7 +355,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Pathfinder Village</h3>
-                    <p>Web Site</p>
+                    <p>"Vibrant helped us create a website that delivers our voice and attracts more people to serve."</p>
                 </div>
             </a>
         </div>
@@ -347,7 +365,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Center for Disability Services</h3>
-                    <p>Web Site</p>
+                    <p>"As a rapidly expanding nonprofit, we were facing the challenges of maintaining brand cohesion. Vibrant’s work included creating a website for the Center that acts as an engaging portal to our supportive services."</p>
                 </div>
             </a>
         </div>
@@ -357,7 +375,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Hospice of Rockland</h3>
-                    <p>Web Site</p>
+                    <p>"Vibrant helped us facilitate the hospice care discussion with families across Rockland County. Now, the care that we provide daily shines on our site and in our message."</p>
                 </div>
             </a>
         </div>
@@ -367,7 +385,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Long Island Council on Alcoholism and Drug Dependence</h3>
-                    <p>Web Site</p>
+                    <p>"Vibrant designed a website that simplifies access to our services and provides accurate and engaging information. With Vibrant’s help, we’re leading prevention through education and intervention."</p>
                 </div>
             </a>
         </div>
@@ -377,7 +395,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Nonotuck</h3>
-                    <p>Web Site</p>
+                    <p>"Vibrant built a great-looking website, but, more importantly, they helped us deliver our caregiving with love to more people in the communities we serve."</p>
                 </div>
             </a>
         </div>
@@ -387,7 +405,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Long Island State Employees FCU</h3>
-                    <p>Web Site</p>
+                    <p>"We needed a site that provided the technology our members need, with the personal touch that comes from credit union membership. Vibrant’s team helped us create the best web experience for our members."</p>
                 </div>
             </a>
         </div>
@@ -397,7 +415,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>One Hope United</h3>
-                    <p>Web Site</p>
+                    <p>"We needed a website that would help us communicate our vision of ‘for every child and family, life without limits.’ Vibrant’s site delivers information, but also reflects our care for the community."</p>
                 </div>
             </a>
         </div>
@@ -407,7 +425,7 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>SFCU</h3>
-                    <p>Web Site</p>
+                    <p>"Vibrant's website helped us solidify our new branding and message to current and future members."</p>
                 </div>
             </a>
         </div>
@@ -417,11 +435,60 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Solutions</h3>
-                    <p>Web Site</p>
+                    <p>"Convenience and accuracy are important to our members. Vibrant helped us create a website that makes banking with Solutions Credit Union easier."</p>
                 </div>
             </a>
         </div>
     </section>
+
+    <!-- <section class="latest-news">
+            <div class="container">
+        <h1>Latest News</h1>
+      <?php  
+      $pl = new PageList();
+      $pl->filterByCollectionTypeHandle('blog_post');
+      $pl->sortByDisplayOrder('alpha_asc'); // Sort alphebetically
+      $counter = 0;
+     
+      $pages = $pl->get(); 
+      
+      
+      // Display Page Name and Description
+      foreach ($pages as $page){  ?>
+
+        <?php
+            $counter++;
+            $url = $page->getCollectionLink();
+        ?>
+
+        <div>
+            <h2>
+                <?php   
+                    echo $page->getCollectionName();
+                ?> 
+            </h2>
+            <div class="date">
+                <?php 
+                $datePublic = $page->getCollectionDatePublicObject()->format('j F, Y');
+                echo $datePublic ?>
+            </div>
+    
+                <?php   
+                    echo $page->getCollectionDescription();
+                ?>
+
+                <p><a href='<?php echo h($url) ?>'>Read more</a> ></p>
+            </p>
+        </div>
+
+        <?php if ($counter == 3) {
+            break;
+        } ?>
+
+        <?php } ?>
+            
+        </div>
+    </section>  -->
 </div>
 
 
