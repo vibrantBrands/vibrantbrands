@@ -1,0 +1,12 @@
+
+.specialties {
+	h1 {
+		animation: movebackground 20s linear infinite alternate;
+		background: $green-gradient;
+		background-size: 130%;
+		color: rgba(0,0,0,.1);
+		background-clip: text;
+		-webkit-background-clip: text;
+		margin-top: 80px;
+	}
+}

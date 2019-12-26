@@ -4335,6 +4335,11 @@ body.vibrant {
       margin-top: 50px; }
     body.vibrant .internal .odometer {
       font-size: 3em; }
+  body.vibrant .internal-hero-image {
+    margin-top: 70px;
+    width: 100%; }
+    body.vibrant .internal-hero-image img {
+      width: 100%; }
   body.vibrant .hero-video,
   body.vibrant .tagline,
   body.vibrant .branding {
@@ -4605,8 +4610,8 @@ body.vibrant {
           display: flex;
           font-size: 1.1em;
           font-weight: bold;
-          -webkit-transform: translateX(27%);
-                  transform: translateX(27%);
+          -webkit-transform: translateX(20%);
+                  transform: translateX(20%);
           transition: -webkit-transform .5s ease-out;
           transition: transform .5s ease-out;
           transition: transform .5s ease-out, -webkit-transform .5s ease-out; }
@@ -5351,6 +5356,15 @@ body.vibrant {
       padding: 8px 30px; }
     body.vibrant .about .input-sample label, body.vibrant .about .input-sample input {
       display: block; }
+  body.vibrant .specialties h1 {
+    -webkit-animation: movebackground 20s linear infinite alternate;
+            animation: movebackground 20s linear infinite alternate;
+    background: linear-gradient(90deg, #12b193, #89c53f, #efc000, #89c53f, #12b193);
+    background-size: 130%;
+    color: rgba(0, 0, 0, 0.1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 80px; }
   body.vibrant footer {
     text-align: left; }
     body.vibrant footer a {

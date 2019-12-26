@@ -441,7 +441,7 @@
         </div>
     </section>
 
-    <!-- <section class="latest-news">
+     <section class="latest-news">
             <div class="container">
         <h1>Latest News</h1>
       <?php  
@@ -488,7 +488,7 @@
         <?php } ?>
             
         </div>
-    </section>  -->
+    </section>
 </div>
 
 

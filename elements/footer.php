@@ -29,7 +29,15 @@
 					<a href="https://vimeo.com/user3665286"><i class="fab fa-vimeo-v"></i></a>
 				</div>
 		</div>
+
 	</footer>
+
+		<!-- Calendly badge widget begin -->
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+		<script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/rick-vibrant-brands', text: 'Schedule time with me', color: '#00a2ff', textColor: '#ffffff', branding: true });</script>
+		<!-- Calendly badge widget end -->
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 		<!-- <script src="<?php echo $this->getThemePath(); ?>/script/vendor/odometer.min.js"></script>  -->
 		<script src="<?php echo $this->getThemePath(); ?>/script/vendor/lity.min.js"></script>
