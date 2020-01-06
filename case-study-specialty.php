@@ -7,7 +7,7 @@
     </div>
 <div class="container specialties">
     <h1>Credit Unions</h1>
-    <p>Vibrant helps credit unions to incorporate new technologies and media into their marketing strategy, expand into new markets, grow membership, and increase loan utilization. We are a preferred provider for the NY Credit Union Association, and we are regular speakers at CU conferences all around the U.S. Our agency strongly believes in the credit union movement (Vibrant has no banking clients) and takes great pride in assisting our clients to build awareness of the value and importance of credit unions.</p>
+    <p>Vibrant knows how to attract new members, promote services and educate communities on the benefits of belonging to a credit union. We deliver creative, targeted messaging and the right media mix to reach your audiences and achieve your goals with a higher ROI. d</p>
     <section class="clients">
         <div>
             <a href="/case-studies/sfcu">

@@ -3775,6 +3775,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     -webkit-transform: perspective(2500px) rotateX(0);
             transform: perspective(2500px) rotateX(0); }
 
+/* SCSS - Vertical Centering */
+/* SCSS -- retina ready images */
+/* SCSS -- Absolute positioning */
+/* SCSS -- Change direction from Row to Column on FLEX element for mobile views */
+/* SCSS -- Change item width at a certain breakpoint for moblie layout. Default to 100% at   */
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -4705,6 +4710,11 @@ body.vibrant {
             margin: 30px 50px;
             line-height: 1.5rem;
             text-align: center; } }
+        @media only screen and (max-width: 768px) {
+          body.vibrant .clients p.save-text,
+          body.vibrant .video-section p.save-text,
+          body.vibrant .website-section p.save-text {
+            margin: 20px 0; } }
   body.vibrant .video-section p,
   body.vibrant .website-section p {
     text-align: center;
@@ -4746,6 +4756,46 @@ body.vibrant {
         display: block;
         height: 100px;
         width: 10px; }
+  body.vibrant .latest-news {
+    margin-bottom: 80px;
+    padding-top: 60px; }
+    body.vibrant .latest-news .container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between; }
+      @media screen and (max-width: 992px) {
+        body.vibrant .latest-news .container {
+          flex-direction: column; } }
+      body.vibrant .latest-news .container > div {
+        background: #FFFFFF;
+        color: #000000;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 20px;
+        position: relative;
+        width: 28%; }
+        @media screen and (max-width: 992px) {
+          body.vibrant .latest-news .container > div {
+            width: 80%; } }
+        body.vibrant .latest-news .container > div .date {
+          font-style: italic;
+          margin-bottom: 20px; }
+        body.vibrant .latest-news .container > div h2 {
+          margin: 10px 0 0; }
+        body.vibrant .latest-news .container > div .read-more-link {
+          bottom: 0;
+          right: 10px;
+          position: absolute;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); }
+          body.vibrant .latest-news .container > div .read-more-link a {
+            color: #00a8d0;
+            font-weight: 800;
+            text-decoration: none; }
+            body.vibrant .latest-news .container > div .read-more-link a:hover {
+              color: #092f57; }
   body.vibrant .case-study {
     background: #FFFFFF;
     color: #000104;
@@ -5402,7 +5452,7 @@ body.vibrant {
       background: #FFFFFF;
       color: #000000;
       display: block;
-      padding: 30px 0;
+      padding: 30px 0 80px 0;
       text-align: center;
       line-height: 1.8; }
       body.vibrant footer .bottombar a {

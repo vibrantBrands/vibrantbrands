@@ -442,8 +442,8 @@
     </section>
 
      <section class="latest-news">
-            <div class="container">
         <h1>Latest News</h1>
+            <div class="container">
       <?php  
       $pl = new PageList();
       $pl->filterByCollectionTypeHandle('blog_post');
@@ -468,16 +468,16 @@
                 ?> 
             </h2>
             <div class="date">
-                <?php 
+                <small><?php 
                 $datePublic = $page->getCollectionDatePublicObject()->format('j F, Y');
-                echo $datePublic ?>
+                echo $datePublic ?></small>
             </div>
     
                 <?php   
                     echo $page->getCollectionDescription();
                 ?>
 
-                <p><a href='<?php echo h($url) ?>'>Read more</a> ></p>
+                <p class="read-more-link"><a href='<?php echo h($url) ?>'>Read more</a></p>
             </p>
         </div>
 
