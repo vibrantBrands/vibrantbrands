@@ -32,15 +32,6 @@
 
 	</footer>
 
-		<!-- Calendly badge widget begin -->
-		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-		<script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/rick-vibrant-brands', text: 'Schedule your 30 minute branding consultation', color: '#5A6D7E', textColor: '#ffffff', branding: false });</script>
-		<style type="text/css">
-.calendly-badge-widget { left: 50% !important; margin-left: -190px!important; }
-</style>
-		<!-- Calendly badge widget end -->
-
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 		<!-- <script src="<?php echo $this->getThemePath(); ?>/script/vendor/odometer.min.js"></script>  -->
 		<script src="<?php echo $this->getThemePath(); ?>/script/vendor/lity.min.js"></script>
