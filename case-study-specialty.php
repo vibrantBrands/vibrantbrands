@@ -7,7 +7,7 @@
     </div>
 <div class="container specialties">
     <h1>Credit Unions</h1>
-    <p>Vibrant knows how to attract new members, promote services and educate communities on the benefits of belonging to a credit union. We deliver creative, targeted messaging and the right media mix to reach your audiences and achieve your goals with a higher ROI. d</p>
+    <p>Vibrant incorporates new technologies and media into credit union marketing strategies. We are the experts in helping credit unions expand into new markets, grow membership and increase loan utilization. With creative, targeted messaging and the right media mix, we achieve your growth and marketing goals with a higher ROI. Our agency strongly believes in the credit union movement (Vibrant has no banking clients), and we frequently speak on innovative credit union marketing at industry conferences across the U.S. We take great pride in assisting our clients in building awareness of the value and importance of credit unions.</p>
     <section class="clients">
         <div>
             <a href="/case-studies/sfcu">
