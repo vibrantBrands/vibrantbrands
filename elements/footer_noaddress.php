@@ -23,7 +23,6 @@
 		</div>
 		<div class="bottombar">
 			<strong><a href="tel:8559462773">(855) 946-2773</a></strong><br />
-				543 Loudon Road, Albany, NY 12110<br />
 				<a href="/contact" class="contact-link">Contact Us</a>
 				<div class="social">
 					<a href="https://www.facebook.com/vibrantbrands/"><i class="fab fa-facebook-f"></i></a>

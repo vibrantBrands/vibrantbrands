@@ -4297,11 +4297,199 @@ body.vibrant {
         @media only screen and (max-width: 576px) {
           body.vibrant header .logo-container .date {
             margin-left: -30px; } }
+    body.vibrant header .navigation {
+      align-items: center;
+      display: flex;
+      font-size: 1.1em;
+      justify-content: space-around;
+      top: 0;
+      width: 100%;
+      z-index: 3; }
+      @media only screen and (max-width: 768px) {
+        body.vibrant header .navigation {
+          padding: 0;
+          justify-content: space-between; } }
+      @media only screen and (max-width: 768px) {
+        body.vibrant header .navigation .logo {
+          align-self: center;
+          margin-right: 10px; } }
+      body.vibrant header .navigation .toggle-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 26px;
+        position: relative;
+        margin: -12px 0 0 20px;
+        z-index: 5; }
+        @media only screen and (max-width: 992px) {
+          body.vibrant header .navigation .toggle-wrapper {
+            display: none; } }
+        body.vibrant header .navigation .toggle-wrapper p {
+          color: blue;
+          font-size: 0.6em;
+          margin: 20px 0 0 -1px; }
+      body.vibrant header .navigation .menu-toggle {
+        cursor: pointer; }
+        body.vibrant header .navigation .menu-toggle .bg {
+          display: block;
+          width: 100%;
+          height: 30px;
+          position: absolute; }
+        body.vibrant header .navigation .menu-toggle .bar {
+          background: blue;
+          display: block;
+          height: 2px;
+          position: absolute;
+          width: 100%;
+          top: 10%; }
+          body.vibrant header .navigation .menu-toggle .bar:nth-child(2) {
+            top: 50%; }
+          body.vibrant header .navigation .menu-toggle .bar:nth-child(3) {
+            top: 90%; }
+        body.vibrant header .navigation .menu-toggle.active .bar {
+          transition: all 0.3s ease-out; }
+          body.vibrant header .navigation .menu-toggle.active .bar:first-child {
+            -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+            top: 50%; }
+          body.vibrant header .navigation .menu-toggle.active .bar:nth-child(2) {
+            opacity: 0; }
+          body.vibrant header .navigation .menu-toggle.active .bar:nth-child(3) {
+            -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+            top: 50%; }
+        body.vibrant header .navigation .menu-toggle.inactive .bar {
+          transition: all 0.3s ease-out; }
+          body.vibrant header .navigation .menu-toggle.inactive .bar:first-child {
+            -webkit-transform: rotate(0);
+                    transform: rotate(0);
+            top: 20%; }
+          body.vibrant header .navigation .menu-toggle.inactive .bar:nth-child(2) {
+            opacity: 1; }
+          body.vibrant header .navigation .menu-toggle.inactive .bar:nth-child(3) {
+            -webkit-transform: rotate(0);
+                    transform: rotate(0);
+            top: 80%; }
+      body.vibrant header .navigation .nav {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;
+        z-index: 10; }
+        @media screen and (max-width: 1200px) {
+          body.vibrant header .navigation .nav {
+            justify-content: center; } }
+        @media screen and (max-width: 768px) {
+          body.vibrant header .navigation .nav {
+            align-items: flex-end;
+            background: black;
+            display: none;
+            font-size: 16px;
+            min-height: 1000px;
+            position: fixed;
+            top: 136px;
+            width: 100%; } }
+        @media screen and (max-width: 768px) {
+          body.vibrant header .navigation .nav {
+            flex-direction: column; } }
+        body.vibrant header .navigation .nav.active {
+          display: block; }
+        body.vibrant header .navigation .nav > li {
+          color: blue;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          margin: 0 20px 0;
+          padding: 0 10px;
+          text-align: left;
+          text-decoration: none; }
+          body.vibrant header .navigation .nav > li a {
+            color: #FFFFFF;
+            text-decoration: none; }
+          body.vibrant header .navigation .nav > li > .submenu {
+            max-height: 0;
+            margin-top: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            top: 180px;
+            transition: all .4s ease-out;
+            z-index: 2; }
+            body.vibrant header .navigation .nav > li > .submenu .nav-item {
+              background: #000000;
+              padding: 0;
+              position: relative; }
+              body.vibrant header .navigation .nav > li > .submenu .nav-item:first-child {
+                border-top: 1px solid #efc000; }
+              body.vibrant header .navigation .nav > li > .submenu .nav-item a {
+                border-bottom: #efc000 1px solid;
+                border-top: 0;
+                color: #FFFFFF;
+                display: block;
+                padding: 10px;
+                width: 92%; }
+                body.vibrant header .navigation .nav > li > .submenu .nav-item a:hover {
+                  color: white;
+                  background: #f29925; }
+            body.vibrant header .navigation .nav > li > .submenu .submenu {
+              margin-bottom: 0;
+              margin-top: 10px; }
+              body.vibrant header .navigation .nav > li > .submenu .submenu .nav-item {
+                color: white;
+                list-style-type: disc;
+                border: 0; }
+            @media screen and (max-width: 768px) {
+              body.vibrant header .navigation .nav > li > .submenu {
+                max-width: 60%;
+                right: 0;
+                top: 0; }
+                body.vibrant header .navigation .nav > li > .submenu > .nav-item {
+                  border-top: 1px solid white;
+                  border-left: 1px solid white;
+                  margin-top: 0;
+                  padding: 0; }
+                  body.vibrant header .navigation .nav > li > .submenu > .nav-item:last-child {
+                    border-bottom: 1px solid white; }
+                  body.vibrant header .navigation .nav > li > .submenu > .nav-item a {
+                    padding: 0 10px; }
+                body.vibrant header .navigation .nav > li > .submenu .submenu {
+                  display: none; } }
+          body.vibrant header .navigation .nav > li:hover .submenu {
+            max-height: 800px; }
+          @media screen and (max-width: 768px) {
+            body.vibrant header .navigation .nav > li {
+              background: blue;
+              border-bottom: 1px solid white;
+              font-size: 1.2em;
+              height: auto;
+              position: relative;
+              margin: 0;
+              text-align: left;
+              width: 100%; }
+              body.vibrant header .navigation .nav > li a {
+                align-items: center;
+                color: white;
+                display: flex;
+                height: 60px;
+                width: 100%; }
+                body.vibrant header .navigation .nav > li a:hover {
+                  color: white; }
+              body.vibrant header .navigation .nav > li:hover {
+                background: #efc000; } }
     body.vibrant header .border {
       z-index: 3; }
   body.vibrant .internal {
     background: #FFFFFF;
     padding: 150px 0 50px; }
+    body.vibrant .internal button.btn {
+      background: #0BAEB9;
+      border-radius: 30px;
+      border: none;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      transition: all .3s ease-out; }
+      body.vibrant .internal button.btn:hover {
+        background: #2A72AF; }
     body.vibrant .internal.black {
       background: #000000; }
     body.vibrant .internal .blog-list {
@@ -4344,7 +4532,8 @@ body.vibrant {
     margin-top: 70px;
     width: 100%; }
     body.vibrant .internal-hero-image img {
-      width: 100%; }
+      width: 100%;
+      height: auto; }
   body.vibrant .hero-video,
   body.vibrant .tagline,
   body.vibrant .branding {
@@ -4528,7 +4717,7 @@ body.vibrant {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 50px auto 0; }
+    margin: 50px auto; }
     @media only screen and (max-width: 768px) {
       body.vibrant .clients,
       body.vibrant .video-section,
@@ -5424,6 +5613,8 @@ body.vibrant {
       body.vibrant footer a:hover {
         color: #efc000;
         transition: all 0.5s ease-out; }
+    body.vibrant footer .contact-link {
+      text-decoration: underline; }
     body.vibrant footer .topbar {
       display: flex;
       align-items: center;
@@ -5469,6 +5660,22 @@ body.vibrant {
       margin: 3px 0 0 5px; }
       body.vibrant footer .arrow .fa-caret-right {
         font-size: 1.3rem; }
+    body.vibrant footer .calendly-btn {
+      background: #2A72AF;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border: 2px solid #FFFFFF;
+      bottom: -3px;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-size: .9em;
+      padding: 15px 20px;
+      position: fixed;
+      right: 30px;
+      transition: all .3s ease-out;
+      z-index: 3; }
+      body.vibrant footer .calendly-btn:hover {
+        background: #0BAEB9; }
   body.vibrant .about .description > div.client-info h1 {
     margin-top: 30px; }
   body.vibrant .about-image-block {
@@ -5645,6 +5852,9 @@ body.vibrant {
     color: #000000; }
     body.vibrant .blog-list .blog-entry {
       text-align: left; }
+      body.vibrant .blog-list .blog-entry img {
+        width: 100%;
+        height: auto; }
       body.vibrant .blog-list .blog-entry h2 {
         margin-bottom: 0; }
       body.vibrant .blog-list .blog-entry a {
@@ -5653,9 +5863,17 @@ body.vibrant {
           color: #f29925; }
       body.vibrant .blog-list .blog-entry .date {
         margin-bottom: 10px; }
+  @media only screen and (max-width: 992px) {
+    body.vibrant .blog-post h1 {
+      font-size: 45px; } }
   body.vibrant .blog-post .container {
     text-align: left;
-    width: 800px; }
+    max-width: 800px; }
+    body.vibrant .blog-post .container img {
+      width: 100%;
+      height: auto; }
+  body.vibrant .blog-post .blog-header {
+    width: 100%; }
   body.vibrant.menu-open {
     overflow: hidden; }
   body.vibrant h1, body.vibrant h2, body.vibrant h3, body.vibrant h4, body.vibrant h5, body.vibrant h6 {

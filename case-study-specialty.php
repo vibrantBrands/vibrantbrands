@@ -3,8 +3,11 @@
 <?php $this->inc('elements/header.php'); ?>
 
 <div class="internal-hero-image">
-        <img src="<?php echo $this->getThemePath(); ?>/images/headers/cu_specialty_hero.jpg" alt="Credit Union Page Header">
-    </div>
+    <?php
+         $a = new Area('Hero Image');
+         $a->display($c);
+   ?>
+</div>
 <div class="container specialties">
     <h1>Credit Unions</h1>
     <p>Vibrant incorporates new technologies and media into credit union marketing strategies. We are the experts in helping credit unions expand into new markets, grow membership and increase loan utilization. With creative, targeted messaging and the right media mix, we achieve your growth and marketing goals with a higher ROI. Our agency strongly believes in the credit union movement (Vibrant has no banking clients), and we frequently speak on innovative credit union marketing at industry conferences across the U.S. We take great pride in assisting our clients in building awareness of the value and importance of credit unions.</p>
@@ -43,11 +46,11 @@
             </a>
     	</div>
         <div>
-            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/solutions.html" data-lity data-lity-desc="Solutions">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/solutions.png" alt="Solutions">
+            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/LIAFCU.html" data-lity data-lity-desc="Solutions">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/LIAFCU.jpg" alt="Solutions">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Solutions</h3>
+                    <h3>Long Island Alliance Federal Credit Union</h3>
                     <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
@@ -68,7 +71,6 @@
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Northern</h3>
-                    <p>Ad samples</p>
                     <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
@@ -76,5 +78,5 @@
     </section>
 </div>
 
+<?php $this->inc('elements/footer_noaddress.php'); ?>
 
-<?php $this->inc('elements/footer.php'); ?>

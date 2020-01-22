@@ -14,24 +14,6 @@
         </div>
 </section>
 
-<section class="badges">
-    <div>
-        <img src="<?php echo $this->getThemePath(); ?>/images/badges/badge1.png" alt="Breakthrough Business">
-    </div>
-    <div class="divider"></div>
-    <div>
-        <img src="<?php echo $this->getThemePath(); ?>/images/badges/badge2.png" alt="Best in Show Genesis Award">
-    </div>
-    <div class="divider"></div>
-    <div>
-        <img src="<?php echo $this->getThemePath(); ?>/images/badges/badge3.png" alt="First in Web Cast Awards">
-    </div>
-    <div class="divider"></div>
-    <div>
-        <img src="<?php echo $this->getThemePath(); ?>/images/badges/badge4.png" alt="Best Places to Work, Albany Business Journal">
-    </div>
-</section>
-
 
 <div class="container">
     <section class="service-filters">
@@ -171,7 +153,7 @@
         </div>
     	<div>
             <h2>We're saving this spot for you.</h2>
-            <p class="save-text">Create an accurate and consistent voice that resonates with your audience.  Call us today: <a href="tel:8559462773">(855) 946-2773</a></p>
+            <p class="save-text">Create an accurate and consistent voice that resonates with your audience.  <a href="/contact">Contact</a> or call us today: <a href="tel:8559462773">(855) 946-2773</a></p>
     	</div>
     </section>
 
@@ -489,6 +471,25 @@
             
         </div>
     </section>
+
+    <section class="badges">
+        <div>
+            <img src="<?php echo $this->getThemePath(); ?>/images/badges/badge1.png" alt="Breakthrough Business">
+        </div>
+        <div class="divider"></div>
+        <div>
+            <img src="<?php echo $this->getThemePath(); ?>/images/badges/badge2.png" alt="Best in Show Genesis Award">
+        </div>
+        <div class="divider"></div>
+        <div>
+            <img src="<?php echo $this->getThemePath(); ?>/images/badges/badge3.png" alt="First in Web Cast Awards">
+        </div>
+        <div class="divider"></div>
+        <div>
+            <img src="<?php echo $this->getThemePath(); ?>/images/badges/badge4.png" alt="Best Places to Work, Albany Business Journal">
+        </div>
+    </section>
+    
 </div>
 
 

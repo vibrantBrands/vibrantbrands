@@ -18,7 +18,7 @@
 <div class="content-wrapper">
   <div class="container">
   <article class="content">
-      <img src="<?php echo $image_src ?>" />
+      <img src="<?php echo $image_src ?>" class="blog-header" />
       <h1><?php echo $title ?></h1>
       <span class="date"><?php echo $datePublic ?></span>
       <p>
