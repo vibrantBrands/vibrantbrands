@@ -4,7 +4,7 @@
 
 <div class="internal black">
 <div class="container">
-    <h1>Case Studies</h1>
+    <h1>Featured Work</h1>
     
     <small class="click-below">Click on the stories below to learn more.</small>
     <p>

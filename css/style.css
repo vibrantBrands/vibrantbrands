@@ -4170,13 +4170,16 @@ body.vibrant {
       flex-direction: column;
       width: 30px;
       height: 26px;
-      position: fixed;
-      top: 30px;
-      left: 30px;
+      position: absolute;
+      margin: 30px 0 0 20px;
       z-index: 5; }
+      @media only screen and (min-width: 768px) {
+        body.vibrant header .toggle-wrapper {
+          display: none; } }
       body.vibrant header .toggle-wrapper p {
-        font-size: 0.7em;
-        margin: 32px 0 0 -1px; }
+        color: #FFFFFF;
+        font-size: 0.6em;
+        margin: 30px 0 0 -1px; }
     body.vibrant header .menu-toggle {
       cursor: pointer; }
       body.vibrant header .menu-toggle .bg {
@@ -4223,54 +4226,6 @@ body.vibrant {
           -webkit-transform: rotate(0);
                   transform: rotate(0);
           top: 80%; }
-    body.vibrant header nav {
-      position: fixed;
-      max-height: 0px;
-      overflow: hidden;
-      width: 100%;
-      z-index: 3; }
-      body.vibrant header nav.active {
-        max-height: 100%; }
-        body.vibrant header nav.active li {
-          -webkit-transform: rotateY(0deg);
-                  transform: rotateY(0deg);
-          opacity: 1; }
-      body.vibrant header nav.inactive {
-        max-height: 0px;
-        transition: max-height .3s ease-out;
-        transition-delay: 1s; }
-        body.vibrant header nav.inactive li {
-          -webkit-transform: rotateY(130deg);
-                  transform: rotateY(130deg);
-          opacity: 0; }
-      body.vibrant header nav ul {
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-        padding: 0; }
-        body.vibrant header nav ul li {
-          align-items: center;
-          background: #000000;
-          cursor: pointer;
-          display: flex;
-          font-size: 2em;
-          height: 100vh;
-          justify-content: center;
-          transition: all 0.3s ease-out;
-          width: 25%; }
-          body.vibrant header nav ul li a {
-            color: #FFFFFF;
-            text-decoration: none; }
-          body.vibrant header nav ul li:hover a {
-            color: #efc000;
-            transition: color .5s ease-out; }
-        @media only screen and (max-width: 768px) {
-          body.vibrant header nav ul {
-            flex-direction: column;
-            margin-top: 120px; }
-            body.vibrant header nav ul li {
-              height: 10vh;
-              width: 100%; } }
     @media only screen and (max-width: 576px) {
       body.vibrant header .logo div span {
         display: none; } }
@@ -4313,66 +4268,11 @@ body.vibrant {
         body.vibrant header .navigation .logo {
           align-self: center;
           margin-right: 10px; } }
-      body.vibrant header .navigation .toggle-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 30px;
-        height: 26px;
-        position: relative;
-        margin: -12px 0 0 20px;
-        z-index: 5; }
-        @media only screen and (max-width: 992px) {
-          body.vibrant header .navigation .toggle-wrapper {
-            display: none; } }
-        body.vibrant header .navigation .toggle-wrapper p {
-          color: blue;
-          font-size: 0.6em;
-          margin: 20px 0 0 -1px; }
-      body.vibrant header .navigation .menu-toggle {
-        cursor: pointer; }
-        body.vibrant header .navigation .menu-toggle .bg {
-          display: block;
-          width: 100%;
-          height: 30px;
-          position: absolute; }
-        body.vibrant header .navigation .menu-toggle .bar {
-          background: blue;
-          display: block;
-          height: 2px;
-          position: absolute;
-          width: 100%;
-          top: 10%; }
-          body.vibrant header .navigation .menu-toggle .bar:nth-child(2) {
-            top: 50%; }
-          body.vibrant header .navigation .menu-toggle .bar:nth-child(3) {
-            top: 90%; }
-        body.vibrant header .navigation .menu-toggle.active .bar {
-          transition: all 0.3s ease-out; }
-          body.vibrant header .navigation .menu-toggle.active .bar:first-child {
-            -webkit-transform: rotate(-45deg);
-                    transform: rotate(-45deg);
-            top: 50%; }
-          body.vibrant header .navigation .menu-toggle.active .bar:nth-child(2) {
-            opacity: 0; }
-          body.vibrant header .navigation .menu-toggle.active .bar:nth-child(3) {
-            -webkit-transform: rotate(45deg);
-                    transform: rotate(45deg);
-            top: 50%; }
-        body.vibrant header .navigation .menu-toggle.inactive .bar {
-          transition: all 0.3s ease-out; }
-          body.vibrant header .navigation .menu-toggle.inactive .bar:first-child {
-            -webkit-transform: rotate(0);
-                    transform: rotate(0);
-            top: 20%; }
-          body.vibrant header .navigation .menu-toggle.inactive .bar:nth-child(2) {
-            opacity: 1; }
-          body.vibrant header .navigation .menu-toggle.inactive .bar:nth-child(3) {
-            -webkit-transform: rotate(0);
-                    transform: rotate(0);
-            top: 80%; }
       body.vibrant header .navigation .nav {
         align-items: center;
         display: flex;
+        padding: 0;
+        margin: 0 0 10px 0;
         justify-content: flex-end;
         text-align: right;
         z-index: 10; }
@@ -4387,7 +4287,7 @@ body.vibrant {
             font-size: 16px;
             min-height: 1000px;
             position: fixed;
-            top: 136px;
+            top: 120px;
             width: 100%; } }
         @media screen and (max-width: 768px) {
           body.vibrant header .navigation .nav {
@@ -4400,7 +4300,6 @@ body.vibrant {
           flex-direction: column;
           justify-content: flex-start;
           margin: 0 20px 0;
-          padding: 0 10px;
           text-align: left;
           text-decoration: none; }
           body.vibrant header .navigation .nav > li a {
@@ -4412,7 +4311,7 @@ body.vibrant {
             overflow: hidden;
             padding: 0;
             position: absolute;
-            top: 180px;
+            top: 155px;
             transition: all .4s ease-out;
             z-index: 2; }
             body.vibrant header .navigation .nav > li > .submenu .nav-item {
@@ -4426,56 +4325,46 @@ body.vibrant {
                 border-top: 0;
                 color: #FFFFFF;
                 display: block;
-                padding: 10px;
-                width: 92%; }
+                padding: 10px; }
                 body.vibrant header .navigation .nav > li > .submenu .nav-item a:hover {
                   color: white;
                   background: #f29925; }
-            body.vibrant header .navigation .nav > li > .submenu .submenu {
-              margin-bottom: 0;
-              margin-top: 10px; }
-              body.vibrant header .navigation .nav > li > .submenu .submenu .nav-item {
-                color: white;
-                list-style-type: disc;
-                border: 0; }
             @media screen and (max-width: 768px) {
               body.vibrant header .navigation .nav > li > .submenu {
-                max-width: 60%;
+                position: relative;
                 right: 0;
                 top: 0; }
                 body.vibrant header .navigation .nav > li > .submenu > .nav-item {
-                  border-top: 1px solid white;
-                  border-left: 1px solid white;
+                  border: 0;
+                  height: auto;
                   margin-top: 0;
                   padding: 0; }
-                  body.vibrant header .navigation .nav > li > .submenu > .nav-item:last-child {
-                    border-bottom: 1px solid white; }
                   body.vibrant header .navigation .nav > li > .submenu > .nav-item a {
-                    padding: 0 10px; }
-                body.vibrant header .navigation .nav > li > .submenu .submenu {
-                  display: none; } }
+                    border: 0;
+                    color: white;
+                    padding: 0;
+                    margin: 0; }
+                    body.vibrant header .navigation .nav > li > .submenu > .nav-item a:hover {
+                      color: #efc000;
+                      background: none; } }
           body.vibrant header .navigation .nav > li:hover .submenu {
             max-height: 800px; }
           @media screen and (max-width: 768px) {
             body.vibrant header .navigation .nav > li {
-              background: blue;
-              border-bottom: 1px solid white;
               font-size: 1.2em;
               height: auto;
               position: relative;
               margin: 0;
-              text-align: left;
+              text-align: center;
               width: 100%; }
               body.vibrant header .navigation .nav > li a {
                 align-items: center;
+                text-align: center;
                 color: white;
-                display: flex;
-                height: 60px;
+                height: 40px;
                 width: 100%; }
                 body.vibrant header .navigation .nav > li a:hover {
-                  color: white; }
-              body.vibrant header .navigation .nav > li:hover {
-                background: #efc000; } }
+                  color: #efc000; } }
     body.vibrant header .border {
       z-index: 3; }
   body.vibrant .internal {
@@ -4579,8 +4468,7 @@ body.vibrant {
     position: relative;
     min-height: 500px;
     max-height: 800px;
-    overflow: hidden;
-    margin-top: -20px; }
+    overflow: hidden; }
     @media only screen and (max-width: 768px) {
       body.vibrant .hero-video {
         padding-top: 100px; } }
@@ -4615,6 +4503,9 @@ body.vibrant {
       padding: 0;
       list-style-type: none;
       z-index: 200; }
+      body.vibrant .service-filters ul a {
+        color: #FFFFFF;
+        text-decoration: none; }
       @media only screen and (max-width: 576px) {
         body.vibrant .service-filters ul {
           font-size: 0.9rem;
@@ -4696,6 +4587,10 @@ body.vibrant {
       width: 85%;
       font-size: 1em;
       line-height: 1.5; }
+    body.vibrant .service-description > div h4 {
+      font-size: 1.2em;
+      margin: 10px;
+      text-align: left; }
   body.vibrant .click-below {
     display: block;
     margin-top: 20px; }
@@ -4717,7 +4612,7 @@ body.vibrant {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 50px auto; }
+    margin: 0 auto 50px; }
     @media only screen and (max-width: 768px) {
       body.vibrant .clients,
       body.vibrant .video-section,
@@ -4924,7 +4819,7 @@ body.vibrant {
   body.vibrant .badges {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto 90px;
+    margin: 0 auto;
     justify-content: space-around;
     width: 100%; }
     body.vibrant .badges img {
@@ -5602,9 +5497,12 @@ body.vibrant {
     background: linear-gradient(90deg, #12b193, #89c53f, #efc000, #89c53f, #12b193);
     background-size: 130%;
     color: rgba(0, 0, 0, 0.1);
+    font-size: 2.2em;
     background-clip: text;
     -webkit-background-clip: text;
-    margin-top: 80px; }
+    margin: 170px 0 0; }
+  body.vibrant .specialties h3 {
+    text-align: center; }
   body.vibrant footer {
     text-align: left; }
     body.vibrant footer a {
