@@ -2,28 +2,18 @@
 
 .hero-video,
 .tagline,
-.branding {
+.specialties {
 	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
-	@keyframes movebackground {
-	  0% { background-position: 0 0; }
-	  50% { background-position: -1000px 0; }
-	  100% { background-position: 0 0; }
-	}
-
 	h1 {
-		animation: movebackground 20s linear infinite alternate;
-		background-size: 130%;
-		background: $rainbow-gradient;
-		color: rgba(0,0,0,.05);
 		font-size: 5rem;
-		line-height: 6rem;
-		background-clip: text;
-		-webkit-background-clip: text;
+    	line-height: 6rem;
+
+		@include moving-masked-text();
 
 		@media only screen and (max-width: $md-breakpoint) {
 			font-size: 3.5rem;
@@ -39,7 +29,8 @@
 	overflow: hidden;
 
 	@media only screen and (max-width: $md-breakpoint) {
-		padding-top: 100px;
+		margin-top: 100px;
+		min-height: 300px;
 	}
 
 	.video-container {
@@ -151,7 +142,7 @@
 	}
 }
 
-.service-description {
+/*.service-description {
 
 	>div {
 		display: flex;
@@ -235,6 +226,69 @@
 			text-align: left;
 		}
 	}
+}*/
+
+h2.featured {
+	@include moving-masked-text($bluegreen-gradient, 10s);
+	margin: 30px 0;
+}
+
+.services {
+	margin-bottom: 50px;
+
+	h2 {
+		@include moving-masked-text($pink-gradient, 10s);
+		margin: 0 auto 30px;
+	}
+
+	.icons {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		>div {
+			width: 33.3%;
+			display: flex;
+			align-items: center;
+			margin: 30px auto;
+
+			@include mobile-full-width($md-breakpoint, 90%);
+
+			@media only screen and (max-width: $md-breakpoint) {
+			    justify-content: flex-start;
+			}
+			
+			color: $icon-text-color;
+			text-transform: uppercase;
+
+			a {
+				color: $icon-text-color;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				text-transform: uppercase;
+				text-decoration: none;
+
+				&:hover {
+					
+					p {
+						color: $yellow;
+						transition: color .3s ease-out;
+					}
+				}
+			}
+
+			p {
+				color: $icon-text-color;
+				text-transform: uppercase;
+			}
+
+			img {
+				margin-right: 20px;
+				width: 80px;
+			}
+		}
+	}
 }
 
 .click-below {
@@ -254,6 +308,37 @@
 	}
 	@media only screen and (max-width: $sm-breakpoint) {
 	    width: 100%;
+	}
+}
+
+.company-description {
+	background: url('../images/icons/hp-bg.png');
+	background-size: cover;
+	margin-bottom: 50px;
+	padding: 0;
+
+	h2 {
+		margin: 0;
+		width: 1700px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			margin: 50px 0 30px;
+			width: 100%;
+		}
+	}
+	p {
+		text-align: left;
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			padding: 0 25px;
+		}
+	}
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@include flex-col-layout();
 	}
 }
 
@@ -366,15 +451,10 @@
 	}
 
 	h2 {
-		background: $pink-gradient;
-		background-size: 130%;
-		background-clip: text;
-		-webkit-background-clip: text;
+		@include moving-masked-text($pink-gradient, 30s);
 		font-size: 2.5rem;
 		line-height: 2.9rem;
 		margin: 100px 0 0 40px;
-		color: rgba(0,0,0,.1);
-		animation: movebackground 30s linear infinite alternate;
 		text-align: left;
 
 		@media only screen and (max-width: $xl-breakpoint) {
@@ -463,41 +543,6 @@
 			.fas {
 				opacity: 1;
 			}
-		}
-	}
-}
-
-.badges {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 auto;
-	justify-content: space-around;
-	width: 100%;
-
-	img {
-		height: auto;
-		width: 140px;
-	}
-
-	.divider {
-		background: $white;
-		display: block;
-		width: 1px;
-		height: 120px;
-
-		@media only screen and (max-width: $md-breakpoint) {
-			display: none;
-		}
-	}
-
-	>div {
-		margin-top: 10px;
-
-		&:after {
-			background: $white;
-			display: block;
-			height: 100px;
-			width: 10px;
 		}
 	}
 }

@@ -2,12 +2,6 @@
 
 <?php $this->inc('elements/header.php'); ?>
 
-<div class="internal-hero-image">
-    <?php
-         $a = new Area('Hero Image');
-         $a->display($c);
-   ?>
-</div>
 <div class="container specialties website">
     <div>
         <h1>Website development.</h1>

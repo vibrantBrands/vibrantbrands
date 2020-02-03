@@ -65,3 +65,20 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* Colors moving behind text effect */
+
+@keyframes movebackground {
+    0% { background-position: 0 0; }
+    50% { background-position: -1000px 0; }
+    100% { background-position: 0 0; }
+  }
+
+@mixin moving-masked-text($gradient: $rainbow-gradient, $timing: 20s) {
+    animation: movebackground $timing linear infinite alternate;
+    background-size: 130%;
+    background: $gradient;
+    color: rgba(0,0,0,.05);
+    background-clip: text;
+    -webkit-background-clip: text;
+}

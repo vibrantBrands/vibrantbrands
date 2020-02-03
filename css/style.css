@@ -3780,6 +3780,22 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /* SCSS -- Absolute positioning */
 /* SCSS -- Change direction from Row to Column on FLEX element for mobile views */
 /* SCSS -- Change item width at a certain breakpoint for moblie layout. Default to 100% at   */
+/* Colors moving behind text effect */
+@-webkit-keyframes movebackground {
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: -1000px 0; }
+  100% {
+    background-position: 0 0; } }
+@keyframes movebackground {
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: -1000px 0; }
+  100% {
+    background-position: 0 0; } }
+
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -4151,6 +4167,91 @@ th {
   padding: 0; }
 
 body.vibrant {
+  /*.service-description {
+
+	>div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		display: none;
+
+		&:last-child {
+			display: block;
+		}
+
+		&.active {
+			opacity: 1;
+			max-height: 400px;
+			transition: all .5s ease-out;
+		}
+
+		h3 {
+			text-align: center;
+		}
+
+		p {
+			margin: 0 auto 20px;
+		}
+
+
+		h2 {
+			animation: movebackground 20s linear infinite alternate;
+			background: $green-gradient;
+			background-size: 130%;
+			color: rgba(0,0,0,.1);
+			background-clip: text;
+			-webkit-background-clip: text;
+		}
+
+		&:first-child {
+
+			h2 {
+				background: $pink-gradient;
+				background-clip: text;
+				-webkit-background-clip: text;
+			}
+		}
+
+		&:nth-child(3) {
+			
+			h2 {
+				background: $orange-gradient;
+				background-clip: text;
+				-webkit-background-clip: text;
+			}
+		} 
+
+		&:nth-child(2) {
+			
+			h2 {
+				background: $bluegreen-gradient;
+				background-clip: text;
+				-webkit-background-clip: text;
+			}
+		} 
+
+		ul {
+			margin-top: 30px;
+		}
+
+		h1 {
+			margin: 10px 0;
+		}
+
+		p {
+			width: 85%;
+			font-size: 1em;
+			line-height: 1.5;
+		}
+
+		h4 {
+			font-size: 1.2em;
+			margin: 10px;
+			text-align: left;
+		}
+	}
+}*/
   /**  About page styles **/
   background: #000000;
   color: #FFFFFF;
@@ -4305,6 +4406,9 @@ body.vibrant {
           body.vibrant header .navigation .nav > li a {
             color: #FFFFFF;
             text-decoration: none; }
+            body.vibrant header .navigation .nav > li a:hover {
+              color: #efc000;
+              transition: color .3s ease-out; }
           body.vibrant header .navigation .nav > li > .submenu {
             max-height: 0;
             margin-top: -1px;
@@ -4425,43 +4529,27 @@ body.vibrant {
       height: auto; }
   body.vibrant .hero-video,
   body.vibrant .tagline,
-  body.vibrant .branding {
+  body.vibrant .specialties {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-
-@-webkit-keyframes movebackground {
-  0% {
-    background-position: 0 0; }
-  50% {
-    background-position: -1000px 0; }
-  100% {
-    background-position: 0 0; } }
-
-@keyframes movebackground {
-  0% {
-    background-position: 0 0; }
-  50% {
-    background-position: -1000px 0; }
-  100% {
-    background-position: 0 0; } }
     body.vibrant .hero-video h1,
     body.vibrant .tagline h1,
-    body.vibrant .branding h1 {
+    body.vibrant .specialties h1 {
+      font-size: 5rem;
+      line-height: 6rem;
       -webkit-animation: movebackground 20s linear infinite alternate;
               animation: movebackground 20s linear infinite alternate;
       background-size: 130%;
       background: linear-gradient(90deg, #c13c8d, #f29925, #efc000, #89c53f, #12b193, #0BAEB9, #2A72AF, #12b193, #89c53f, #efc000, #f29925, #c13c8d);
       color: rgba(0, 0, 0, 0.05);
-      font-size: 5rem;
-      line-height: 6rem;
       background-clip: text;
       -webkit-background-clip: text; }
       @media only screen and (max-width: 768px) {
         body.vibrant .hero-video h1,
         body.vibrant .tagline h1,
-        body.vibrant .branding h1 {
+        body.vibrant .specialties h1 {
           font-size: 3.5rem;
           line-height: 3.9rem; } }
   body.vibrant .hero-video {
@@ -4471,7 +4559,8 @@ body.vibrant {
     overflow: hidden; }
     @media only screen and (max-width: 768px) {
       body.vibrant .hero-video {
-        padding-top: 100px; } }
+        margin-top: 100px;
+        min-height: 300px; } }
     body.vibrant .hero-video .video-container {
       top: 0;
       left: 0;
@@ -4543,54 +4632,59 @@ body.vibrant {
           background-size: 150%;
           background-position: 120px 0;
           transition: all .5s ease-out; }
-  body.vibrant .service-description > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: none; }
-    body.vibrant .service-description > div:last-child {
-      display: block; }
-    body.vibrant .service-description > div.active {
-      opacity: 1;
-      max-height: 400px;
-      transition: all .5s ease-out; }
-    body.vibrant .service-description > div h3 {
-      text-align: center; }
-    body.vibrant .service-description > div p {
-      margin: 0 auto 20px; }
-    body.vibrant .service-description > div h2 {
-      -webkit-animation: movebackground 20s linear infinite alternate;
-              animation: movebackground 20s linear infinite alternate;
-      background: linear-gradient(90deg, #12b193, #89c53f, #efc000, #89c53f, #12b193);
+  body.vibrant h2.featured {
+    -webkit-animation: movebackground 10s linear infinite alternate;
+            animation: movebackground 10s linear infinite alternate;
+    background-size: 130%;
+    background: linear-gradient(90deg, #12b193, #89c53f, #0BAEB9, #2A72AF, #0BAEB9, #89c53f, #12b193);
+    color: rgba(0, 0, 0, 0.05);
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 30px 0; }
+  body.vibrant .services {
+    margin-bottom: 50px; }
+    body.vibrant .services h2 {
+      -webkit-animation: movebackground 10s linear infinite alternate;
+              animation: movebackground 10s linear infinite alternate;
       background-size: 130%;
-      color: rgba(0, 0, 0, 0.1);
-      background-clip: text;
-      -webkit-background-clip: text; }
-    body.vibrant .service-description > div:first-child h2 {
       background: linear-gradient(90deg, #c13c8d, #f29925, #f29925, #c13c8d);
+      color: rgba(0, 0, 0, 0.05);
       background-clip: text;
-      -webkit-background-clip: text; }
-    body.vibrant .service-description > div:nth-child(3) h2 {
-      background: linear-gradient(90deg, #efc000, #f29925, #f29925, #efc000);
-      background-clip: text;
-      -webkit-background-clip: text; }
-    body.vibrant .service-description > div:nth-child(2) h2 {
-      background: linear-gradient(90deg, #12b193, #89c53f, #0BAEB9, #2A72AF, #0BAEB9, #89c53f, #12b193);
-      background-clip: text;
-      -webkit-background-clip: text; }
-    body.vibrant .service-description > div ul {
-      margin-top: 30px; }
-    body.vibrant .service-description > div h1 {
-      margin: 10px 0; }
-    body.vibrant .service-description > div p {
-      width: 85%;
-      font-size: 1em;
-      line-height: 1.5; }
-    body.vibrant .service-description > div h4 {
-      font-size: 1.2em;
-      margin: 10px;
-      text-align: left; }
+      -webkit-background-clip: text;
+      margin: 0 auto 30px; }
+    body.vibrant .services .icons {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      body.vibrant .services .icons > div {
+        width: 33.3%;
+        display: flex;
+        align-items: center;
+        margin: 30px auto;
+        color: #2793ae;
+        text-transform: uppercase; }
+        @media screen and (max-width: 768px) {
+          body.vibrant .services .icons > div {
+            width: 90%; } }
+        @media only screen and (max-width: 768px) {
+          body.vibrant .services .icons > div {
+            justify-content: flex-start; } }
+        body.vibrant .services .icons > div a {
+          color: #2793ae;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          text-transform: uppercase;
+          text-decoration: none; }
+          body.vibrant .services .icons > div a:hover p {
+            color: #efc000;
+            transition: color .3s ease-out; }
+        body.vibrant .services .icons > div p {
+          color: #2793ae;
+          text-transform: uppercase; }
+        body.vibrant .services .icons > div img {
+          margin-right: 20px;
+          width: 80px; }
   body.vibrant .click-below {
     display: block;
     margin-top: 20px; }
@@ -4606,6 +4700,30 @@ body.vibrant {
     @media only screen and (max-width: 576px) {
       body.vibrant .container {
         width: 100%; } }
+  body.vibrant .company-description {
+    background: url("../images/icons/hp-bg.png");
+    background-size: cover;
+    margin-bottom: 50px;
+    padding: 0; }
+    body.vibrant .company-description h2 {
+      margin: 0;
+      width: 1700px; }
+      @media only screen and (max-width: 768px) {
+        body.vibrant .company-description h2 {
+          margin: 50px 0 30px;
+          width: 100%; } }
+    body.vibrant .company-description p {
+      text-align: left; }
+      @media only screen and (max-width: 992px) {
+        body.vibrant .company-description p {
+          padding: 0 25px; } }
+    body.vibrant .company-description .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      @media screen and (max-width: 992px) {
+        body.vibrant .company-description .container {
+          flex-direction: column; } }
   body.vibrant .clients,
   body.vibrant .video-section,
   body.vibrant .website-section {
@@ -4724,16 +4842,16 @@ body.vibrant {
     body.vibrant .clients h2,
     body.vibrant .video-section h2,
     body.vibrant .website-section h2 {
-      background: linear-gradient(90deg, #c13c8d, #f29925, #f29925, #c13c8d);
+      -webkit-animation: movebackground 30s linear infinite alternate;
+              animation: movebackground 30s linear infinite alternate;
       background-size: 130%;
+      background: linear-gradient(90deg, #c13c8d, #f29925, #f29925, #c13c8d);
+      color: rgba(0, 0, 0, 0.05);
       background-clip: text;
       -webkit-background-clip: text;
       font-size: 2.5rem;
       line-height: 2.9rem;
       margin: 100px 0 0 40px;
-      color: rgba(0, 0, 0, 0.1);
-      -webkit-animation: movebackground 30s linear infinite alternate;
-              animation: movebackground 30s linear infinite alternate;
       text-align: left; }
       @media only screen and (max-width: 1200px) {
         body.vibrant .clients h2,
@@ -4816,30 +4934,6 @@ body.vibrant {
   body.vibrant .video-section > div:hover .fas,
   body.vibrant .website-section > div:hover .fas {
     opacity: 1; }
-  body.vibrant .badges {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: space-around;
-    width: 100%; }
-    body.vibrant .badges img {
-      height: auto;
-      width: 140px; }
-    body.vibrant .badges .divider {
-      background: #FFFFFF;
-      display: block;
-      width: 1px;
-      height: 120px; }
-      @media only screen and (max-width: 768px) {
-        body.vibrant .badges .divider {
-          display: none; } }
-    body.vibrant .badges > div {
-      margin-top: 10px; }
-      body.vibrant .badges > div:after {
-        background: #FFFFFF;
-        display: block;
-        height: 100px;
-        width: 10px; }
   body.vibrant .latest-news {
     margin-bottom: 80px;
     padding-top: 60px; }
@@ -5503,6 +5597,8 @@ body.vibrant {
     margin: 170px 0 0; }
   body.vibrant .specialties h3 {
     text-align: center; }
+  body.vibrant .page-type-credit-union-specialty h1 {
+    margin-top: 50px; }
   body.vibrant footer {
     text-align: left; }
     body.vibrant footer a {
@@ -5574,6 +5670,32 @@ body.vibrant {
       z-index: 3; }
       body.vibrant footer .calendly-btn:hover {
         background: #0BAEB9; }
+    body.vibrant footer .badges {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      justify-content: center;
+      width: 100%; }
+      body.vibrant footer .badges img {
+        height: auto;
+        width: 150px; }
+      body.vibrant footer .badges .divider {
+        background: #000000;
+        display: block;
+        width: 1px;
+        height: 150px; }
+        @media only screen and (max-width: 768px) {
+          body.vibrant footer .badges .divider {
+            display: none; } }
+      body.vibrant footer .badges > div {
+        margin-top: 10px; }
+        body.vibrant footer .badges > div:nth-child(odd) {
+          padding: 0 30px; }
+        body.vibrant footer .badges > div:after {
+          background: #FFFFFF;
+          display: block;
+          height: 100px;
+          width: 10px; }
   body.vibrant .about .description > div.client-info h1 {
     margin-top: 30px; }
   body.vibrant .about-image-block {
@@ -5777,9 +5899,9 @@ body.vibrant {
   body.vibrant h1, body.vibrant h2, body.vibrant h3, body.vibrant h4, body.vibrant h5, body.vibrant h6 {
     font-family: "Josefin Sans", sans-serif; }
   body.vibrant h1 {
-    font-size: 2.2em; }
+    font-size: 2.4em; }
   body.vibrant h2 {
-    font-size: 1.8em;
+    font-size: 2.2em;
     margin: 50px 0 10px; }
   body.vibrant h3 {
     font-size: 1.4em;

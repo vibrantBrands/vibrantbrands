@@ -27,8 +27,6 @@ header {
 			}
 		}
 
-
-
 	.menu-toggle {
 			cursor: pointer;			
 
@@ -205,6 +203,11 @@ header {
                 a {
                 	color: $white;
                 	text-decoration: none;
+
+                	&:hover {
+                		color: $yellow;
+                		transition: color .3s ease-out;
+                	}
                 }
 
                 >.submenu {
