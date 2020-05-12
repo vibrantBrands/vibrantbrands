@@ -16,10 +16,7 @@
 			  		</div>
 		  		</a>
 			</div>
-			<div>
-				<!--<strong>Newsletter Signup</strong><br /> 
-				Enter email address here <div class="arrow"><i class="fas fa-caret-right"></i></div> -->
-			</div>
+			<div></div>
 		</div>
 		<div class="bottombar">
 			  <section class="badges">
@@ -46,7 +43,10 @@
 					<a href="https://vimeo.com/user3665286"><i class="fab fa-vimeo-v"></i></a>
 				</div>
 		</div>
-
+		<a href="/calendly-button">
+			<button class="calendly-btn">
+			Schedule your 30 minute branding consultation</button>
+		</a>
 	</footer>
 	<script type="text/javascript">
 		  var _userway_config = {

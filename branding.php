@@ -104,11 +104,11 @@
         </div>
         <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/lisefcu.html" data-lity data-lity-desc="lisefcu">
-                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/lisefcu_img-grid_web.png" alt="LISEFCU thumbnail">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/LIAFCU.jpg" alt="LISEFCU thumbnail">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Long Island State Employees FCU</h3>
-                    <p>"Vibrant’s team helped us create the best web experience for our members."</p>
+                    <p>"We needed a site that provided the technology our members need, with the personal touch that comes from credit union membership. Vibrant’s team helped us create the best web experience for our members."</p>
                     <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>

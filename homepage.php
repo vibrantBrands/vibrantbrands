@@ -4,8 +4,8 @@
 
 <section class="hero-video">
         <div class="textbox">
-            <h1>Branding for Good.</h1>
-            <h2>Doing great work for great people.</h2>
+            <h1>Work Toward the Future.</h1>
+            <h2>Stay strong, be kind and make progress.</h2>
         </div>
         <div class="video-container">
             <video muted autoplay loop>
@@ -38,7 +38,7 @@
                 </a>
             </div>
             <div>
-                <a href="/services/video-production">
+                <a href="/video">
                     <img src="<?php echo $this->getThemePath(); ?>/images/icons/VP.png" alt="Video Production" />
                     <p>Video Production</p>
                 </a>
@@ -57,7 +57,7 @@
 
     <section class="company-description">
         <div class="container">
-             <h2>Vibrant Brands</h2>
+            <h2>Vibrant Brands</h2>
             <p>Vibrant Brands delivers full-service branding and marketing services. Founded in 2002, Vibrant Brands implements branded solutions that get results. More than just websites. More than advertising campaigns. Vibrant Brands combines all of these and more, bringing your organization to life. Put our experience in branding, marketing, and digital design to work for you, and experience the power of branding for good.</p>
         </div>       
     </section>

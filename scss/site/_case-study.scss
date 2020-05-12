@@ -12,6 +12,9 @@
     h2 {
     	font-size: $case-study-h2;
     }
+    ul {
+    	font-size: 20px;
+    }
     .hero {
     	//margin-top: 80px;
 
@@ -992,6 +995,9 @@
 
 
 .about {
+	ul {
+		font-size: 20px;
+	}
 
 	.input-sample {
 		margin: 80px;
@@ -1016,5 +1022,9 @@ box-shadow: inset 0px -14px 8px -14px rgba(0,0,0,0.34);
 		label, input {
 			display: block;
 		}
+	}
+
+	.specialty-container {
+		display: flex;
 	}
 }

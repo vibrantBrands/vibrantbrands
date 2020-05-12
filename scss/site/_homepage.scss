@@ -63,6 +63,7 @@
 
 	h2 {
 		margin: 10px auto 40px;
+		text-shadow: 2px 2px 6px #000000;
 	}
 }
 
@@ -294,6 +295,7 @@ h2.featured {
 .click-below {
 	display: block;
 	margin-top: 20px;
+	font-size: 20px;
 }
 
 .container {
@@ -308,37 +310,6 @@ h2.featured {
 	}
 	@media only screen and (max-width: $sm-breakpoint) {
 	    width: 100%;
-	}
-}
-
-.company-description {
-	background: url('../images/icons/hp-bg.png');
-	background-size: cover;
-	margin-bottom: 50px;
-	padding: 0;
-
-	h2 {
-		margin: 0;
-		width: 1700px;
-
-		@media only screen and (max-width: $md-breakpoint) {
-			margin: 50px 0 30px;
-			width: 100%;
-		}
-	}
-	p {
-		text-align: left;
-
-		@media only screen and (max-width: $lg-breakpoint) {
-			padding: 0 25px;
-		}
-	}
-	.container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-
-		@include flex-col-layout();
 	}
 }
 
@@ -381,13 +352,13 @@ h2.featured {
 			cursor: pointer;
 			display: flex;
 			flex-direction: column;
-			height: 93%;
+			height: 94%;
 			justify-content: center;
 			left: 0;
 			opacity: 0;
 			position: absolute;
 			top: 0;
-			width: 94%;
+			width: 95%;
 			z-index: 2;
 
 			.info-bg {
@@ -426,9 +397,9 @@ h2.featured {
 
 				.cta-prompt {
 					display: flex;
-					font-size: 1.1em;
+					font-size: 20px;
 					font-weight: bold;
-					transform: translateX(20%);
+					transform: translateX(16%);
 					transition: transform .5s ease-out;
 				}
 			}	
@@ -528,7 +499,7 @@ h2.featured {
 
 	.fas {
 		color: white;
-		font-size: 2.5em;
+		font-size: 30px;
 		opacity: 0.5;
 		position: absolute;
 		top: 15px;

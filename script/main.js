@@ -17,7 +17,7 @@ $( document ).ready(function() {
 
 			vibrant_functions.startSlickSlider();
 
-			//_this.filterTheBoxes(window.location.hash);
+			this.filterTheBoxes(window.location.hash);
 
 			/*$(window).bind('scroll',function(e){
 		        var scrolled = $(window).scrollTop();
@@ -66,14 +66,18 @@ $( document ).ready(function() {
 
 		filterTheBoxes: function(hash) {
 
-			$('.service-description div').slideUp('500');
+			if(hash == '#video') {
+				window.location.href = "https://www.vibrantbrands.com/services/video-production";
+			}
+
+			/*$('.service-description div').slideUp('500');
 			$('.click-below').text('Visit the stories below to learn more.');
 
 			if(hash !== '') {
 				$('html, body').animate({
             		scrollTop: $('.service-filters').offset().top - 170
         		}, 500);
-			}
+			}*/
 
 			switch(hash) {
 				  case "#branding":
@@ -141,6 +145,18 @@ $( document ).ready(function() {
 				    // settings: "unslick"
 				    // instead of a settings object
 				  ]
+		    });
+
+		    $('.quotes').slick({
+		        autoplay: false,
+		        arrows: true,
+		        dots: true,
+		        infinite: true,
+		        slidesToShow: 1,
+		  		slidesToScroll: 1,
+		  		cssEase: "ease",
+		  		autoplaySpeed: 5000,
+		  		pauseOnFocus: true,
 		    });
 
 		}

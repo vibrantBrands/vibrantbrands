@@ -66,7 +66,7 @@
         </div>
         <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/lisefcu.html" data-lity data-lity-desc="lisefcu">
-                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/lisefcu_img-grid_web.png" alt="LISEFCU thumbnail">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/LIAFCU.jpg" alt="LISEFCU thumbnail">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Long Island State Employees FCU</h3>

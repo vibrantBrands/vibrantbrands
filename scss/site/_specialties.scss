@@ -3,23 +3,362 @@
 
 	h1 {
 		animation: movebackground 20s linear infinite alternate;
-		background: $green-gradient;
+		background: $pink-gradient;
 		background-size: 130%;
 		color: rgba(0,0,0,.1);
-		font-size: 2.2em;
+		font-size: 1em;
+		line-height: 1em;
 		background-clip: text;
 		-webkit-background-clip: text;
-		margin: 170px 0 0;
+		margin-top: 200px;
 	}
 
 	h3 {
 		text-align: center;
+		font-size: 30px;
+	}
+
+	p {
+		color: white;
+	}
+
+	&.cu {
+		background: white;
+	}
+
+	.clients {
+		p {
+			color: $white;
+		}
 	}
 }
 
-.page-type-credit-union-specialty  {
-	
+.specialty-wrapper {
+	color: black;
+	background: white;
+
+	.container {
+		width: 90%;
+
+		img {
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	a {
+		color: $icon-text-color;
+	}
+
+	p {
+		color: black;
+		text-align: left;
+	}
+
 	h1 {
+		animation: movebackground 20s linear infinite alternate;
+		background: $bluegreen-gradient;
+		background-size: 130%;
+		color: rgba(0,0,0,.1);
+		font-size: 3em;
+		line-height: 1em;
+		background-clip: text;
+		-webkit-background-clip: text;
 		margin-top: 50px;
 	}
+
+	h2 {
+		font-size: 35px;
+		text-align: center;
+	}
+
+	.page-header {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin-top: 50px;
+
+		h2 {
+			color: $icon-text-color;
+			margin: 13px 0 0 5px;
+		}
+
+		a {
+			color: $icon-text-color;
+			text-decoration: none;
+		}
+
+		img {
+			height: auto;
+			width: 50px;
+			align-self: center;
+		}
+	}
+
+	.services {
+
+		ul {
+			color: $black;
+			font-size: 1.2em;
+			list-style-type: none;
+			margin: 0;
+			padding-left: 0;
+			text-align: left;
+
+			li {
+				padding: 5px 0 5px 30px;
+				font-size: 20px;
+				height: 30px;
+				width: 100%;
+
+				&:nth-child(even) {
+					background: #eee;
+				}
+
+				&:before {
+					content: "\2022";
+					margin: 0 5px;
+				}
+			}
+		}
+
+		.container {
+			display: flex;
+			margin-top: 30px;
+
+			@include flex-col-layout();
+
+			>div {
+				width: 50%;
+
+				@include mobile-full-width($lg-breakpoint, 90%);
+			}
+
+			&.photo {
+				
+				display: block;
+
+				>div {
+					width: 100%;
+				}
+			}
+
+			.reverse-stripe {
+
+				ul {
+
+					li {
+
+						@media only screen and (max-width: $lg-breakpoint) {
+
+							&:nth-child(even) {
+								background: #fff;
+							}
+								
+							&:nth-child(odd) {
+								background: #eee;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	.process {
+		background: url('../images/specialty/cu/process.png');
+		background-size: cover;
+		padding: 80px 0;
+
+		.page-header {
+			justify-content: flex-start;
+			margin-top: 0;
+
+			h2 {
+				text-align: left;
+			}
+		}
+		
+		.container {
+			flex-direction: column;
+		}
+
+		&.branding-process {
+
+			.container {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+
+				>div {
+					margin-top: 30px;
+					width: 45%;
+
+					@include mobile-full-width($md-breakpoint, 100%);
+				}
+
+				@include flex-col-layout($md-breakpoint);
+			}
+		}
+	}
+
+	.featured {
+		padding: 30px 0;
+
+		.page-header {
+			justify-content: center;
+		}		
+
+		p {
+			text-align: center;
+		}
+	}
+
+	.clients {
+
+		p {
+			color: white;
+		}
+	}
+
+	.company-description {
+		color: white;
+		padding: 40px 0;
+
+		.container {
+
+			@media only screen and (max-width: $lg-breakpoint) {
+	    		padding-top: 50px;
+			}
+
+			h2 {
+				text-align: left;
+				width: auto;
+			}
+
+
+			>div {
+
+				&:first-child {
+					width: 30%;
+
+					@include mobile-full-width($md-breakpoint, 90%);
+				}
+				&:last-child {
+					width: 70%;
+
+					@include mobile-full-width($md-breakpoint, 90%);
+				} 
+			}
+
+			.slick-track {
+				align-items: center;
+				display: flex;
+
+				p {
+					text-align: center;
+					color: white;
+
+					span {
+						display: block;
+						margin-top: 20px;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+
+	.cu-logos {
+		img {
+			width: 100%;
+		}
+		.desktop {
+			@media only screen and (max-width: $lg-breakpoint) {
+	    		display: none;
+			}
+		}
+		.mobile {
+			@media only screen and (min-width: $lg-breakpoint) {
+	    		display: none;
+			}
+		}
+	}
+
+	.page-type-credit-union-specialty  {
+		
+		h1 {
+			margin-top: 50px;
+		}
+	}
+
+	&.video {
+
+		h1 {
+			animation: movebackground 10s linear infinite alternate;
+			background: $pinkblue-gradient;
+			background-size: 130%;
+			background-clip: text;
+			-webkit-background-clip: text;
+		}
+
+		.sizzle {
+
+			h3 {
+				position: absolute;
+				color: $white;
+				font-size: 2em;
+				bottom: 50px;
+
+				@include translate-x-center();
+			}
+		}
+
+		.video-section {
+
+			p {
+				color: $white;
+			}
+
+			>div {
+
+				.fas {
+					font-size: 80px;
+
+					@include translate-center();
+				}
+
+				&:hover {
+
+					.fas {
+						opacity: 0;
+					}
+				}
+			}
+		}
+
+		.county-fair {
+
+			.container {
+
+				.awards {
+					align-items: center;
+					display: flex;
+					justify-content: space-between;
+					padding: 30px 0;
+
+					>div {
+						width: 18%;
+					}
+				}
+
+				.county-logo {
+					width: 300px;
+				}
+			}
+		}
+	}
 }
+

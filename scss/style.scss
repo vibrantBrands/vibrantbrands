@@ -20,6 +20,8 @@
 @import "core/normalize";
 @import "core/variables";
 
+@import "site/landing";
+
 
 body.vibrant {
 	@import "core/base";
@@ -59,6 +61,14 @@ body.vibrant {
 		font-size: 1.4em;
 		margin: 10px 0 0;
 		text-align: left;
+	}
+
+	a {
+		color: $icon-text-color;
+
+		&:hover {
+			color: darken($icon-text-color, 10%);
+		}
 	}
 
 	p,
@@ -134,5 +144,39 @@ body.vibrant {
 		padding: 0;
 		position: relative;
 		width: 100%;
+	}
+
+	.company-description {
+		background: url('../images/icons/hp-bg.png');
+		background-size: cover;
+		margin-bottom: 50px;
+		padding: 0;
+
+		h2 {
+			margin: 0;
+			width: 1700px;
+
+			@media only screen and (max-width: $md-breakpoint) {
+				margin: 50px 0 30px;
+				width: 100%;
+			}
+		}
+
+		p {
+			text-align: left;
+		}
+
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			@include flex-col-layout();
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				padding: 50px 0;
+				width: 90%;
+			}
+		}
 	}
 }
