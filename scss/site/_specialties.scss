@@ -360,5 +360,55 @@
 			}
 		}
 	}
+
+	/* partners page styles */
+
+&.membership {
+
+	h2 {
+		color: $aqua-blue;
+		margin-top: 0;
+		padding-top: 50px;
+	}
+
+	.partner-logos {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 30px 0;
+
+		@media only screen and (max-width: $md-breakpoint) {
+	    	flex-direction: column;
+		}
+
+		img {
+			align-self: center;
+			height: auto;
+			justify-content: center;
+			margin: 10px;
+			width: 31%;
+
+			@media only screen and (max-width: $md-breakpoint) {
+	    		width: 100%;
+			}
+		}
+	}
+
+	.gray-bg {
+		background: $grey-bg;
+
+		.partner-logos {
+
+			div {
+				background: $white;
+
+				img {
+					width: 60%;
+				}
+			}
+		}
+
+		}
+	}
 }
 

@@ -5653,7 +5653,8 @@ body.vibrant {
     color: #FFFFFF; }
   body.vibrant .specialty-wrapper {
     color: black;
-    background: white; }
+    background: white;
+    /* partners page styles */ }
     body.vibrant .specialty-wrapper .container {
       width: 90%; }
       body.vibrant .specialty-wrapper .container img {
@@ -5836,6 +5837,33 @@ body.vibrant {
         width: 18%; }
     body.vibrant .specialty-wrapper.video .county-fair .container .county-logo {
       width: 300px; }
+    body.vibrant .specialty-wrapper.membership h2 {
+      color: #1e93b0;
+      margin-top: 0;
+      padding-top: 50px; }
+    body.vibrant .specialty-wrapper.membership .partner-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 0; }
+      @media only screen and (max-width: 768px) {
+        body.vibrant .specialty-wrapper.membership .partner-logos {
+          flex-direction: column; } }
+      body.vibrant .specialty-wrapper.membership .partner-logos img {
+        align-self: center;
+        height: auto;
+        justify-content: center;
+        margin: 10px;
+        width: 31%; }
+        @media only screen and (max-width: 768px) {
+          body.vibrant .specialty-wrapper.membership .partner-logos img {
+            width: 100%; } }
+    body.vibrant .specialty-wrapper.membership .gray-bg {
+      background: rgba(0, 0, 0, 0.1); }
+      body.vibrant .specialty-wrapper.membership .gray-bg .partner-logos div {
+        background: #FFFFFF; }
+        body.vibrant .specialty-wrapper.membership .gray-bg .partner-logos div img {
+          width: 60%; }
   body.vibrant footer {
     text-align: left; }
     body.vibrant footer a {
@@ -6194,6 +6222,16 @@ body.vibrant {
     font-family: "Josefin Sans", sans-serif; }
   body.vibrant h1 {
     font-size: 2.4em; }
+  body.vibrant h1.masked {
+    -webkit-animation: movebackground 10s linear infinite alternate;
+            animation: movebackground 10s linear infinite alternate;
+    background: linear-gradient(90deg, #c13c8d, #0BAEB9, #0BAEB9, #c13c8d);
+    background-size: 130%;
+    background-clip: text;
+    color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    -webkit-background-clip: text; }
   body.vibrant h2 {
     font-size: 2.2em;
     margin: 50px 0 10px; }

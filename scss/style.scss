@@ -52,6 +52,18 @@ body.vibrant {
 		font-size: 2.4em;
 	}
 
+	
+	h1.masked {
+		animation: movebackground 10s linear infinite alternate;
+		background: $pinkblue-gradient;
+		background-size: 130%;
+		background-clip: text;
+		color: rgba(0, 0, 0, 0.1);
+		text-align: center;
+		width: 100%;
+		-webkit-background-clip: text;
+	}
+
 	h2 {
 		font-size: 2.2em;
 		margin: 50px 0 10px;
