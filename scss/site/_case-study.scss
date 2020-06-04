@@ -148,11 +148,12 @@
 
                 h2 {
                     font-size: 1.3rem;
-                    margin: 0;
+                    margin: 20px 0 0 0;
                 }
 	
 				p {
                     line-height: 1.3;
+                    margin-bottom: 0;
 				}
 
                 ul {
@@ -160,7 +161,7 @@
                     flex-wrap: wrap;
                     font-size: 1rem;
                     padding: 0;
-                    margin: 0 0 20px;
+                    margin: 0;
 
                     @media only screen and (max-width: $md-breakpoint) {
 						flex-direction: column;
@@ -226,6 +227,18 @@
 			div {
 				min-width: 100px;
 				margin: 0 30px;
+			}
+		}
+
+		&.li-logo {
+			background: $case-study-li-blue-bg;
+			
+			img {
+				width: 800px;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					width: 90%;
+				}
 			}
 		}
 	}
@@ -326,6 +339,20 @@
         }
     }
 
+    .icon-row {
+		display: flex;
+		justify-content: space-between;
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			display: none;
+		}
+
+		img {
+			height: auto;
+			width: 120px;
+		}
+	}
+
     .website-design {
     	position: relative;
 
@@ -378,6 +405,11 @@
     		justify-content: space-between;
     		margin: 50px auto;
 
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				display: none;
+			}
+
     		img {
     			align-self: center;
     		}
@@ -427,7 +459,8 @@
     	background: gray;
     	display: flex;
     	margin: 180px 0;
-    	height: 250px;
+    	height: 270px;
+
 
     	&.belvedere-bg {
     		height: 362px;
@@ -521,6 +554,12 @@
 
 	.ad-cards {
 		margin: 150px 0;
+
+		&.innerlakes {
+			@media only screen and (max-width: $lg-breakpoint) {
+				margin-top: 260px;
+			}
+		}
 
 		.container {
 			justify-content: space-between;
@@ -724,6 +763,10 @@
 
 	.videoblock {
 		min-height: 900px;
+
+		&.long-island {
+			min-height: 0;
+		}
 	}
 
 	.vidblurb {
@@ -741,6 +784,10 @@
 
 		&.pathfinder {
 			background: $case-study-maroon;
+		}
+		&.long-island {
+			background: $case-study-li-vid-bg;
+			color: $black;
 		}
 	}
 
@@ -845,10 +892,6 @@
 			float: left;
 			width: 45%;
 			margin-right: 30px;
-
-			@media only screen and (max-width: $lg-breakpoint) {
-				width: 100%;
-			}
 		}
 
 		&.pathfinder {
@@ -859,6 +902,11 @@
 				margin: 0;
 				padding: 0;
 				width: 50%;
+
+				
+				@media only screen and (max-width: $lg-breakpoint) {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -945,9 +993,29 @@
 			width: 100%;
 		}
 	}
+	.parks-bg {
+		background: $case-study-parks-blue;
+	}
+	.li-bg {
+		background: $case-study-li-blue;
+	}
+	.li-blue-box {
+		background: $case-study-li-blue-box;
+	}
+	.li-green-box {
+		background: $case-study-li-green-box;
+	}
+	.innerlakes-bg {
+		background: $case-study-innerlakes-bg;
+		color: $white;
+		height: 350px;
 
-
-
+		@media only screen and (max-width: $lg-breakpoint) {
+			background: $white;
+			color: $case-study-innerlakes-bg;
+			margin-top: 260px;
+		}
+	}
 
 	//text colors 
 

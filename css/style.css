@@ -4532,7 +4532,7 @@ body.vibrant {
       z-index: 3; }
   body.vibrant .internal {
     background: #FFFFFF;
-    padding: 150px 0 50px; }
+    padding: 200px 0 50px; }
     body.vibrant .internal button.btn {
       background: #0BAEB9;
       border-radius: 30px;
@@ -5102,15 +5102,16 @@ body.vibrant {
             margin: 50px 0 0; }
           body.vibrant .case-study .description > div.client-info h2 {
             font-size: 1.3rem;
-            margin: 0; }
+            margin: 20px 0 0 0; }
           body.vibrant .case-study .description > div.client-info p {
-            line-height: 1.3; }
+            line-height: 1.3;
+            margin-bottom: 0; }
           body.vibrant .case-study .description > div.client-info ul {
             display: flex;
             flex-wrap: wrap;
             font-size: 1rem;
             padding: 0;
-            margin: 0 0 20px; }
+            margin: 0; }
             @media only screen and (max-width: 768px) {
               body.vibrant .case-study .description > div.client-info ul {
                 flex-direction: column; } }
@@ -5152,6 +5153,13 @@ body.vibrant {
         body.vibrant .case-study .case-study-logo.uhr div {
           min-width: 100px;
           margin: 0 30px; }
+      body.vibrant .case-study .case-study-logo.li-logo {
+        background: #E7F4F7; }
+        body.vibrant .case-study .case-study-logo.li-logo img {
+          width: 800px; }
+          @media only screen and (max-width: 992px) {
+            body.vibrant .case-study .case-study-logo.li-logo img {
+              width: 90%; } }
     @media only screen and (max-width: 992px) {
       body.vibrant .case-study .picture img {
         width: 100%;
@@ -5199,6 +5207,15 @@ body.vibrant {
           width: 60%; }
       body.vibrant .case-study .approach h2 {
         margin-top: 80px; }
+    body.vibrant .case-study .icon-row {
+      display: flex;
+      justify-content: space-between; }
+      @media only screen and (max-width: 992px) {
+        body.vibrant .case-study .icon-row {
+          display: none; } }
+      body.vibrant .case-study .icon-row img {
+        height: auto;
+        width: 120px; }
     body.vibrant .case-study .website-design {
       position: relative; }
       body.vibrant .case-study .website-design .website-design-bg {
@@ -5233,6 +5250,9 @@ body.vibrant {
 				flex-direction: column;
 				padding: 0;
 			}*/ }
+        @media only screen and (max-width: 992px) {
+          body.vibrant .case-study .website-design .icon-row {
+            display: none; } }
         body.vibrant .case-study .website-design .icon-row img {
           align-self: center; }
       body.vibrant .case-study .website-design .mobile-devices {
@@ -5261,7 +5281,7 @@ body.vibrant {
       background: gray;
       display: flex;
       margin: 180px 0;
-      height: 250px; }
+      height: 270px; }
       body.vibrant .case-study .online-marketing.belvedere-bg,
       body.vibrant .case-study .cfds-subranding.belvedere-bg {
         height: 362px; }
@@ -5327,6 +5347,9 @@ body.vibrant {
           width: 30%; }
     body.vibrant .case-study .ad-cards {
       margin: 150px 0; }
+      @media only screen and (max-width: 992px) {
+        body.vibrant .case-study .ad-cards.innerlakes {
+          margin-top: 260px; } }
       body.vibrant .case-study .ad-cards .container {
         justify-content: space-between;
         display: flex; }
@@ -5450,6 +5473,8 @@ body.vibrant {
           height: auto; }
     body.vibrant .case-study .videoblock {
       min-height: 900px; }
+      body.vibrant .case-study .videoblock.long-island {
+        min-height: 0; }
     body.vibrant .case-study .vidblurb {
       color: #FFFFFF;
       margin-top: 50px;
@@ -5460,6 +5485,9 @@ body.vibrant {
         background: #ad0875; }
       body.vibrant .case-study .vidblurb.pathfinder {
         background: #8a2332; }
+      body.vibrant .case-study .vidblurb.long-island {
+        background: #63abc7;
+        color: #000000; }
     body.vibrant .case-study .divider {
       display: flex;
       width: 100%;
@@ -5522,9 +5550,6 @@ body.vibrant {
         float: left;
         width: 45%;
         margin-right: 30px; }
-        @media only screen and (max-width: 992px) {
-          body.vibrant .case-study .half > div {
-            width: 100%; } }
       body.vibrant .case-study .half.pathfinder {
         margin: 0;
         padding: 0; }
@@ -5532,6 +5557,9 @@ body.vibrant {
           margin: 0;
           padding: 0;
           width: 50%; }
+          @media only screen and (max-width: 992px) {
+            body.vibrant .case-study .half.pathfinder > div {
+              width: 100%; } }
     body.vibrant .case-study .teal-bg {
       background: #00aab8; }
     body.vibrant .case-study .orange-bg {
@@ -5588,6 +5616,23 @@ body.vibrant {
         background-clip: text;
         -webkit-background-clip: text;
         width: 100%; }
+    body.vibrant .case-study .parks-bg {
+      background: #2cbff7; }
+    body.vibrant .case-study .li-bg {
+      background: #185a7d; }
+    body.vibrant .case-study .li-blue-box {
+      background: #416ba9; }
+    body.vibrant .case-study .li-green-box {
+      background: #71a850; }
+    body.vibrant .case-study .innerlakes-bg {
+      background: #4847b4;
+      color: #FFFFFF;
+      height: 350px; }
+      @media only screen and (max-width: 992px) {
+        body.vibrant .case-study .innerlakes-bg {
+          background: #FFFFFF;
+          color: #4847b4;
+          margin-top: 260px; } }
     body.vibrant .case-study .teal-text {
       color: #00aab8; }
     body.vibrant .case-study .orange-text {
@@ -6319,5 +6364,7 @@ body.vibrant {
         body.vibrant .company-description .container {
           padding: 50px 0;
           width: 90%; } }
+  body.vibrant .subtle-link a {
+    text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
