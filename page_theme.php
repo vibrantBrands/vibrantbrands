@@ -92,6 +92,16 @@ class PageTheme extends Theme implements ThemeProviderInterface
     {
         return [
             ['title' => t('Subtle Link'), 'menuClass' => '', 'spanClass' => 'subtle-link', 'forceBlock' => '-1'],
+            ['title' => t('Subtle Link PV'), 'menuClass' => '', 'spanClass' => 'subtle-link-pv', 'forceBlock' => '-1'],
+            ['title' => t('Subtle Link UH'), 'menuClass' => '', 'spanClass' => 'subtle-link-uh', 'forceBlock' => '-1'],
+            ['title' => t('Subtle Link Belvedere'), 'menuClass' => '', 'spanClass' => 'subtle-link-belv', 'forceBlock' => '-1'],
+            ['title' => t('Subtle Link Sunmark'), 'menuClass' => '', 'spanClass' => 'subtle-link-sunmark', 'forceBlock' => '-1'],
+            ['title' => t('Subtle Link FCA'), 'menuClass' => '', 'spanClass' => 'subtle-link-fca', 'forceBlock' => '-1'],
+            ['title' => t('Subtle Link NEPA'), 'menuClass' => '', 'spanClass' => 'subtle-link-nepa', 'forceBlock' => '-1'],
+            ['title' => t('Subtle Link SFCU'), 'menuClass' => '', 'spanClass' => 'subtle-link-sfcu', 'forceBlock' => '-1'],
+            ['title' => t('Subtle Link Gold'), 'menuClass' => '', 'spanClass' => 'subtle-link-gold', 'forceBlock' => '-1'],
+            ['title' => t('Subtle Link White'), 'menuClass' => '', 'spanClass' => 'subtle-link-white', 'forceBlock' => '-1'],
+            ['title' => t('Subtle Link Black'), 'menuClass' => '', 'spanClass' => 'subtle-link-black', 'forceBlock' => '-1'],
         ];
     }
 

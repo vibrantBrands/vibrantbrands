@@ -5030,7 +5030,8 @@ body.vibrant {
       width: 100%;
       height: auto; }
     body.vibrant .case-study .container {
-      text-align: left; }
+      text-align: left;
+      padding: 30px; }
       @media only screen and (max-width: 992px) {
         body.vibrant .case-study .container {
           width: 90%; } }
@@ -5264,10 +5265,10 @@ body.vibrant {
             flex-direction: column;
             padding: 0; } }
         body.vibrant .case-study .website-design .mobile-devices img {
-          align-self: center; }
-          @media only screen and (max-width: 992px) {
-            body.vibrant .case-study .website-design .mobile-devices img {
-              width: auto; } }
+          align-self: center;
+          /*@media only screen and (max-width: $lg-breakpoint) {
+					width: auto;
+				}*/ }
           @media only screen and (max-width: 992px) {
             body.vibrant .case-study .website-design .mobile-devices img.nepa_tablet {
               width: 100%; } }
@@ -5282,6 +5283,10 @@ body.vibrant {
       display: flex;
       margin: 180px 0;
       height: 270px; }
+      @media only screen and (max-width: 992px) {
+        body.vibrant .case-study .online-marketing,
+        body.vibrant .case-study .cfds-subranding {
+          margin: 0; } }
       body.vibrant .case-study .online-marketing.belvedere-bg,
       body.vibrant .case-study .cfds-subranding.belvedere-bg {
         height: 362px; }
@@ -5520,6 +5525,9 @@ body.vibrant {
       @media only screen and (max-width: 992px) {
         body.vibrant .case-study .cfds-logo-study {
           flex-direction: column; } }
+      @media only screen and (max-width: 992px) {
+        body.vibrant .case-study .cfds-logo-study img {
+          width: 90%; } }
     body.vibrant .case-study .cfds-slider {
       width: 350px;
       height: 150px; }
@@ -5550,6 +5558,9 @@ body.vibrant {
         float: left;
         width: 45%;
         margin-right: 30px; }
+        @media only screen and (max-width: 992px) {
+          body.vibrant .case-study .half > div {
+            width: 90%; } }
       body.vibrant .case-study .half.pathfinder {
         margin: 0;
         padding: 0; }

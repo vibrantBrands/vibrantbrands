@@ -26,6 +26,7 @@
 
     .container {
         text-align: left;
+        padding: 30px;
 
         @media only screen and (max-width: $lg-breakpoint) {
 			width: 90%;
@@ -433,9 +434,9 @@
     		img {
     			align-self: center;
 
-    			@media only screen and (max-width: $lg-breakpoint) {
+    			/*@media only screen and (max-width: $lg-breakpoint) {
 					width: auto;
-				}
+				}*/
 
 				&.nepa_tablet {
 					@media only screen and (max-width: $lg-breakpoint) {
@@ -461,6 +462,10 @@
     	margin: 180px 0;
     	height: 270px;
 
+    	@media only screen and (max-width: $lg-breakpoint) {
+			margin: 0;
+		}
+
 
     	&.belvedere-bg {
     		height: 362px;
@@ -468,7 +473,6 @@
     		@media only screen and (max-width: $lg-breakpoint) {
 				height: auto;
 			}
-
 
     		h2 {
     			margin-top: 35px;
@@ -847,6 +851,12 @@
 			flex-direction: column;
 		}
 
+		img {
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 90%;
+			}
+		}
+
 	}
 
 	.cfds-slider {
@@ -892,6 +902,10 @@
 			float: left;
 			width: 45%;
 			margin-right: 30px;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 90%;
+			}
 		}
 
 		&.pathfinder {

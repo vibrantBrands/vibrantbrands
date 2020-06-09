@@ -198,4 +198,92 @@ body.vibrant {
 			text-decoration: none;
 		}
 	}
+
+	.subtle-link-pv {
+
+		a {
+			color: #8a2332;
+			text-decoration: none;
+		}
+	}
+
+	.subtle-link-uh {
+
+		a {
+			color: #00aab8;
+			text-decoration: none;
+		}
+	}
+
+	.subtle-link-belv {
+
+		a {
+			color: #00a8d0;
+			text-decoration: none;
+		}
+	}
+
+	.subtle-link-sunmark {
+
+		a {
+			color: #FDBA30;
+			text-decoration: none;
+		}
+	}
+
+	.subtle-link-fca {
+
+		a {
+			color: #28ace2;
+			text-decoration: none;
+		}
+	}
+
+	.subtle-link-nepa {
+
+		a {
+			color: #075f2b;
+			text-decoration: none;
+		}
+	}
+
+	.subtle-link-sfcu {
+
+		a {
+			color: #89c53f;
+			text-decoration: none;
+		}
+	}
+
+	.subtle-link-white {
+
+		a {
+			color: #ffffff;
+			text-decoration: none;
+
+			&:hover {
+				color: #cccccc;
+			}
+		}
+	}
+
+	.subtle-link-black {
+
+		a {
+			color: #000104;
+			text-decoration: none;
+
+			&:hover {
+				color: #000000;
+			}
+		}
+	}
+
+	.subtle-link-gold {
+
+		a {
+			color: #C79112;
+			text-decoration: none;
+		}
+	}
 }
