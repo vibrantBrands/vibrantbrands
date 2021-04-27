@@ -3,12 +3,19 @@
 <?php $this->inc('elements/header.php'); ?>
 
 <div class="case-study about">
-   <section class="hero">
-      <?php
-         $a = new Area('Hero Image');
-         $a->display($c);
-   ?>
-   </section>
+   <section class="hero-video">
+        <div class="textbox">
+               <?php
+                     $a = new Area('Header Text');
+                     $a->display($c);
+               ?>
+        </div>
+        <div class="video-container">
+            <video muted autoplay>
+                <source src="<?php echo $this->getThemePath(); ?>/video/Vibrant_About.mp4" type="video/mp4"> Your browser does not support the video tag.
+            </video>
+        </div>
+</section>
    <?php
          $a = new Area('First Section');
          $a->display($c);

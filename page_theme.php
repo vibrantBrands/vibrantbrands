@@ -102,6 +102,9 @@ class PageTheme extends Theme implements ThemeProviderInterface
             ['title' => t('Subtle Link Gold'), 'menuClass' => '', 'spanClass' => 'subtle-link-gold', 'forceBlock' => '-1'],
             ['title' => t('Subtle Link White'), 'menuClass' => '', 'spanClass' => 'subtle-link-white', 'forceBlock' => '-1'],
             ['title' => t('Subtle Link Black'), 'menuClass' => '', 'spanClass' => 'subtle-link-black', 'forceBlock' => '-1'],
+            ['title' => t('Animated Text'), 'menuClass' => '', 'spanClass' => 'animated-text', 'forceBlock' => '1'],
+            ['title' => t('Blue Text'), 'menuClass' => '', 'spanClass' => 'blue', 'forceBlock' => '-1'],
+            ['title' => t('Green Text'), 'menuClass' => '', 'spanClass' => 'green', 'forceBlock' => '-1'],
         ];
     }
 

@@ -15,7 +15,7 @@
     </div>
     <section class="clients">
         <div>
-            <a href="/case-studies/cfds">
+            <a href="/featured-work/cfds">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/cfds-hmpg-img-grid3.png" alt="CDFS Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -26,7 +26,7 @@
             </a>
         </div>
         <div>
-            <a href="/case-studies/belvedere">
+            <a href="/featured-work/belvedere">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/belvedere-hmpg-img-grid.png" alt="Belvedere Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -37,7 +37,7 @@
             </a>
         </div>
         <div>
-            <a href="/case-studies/sunmark">
+            <a href="/featured-work/sunmark">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/sunmark_thumbnail.png" alt="Sunmark Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -48,7 +48,7 @@
             </a>
         </div>
         <div>
-            <a href="/case-studies/united-hospice-rockland">
+            <a href="/featured-work/united-hospice-rockland">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/uhr_thumbnail.png" alt="United Hospice Of Rockland Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -59,7 +59,7 @@
             </a>
         </div>
         <div>
-            <a href="/case-studies/fca-case-study">
+            <a href="/featured-work/fca-case-study">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/fca-hmpg-img-grid.png" alt="Fca Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -70,7 +70,7 @@
             </a>
         </div>
         <div>
-            <a href="/case-studies/ne-pa">
+            <a href="/featured-work/ne-pa">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/Vibrant_nepa-thumbs_mcl082019.jpeg" alt="NEPA Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -81,7 +81,7 @@
             </a>
         </div>
         <div>
-            <a href="/case-studies/sfcu">
+            <a href="/featured-work/sfcu-case-study">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/sfcu_thumbnail.png" alt="Sfcu Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -92,7 +92,7 @@
             </a>
         </div>
         <div>
-            <a href="/case-studies/pathfinder">
+            <a href="/featured-work/pathfinder">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/Vibrant_pathfinder-thumbs_mcl082019.jpeg" alt="Pathfinder Case Study">
                 <div class="info">
                     <div class="info-bg"></div>

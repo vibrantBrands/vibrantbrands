@@ -69,3 +69,45 @@
 		}
 	}
 }
+
+.project-description {
+	background: $white;
+	color: $black;
+	padding-top: 150px;
+
+	.content {
+		padding-bottom: 50px;
+	}
+
+	.clients {
+		width: 90%;
+
+		>div {
+			max-height: 260px;
+			margin: 5px 0px !important;
+			max-width: none !important;
+
+			@media only screen and (max-width: $xl-breakpoint) {
+				max-height: 200px;
+			}
+			@media only screen and (max-width: $lg-breakpoint) {
+				max-height: none;
+			}
+		}
+	}
+
+	.vid-row {
+		display: flex;
+		max-width: none !important;
+
+		@include flex-col-layout();
+
+		>div {
+			width: 90%;
+			margin-top: 30px;
+
+			@include mobile-full-width();
+		}
+	}
+
+}

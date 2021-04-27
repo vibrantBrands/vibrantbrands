@@ -4,10 +4,10 @@
 
 <div class="container specialties website">
     <div>
-        <h1>Website development.</h1>
-        <p>Your digital presence is crucial in delivering your branding. Vibrant Brands creates websites that deliver value. Our website design services are second to none, but a Vibrant website is much more than just visually attractive. We create websites that are engaging, informative, and consistent with your overall branding strategy. When you ask why your website is important, the answer is the Vibrant difference. </p>
-        <h3>Services Include:</h3>
-        <p>Website Design, Social Media Strategy & Training, Online Marketing (AdWords), Google Grant Administration, Search Engine Optimization (SEO), ADA Compliance, Online Store Setup, Responsive Design</p>
+        <?php
+            $a = new Area('Content');
+            $a->display($c);
+        ?> 
         <small class="click-below">Visit the stories below to learn more.</small>
         <p>
             <i class="fas fa-arrow-down"></i>

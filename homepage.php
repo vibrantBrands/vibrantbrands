@@ -4,12 +4,12 @@
 
 <section class="hero-video">
         <div class="textbox">
-            <h1>Work Toward the Future.</h1>
-            <h2>Stay strong, be kind and make progress.</h2>
+            <h1>Let's Spark Something Incredible</h1>
+            <h2>Connect your brand with your audience</h2>
         </div>
         <div class="video-container">
-            <video muted autoplay loop>
-                <source src="<?php echo $this->getThemePath(); ?>/video/VibrantBrands.mp4" type="video/mp4"> Your browser does not support the video tag.
+            <video muted autoplay>
+                <source src="<?php echo $this->getThemePath(); ?>/video/VB_Header.mp4" type="video/mp4"> Your browser does not support the video tag.
             </video>
         </div>
 </section>
@@ -17,7 +17,10 @@
 
 <div class="container">
     <section class="services">
-        <h2>What We Do</h2>
+        <?php
+            $a = new Area('Header Text');
+            $a->display($c);
+        ?>  
         <div class="icons">
             <div>
                 <a href="/services/brand-development">
@@ -57,17 +60,22 @@
 
     <section class="company-description">
         <div class="container">
-            <h2>Vibrant Brands</h2>
-            <p>Vibrant Brands delivers full-service branding and marketing services. Founded in 2002, Vibrant Brands implements branded solutions that get results. More than just websites. More than advertising campaigns. Vibrant Brands combines all of these and more, bringing your organization to life. Put our experience in branding, marketing, and digital design to work for you, and experience the power of branding for good.</p>
+            <?php
+                $a = new Area('Company Description Text');
+                $a->display($c);
+            ?>  
         </div>       
     </section>
 
 <div class="container">
-     <h2 class="featured">Featured Work</h2>
-     <p>Visit the stories below to learn more.</p>
+    <?php
+        $a = new Area('Case Studies Text');
+        $a->display($c);
+    ?>  
+
     <section class="clients">
         <div>
-            <a href="/case-studies/cfds">
+            <a href="/featured-work/cfds">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/cfds-hmpg-img-grid3.png" alt="CDFS Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -78,7 +86,7 @@
             </a>
         </div>
         <div>
-            <a href="/case-studies/belvedere">
+            <a href="/featured-work/belvedere">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/belvedere-hmpg-img-grid.png" alt="Belvedere Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -89,7 +97,7 @@
             </a>
         </div>
     	<div>
-            <a href="/case-studies/sunmark">
+            <a href="/featured-work/sunmark">
         		<img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/sunmark_thumbnail.png" alt="Sunmark Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -100,7 +108,7 @@
             </a>
     	</div>
     	<div>
-            <a href="/case-studies/united-hospice-rockland">
+            <a href="/featured-work/united-hospice-rockland">
         		<img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/uhr_thumbnail.png" alt="United Hospice Of Rockland Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -111,7 +119,7 @@
             </a>
     	</div>
     	<div>
-            <a href="/case-studies/fca-case-study">
+            <a href="/featured-work/fca-case-study">
         		<img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/fca-hmpg-img-grid.png" alt="Fca Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -122,7 +130,7 @@
             </a>
     	</div>
     	<div>
-            <a href="/case-studies/ne-pa">
+            <a href="/featured-work/ne-pa">
         		<img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/Vibrant_nepa-thumbs_mcl082019.jpeg" alt="NEPA Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -133,7 +141,7 @@
             </a>
     	</div>
     	<div>
-            <a href="/case-studies/sfcu">
+            <a href="/featured-work/sfcu-case-study">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/sfcu_thumbnail.png" alt="Sfcu Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -144,7 +152,7 @@
             </a>
         </div>
         <div>
-            <a href="/case-studies/pathfinder">
+            <a href="/featured-work/pathfinder">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/Vibrant_pathfinder-thumbs_mcl082019.jpeg" alt="Pathfinder Case Study">
                 <div class="info">
                     <div class="info-bg"></div>

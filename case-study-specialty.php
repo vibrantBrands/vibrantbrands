@@ -50,7 +50,7 @@
         <section class="clients">
         <div>
             <a href="/case-studies/sfcu">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/sunmark_thumbnail.png" alt="Sfcu Case Study">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/sunmark_thumbnail.png" alt="SFCU Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>sfcu</h3>
@@ -82,7 +82,7 @@
             </a>
         </div>
         <div>
-            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/LIAFCU.html" data-lity data-lity-desc="Solutions">
+            <a href="/featured-work/long-island-alliance">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/LIAFCU.jpg" alt="Solutions">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -92,7 +92,7 @@
             </a>
         </div>
         <div>
-            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/parks-heritage.html" data-lity data-lity-desc="Parks Heritage">
+            <a href="/featured-work/parks-heritage">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/parks.png" alt="Parks Heritage">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -101,12 +101,12 @@
                 </div>
             </a>
         </div>
-        <div>
-            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/northern.html" data-lity data-lity-desc="Northern">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/northern-thumb.png" alt="Northern FCU">
+         <div>
+            <a href="/featured-work/inner-lakes-fcu">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/inner-lake.jpg" alt="Inner Lakes FCU">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Northern</h3>
+                    <h3>Inner Lakes FCU</h3>
                     <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
@@ -116,8 +116,29 @@
 
     <section class="cu-logos" data-aos="fade-up">
         <div class="container">
-            <img src="<?php echo $this->getThemePath(); ?>/images/specialty/cu/sponsors.png" alt="Sponsors" class="desktop">
-             <img src="<?php echo $this->getThemePath(); ?>/images/specialty/cu/sponsors-mobile.png" alt="Sponsors" class="mobile">
+             <?php
+              $fs = FileSet::getByName('Credit Union Logos');
+              $fl = new FileList();
+              $fl->filterBySet($fs);
+              $fl->sortBy('fsDisplayOrder', 'asc');
+              $files = $fl->get();
+             
+              foreach($files as $f) {
+                $imagepath = $f->getRelativePath();
+                $description = $f->getDescription(); ?>
+                
+                <div>
+                <?php if($description == ''): ?>
+                    <img src='<?php echo $imagepath; ?>' />
+                <?php else: ?>
+    
+                <a href='<?php echo $description; ?>' target='_blank'>
+                    <img src='<?php echo $imagepath; ?>' />
+                </a>
+                <?php endif; ?>
+                </div>
+          <?php }
+        ?>
         </div>
     </section>
 

@@ -1,3 +1,111 @@
 .nav {
-	text-align: left;
+    text-align: left;
+}
+
+.animated-text {
+    @include moving-masked-text();
+    text-align: center;
+}
+
+.company-description {
+    color: white;
+    padding: 40px 0;
+
+    .container {
+        flex-direction: column;
+        padding: 50px 0;
+
+        @media only screen and (max-width: $lg-breakpoint) {
+            padding-top: 50px;
+        }
+
+        h2 {
+            text-align: left;
+            width: auto;
+        }
+
+
+        >div {
+
+            &:first-child {
+                width: 30%;
+
+                @include mobile-full-width($md-breakpoint, 90%);
+            }
+
+            &:last-child {
+                width: 70%;
+
+                @include mobile-full-width($md-breakpoint, 90%);
+            }
+        }
+
+        .slick-track {
+            align-items: center;
+            display: flex;
+
+            p {
+                text-align: center;
+                color: white;
+
+                span {
+                    display: block;
+                    margin-top: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.col2 {
+    display: flex;
+
+    @include flex-col-layout();
+
+    >div {
+        width: 50%;
+
+        @include mobile-full-width();
+
+        ul {
+            //border: 1px solid white;
+            list-style-type: none;
+            padding-left: 0;
+
+            li {
+                padding: 5px 10%;
+                width: 80%;
+
+                &:nth-child(even) {
+                    background: rgba(0, 0, 0, .3);
+                }
+            }
+        }
+    }
+}
+
+.striped-table {
+
+    li {
+        list-style-type: none;
+        padding: 5px 28%;
+        width: 44%;
+
+
+        @media only screen and (max-width: $lg-breakpoint) {
+            width: 90%;
+            padding: 5px 3%;
+        }
+
+        &:nth-child(even) {
+            background: #eee;
+        }
+    }
+}
+
+.mobile-full-width {
+    @media only screen and (max-width: $xl-breakpoint) {
+            width: 100%;
+        }
 }

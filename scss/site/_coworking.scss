@@ -1,0 +1,181 @@
+
+.coworking {
+
+	.container {
+		@media only screen and (max-width: $lg-breakpoint) {
+	    	width: 90%;
+		}
+	}
+
+	.hero {
+		background: url('../images/cowork/cowork-hero.jpg');
+		background-size: cover;
+		padding: 200px 0;
+
+		.container {
+			text-align: left;
+
+			p {
+				width: 600px;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+	    			width: 90%;
+				}
+			}
+
+			button {
+				background: #f13346;
+				border: none;
+				border-radius: 6px;
+				color: #fff;
+				cursor: pointer;
+				outline: none;
+				padding: 15px 30px;
+
+				&:hover {
+					background: darken(#f13346, 10%);
+				}
+			}
+		}
+	}
+
+	.content {
+		background: url('../images/cowork/cowork-bg.png');
+		background-size: cover;
+		padding: 40px 0;
+
+		h1 {
+			margin-top: 80px;
+		}
+
+		.row {
+			display: flex;
+			justify-content: space-between;
+
+			@include flex-col-layout();
+
+			>img {
+				align-self: center;
+				margin-top: 30px;
+				width: 24%;
+
+				@include mobile-full-width();
+			}
+
+			>div {
+				padding: 10px;
+				width: 20%;
+
+				@include mobile-full-width();
+
+				p {
+					font-size: 1em;
+					text-align: center;
+				}
+
+				>div {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+					min-height: 100px;
+					
+					>img {
+						max-height: 100px;
+						width: 50%;
+
+						@media only screen and (max-width: $lg-breakpoint) {
+					    	width: auto;
+						}
+					} 	
+				}
+			}
+
+			&.two-col {
+
+				@include flex-col-layout();
+
+				div {
+					width: 47%;
+					@include mobile-full-width($lg-breakpoint, 95%);
+
+					img {
+						width: 100%;
+					}
+				}
+			}
+
+			&.prices {
+				justify-content: space-between;
+
+				>div {
+					align-items: center;
+					border: 3px solid #CCC;
+					color: #000;
+					display: flex;
+					flex-direction: column;
+					height: 350px;
+					justify-content: center;
+					margin-top: 40px;
+					width: 30%;
+
+					@include mobile-full-width($lg-breakpoint, 95%);
+
+					&:first-child {
+						background: url('../images/cowork/dedicated.png');
+						background-size: cover;
+					}
+					&:nth-child(2) {
+						background: url('../images/cowork/floating.png');
+						background-size: cover;
+					}
+					&:nth-child(3) {
+						background: url('../images/cowork/tour-bg.png');
+						background-size: cover;
+					}
+
+					span {
+						font-size: 2.4em;
+						font-weight: 100;
+					}
+
+					h2 {
+						color: #27b0cd;
+						font-size: 1.4em;
+						margin-top: 0;
+					}
+
+					.book {
+						align-items: center;
+						border: 3px solid #CCC;
+						font-size: 1.4em;
+						color: #27b0cd;
+						display: flex;
+						width: 80%;
+						height: 80px;
+						background: rgba(255,255,255,0.5);
+
+						a {
+							text-decoration: none;
+						}
+
+						.far {
+							margin-left: 5px;
+						}
+
+					}
+				}
+			}
+		}
+
+		h1 {
+			@include moving-masked-text();
+		}
+
+		p {
+			color: #000;
+			text-align: left;
+		}
+	}
+
+}
+

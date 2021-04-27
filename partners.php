@@ -32,10 +32,19 @@
 			 
 			  foreach($files as $f) {
 			    $downloadpath = $f->getDownloadURL();
-			    $imagepath = $f->getRelativePath(); ?>
+			    $imagepath = $f->getRelativePath();
+			    $description = $f->getDescription();
+
+			    if($description == ''): ?>
+						<img src='<?php echo $imagepath; ?>' />
+			    <?php else: ?>
+	
+			    <a href='<?php echo $description; ?>' target='_blank'>
 			        <img src='<?php echo $imagepath; ?>' />
-	  		<?php }
-		?>
+			    </a>
+			    <?php endif; ?>
+	  <?php }
+	?>
 	  </div>
 
   <div class="border"></div>
@@ -54,10 +63,19 @@
 			 
 			  foreach($files as $f) {
 			    $downloadpath = $f->getDownloadURL();
-			    $imagepath = $f->getRelativePath(); ?>
+			    $imagepath = $f->getRelativePath();
+			    $description = $f->getDescription();
+
+			    if($description == ''): ?>
+						<img src='<?php echo $imagepath; ?>' />
+			    <?php else: ?>
+	
+			    <a href='<?php echo $description; ?>' target='_blank'>
 			        <img src='<?php echo $imagepath; ?>' />
-	  		<?php }
-			?>
+			    </a>
+			    <?php endif; ?>
+	  	<?php }
+		?>
   	</div>
   </div>
 
@@ -78,8 +96,17 @@
 			 
 			  foreach($files as $f) {
 			    $downloadpath = $f->getDownloadURL();
-			    $imagepath = $f->getRelativePath(); ?>
+			    $imagepath = $f->getRelativePath();
+			    $description = $f->getDescription();
+
+			    if($description == ''): ?>
+						<img src='<?php echo $imagepath; ?>' />
+			    <?php else: ?>
+	
+			    <a href='<?php echo $description; ?>' target='_blank'>
 			        <img src='<?php echo $imagepath; ?>' />
+			    </a>
+			    <?php endif; ?>
 	  <?php }
 	?>
 	      
@@ -103,8 +130,17 @@
 			 
 			  foreach($files as $f) {
 			    $downloadpath = $f->getDownloadURL();
-			    $imagepath = $f->getRelativePath(); ?>
+			    $imagepath = $f->getRelativePath();
+			    $description = $f->getDescription();
+
+			    if($description == ''): ?>
+						<img src='<?php echo $imagepath; ?>' />
+			    <?php else: ?>
+	
+			    <a href='<?php echo $description; ?>' target='_blank'>
 			        <img src='<?php echo $imagepath; ?>' />
+			    </a>
+			    <?php endif; ?>
 	  <?php }
 	?>
   	</div>
@@ -126,8 +162,17 @@
 			 
 			  foreach($files as $f) {
 			    $downloadpath = $f->getDownloadURL();
-			    $imagepath = $f->getRelativePath(); ?>
+			    $imagepath = $f->getRelativePath();
+			    $description = $f->getDescription();
+
+			    if($description == ''): ?>
+						<img src='<?php echo $imagepath; ?>' />
+			    <?php else: ?>
+	
+			    <a href='<?php echo $description; ?>' target='_blank'>
 			        <img src='<?php echo $imagepath; ?>' />
+			    </a>
+			    <?php endif; ?>
 	  <?php }
 	?>
   </div>
@@ -148,8 +193,17 @@
 			 
 			  foreach($files as $f) {
 			    $downloadpath = $f->getDownloadURL();
-			    $imagepath = $f->getRelativePath(); ?>
+			    $imagepath = $f->getRelativePath();
+			    $description = $f->getDescription();
+
+			    if($description == ''): ?>
+						<img src='<?php echo $imagepath; ?>' />
+			    <?php else: ?>
+	
+			    <a href='<?php echo $description; ?>' target='_blank'>
 			        <img src='<?php echo $imagepath; ?>' />
+			    </a>
+			    <?php endif; ?>
 	  <?php }
 	?>
   	</div>

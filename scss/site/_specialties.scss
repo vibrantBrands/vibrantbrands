@@ -108,7 +108,7 @@
 			li {
 				padding: 5px 0 5px 30px;
 				font-size: 20px;
-				height: 30px;
+				min-height: 30px;
 				width: 100%;
 
 				&:nth-child(even) {
@@ -163,6 +163,10 @@
 				}
 			}
 		}
+	}
+
+	.slick-slide {
+		height: auto;
 	}
 
 
@@ -223,68 +227,26 @@
 		}
 	}
 
-	.company-description {
-		color: white;
-		padding: 40px 0;
+	.cu-logos {
+		margin-bottom: 50px;
 
 		.container {
-
-			@media only screen and (max-width: $lg-breakpoint) {
-	    		padding-top: 50px;
-			}
-
-			h2 {
-				text-align: left;
-				width: auto;
-			}
-
+			display: flex;
+			flex-wrap: wrap;
 
 			>div {
-
-				&:first-child {
-					width: 30%;
-
-					@include mobile-full-width($md-breakpoint, 90%);
-				}
-				&:last-child {
-					width: 70%;
-
-					@include mobile-full-width($md-breakpoint, 90%);
-				} 
-			}
-
-			.slick-track {
 				align-items: center;
 				display: flex;
+				flex: 0 1 25%;
+				justify-content: center;
+				margin-top: 20px;
 
-				p {
-					text-align: center;
-					color: white;
-
-					span {
-						display: block;
-						margin-top: 20px;
-						font-weight: bold;
-					}
+				img {
+					width: 60%;
 				}
 			}
 		}
-	}
 
-	.cu-logos {
-		img {
-			width: 100%;
-		}
-		.desktop {
-			@media only screen and (max-width: $lg-breakpoint) {
-	    		display: none;
-			}
-		}
-		.mobile {
-			@media only screen and (min-width: $lg-breakpoint) {
-	    		display: none;
-			}
-		}
 	}
 
 	.page-type-credit-union-specialty  {
@@ -381,15 +343,27 @@
 	    	flex-direction: column;
 		}
 
-		img {
+		img, a {
 			align-self: center;
 			height: auto;
 			justify-content: center;
-			margin: 10px;
 			width: 31%;
 
 			@media only screen and (max-width: $md-breakpoint) {
 	    		width: 100%;
+			}
+		}
+
+		img {
+			margin: 10px;
+		}
+
+		a {
+			margin: 0 10px;
+
+			>img {
+				margin: 0;
+				width: 100%;
 			}
 		}
 	}

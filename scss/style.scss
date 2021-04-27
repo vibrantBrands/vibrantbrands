@@ -2,6 +2,7 @@
 
 // Font Awesome
 @import "fontawesome/fontawesome.scss";
+@import "fontawesome/fa-regular.scss";
 @import "fontawesome/fa-solid.scss";
 @import "fontawesome/fa-brands.scss";
 
@@ -30,6 +31,7 @@ body.vibrant {
 	@import "site/homepage";
 	@import "site/case-study";
 	@import "site/specialties";
+	@import "site/coworking";
 	@import "site/footer";
 	@import "site/about";
 	@import "site/blog";
@@ -52,7 +54,6 @@ body.vibrant {
 		font-size: 2.4em;
 	}
 
-	
 	h1.masked {
 		animation: movebackground 10s linear infinite alternate;
 		background: $pinkblue-gradient;
@@ -88,6 +89,14 @@ body.vibrant {
 		font-size: $text-font-size;
 	}
 
+	.blue {
+		color: $blue-header;
+	}
+
+	.green {
+		color: $green-text;
+		font-weight: bold;
+	}
 
 	.logo {
 			display: flex;

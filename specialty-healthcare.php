@@ -1,4 +1,4 @@
-j<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
+<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 <?php $this->inc('elements/header.php'); ?>
 
@@ -50,8 +50,57 @@ j<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
     <div class="container">
     <section class="video-section">
         <div>
+            <a href="/featured-work/fca-case-study">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/fca-hmpg-img-grid.png" alt="Fca Case Study">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>FCA</h3>
+                    <p>"Thanks to Vibrant, FCA has an overall broader impact."</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="/featured-work/pathfinder">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/Vibrant_pathfinder-thumbs_mcl082019.jpeg" alt="Pathfinder Case Study">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Pathfinder Village</h3>
+                    <p>"We have been able to reach more people than ever before and truly build our awareness."</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="/featured-work/united-hospice-rockland">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/uhr_thumbnail.png" alt="United Hospice Of Rockland Case Study">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>United Hospice</h3>
+                    <p>"Vibrant’s work helped us resonate with the community and deliver our mission"</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="/featured-work/cfds">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/Vibrant_cfds-thumbs_mcl082019.jpeg" alt="CDFS Case Study">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Center for Disability Services</h3>
+                    <p>"Vibrant helped us broadcast our message in a modern way, leading to amazing new opportunities for the future."</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="/featured-work/belvedere">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/belvedere-hmpg-img-grid.png" alt="Belvedere">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Belvedere</h3>
+                </div>
+            </a>
+        </div>
+        <!-- 
+        <div>
             <a href="<?php echo $this->getThemePath(); ?>/images/specialty/healthcare/sjh.pdf" data-lity data-lity-desc="St. John's Episcopal Hospital">
-                <!-- <i class="fas fa-play-circle"></i>  -->
                 <img src="<?php echo $this->getThemePath(); ?>/images/specialty/healthcare/deputy-grand-marshall.png" alt="Deputy Grand Marshall">
                 <div class="info">
                     <div class="info-bg"></div>
@@ -74,15 +123,6 @@ j<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Sunnyview</h3>
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="<?php echo $this->getThemePath(); ?>/images/specialty/healthcare/belvedere.jpg-2" data-lity data-lity-desc="Belvedere">
-                <img src="<?php echo $this->getThemePath(); ?>/images/specialty/healthcare/men.png" alt="Belvedere">
-                <div class="info">
-                    <div class="info-bg"></div>
-                    <h3>Belvedere</h3>
                 </div>
             </a>
         </div>
@@ -132,15 +172,39 @@ j<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
                     <h3>St. John's Card</h3>
                 </div>
             </a>
-        </div>
+        </div> -->
     </section>
     </div>
 
     <div class="border"></div>
 
-    <div class="container">
-        <img src="<?php echo $this->getThemePath(); ?>/images/specialty/healthcare/hc-clients.png" alt="Deputy Grand Marshall">
-    </div>
+    <section class="cu-logos" data-aos="fade-up">
+        <div class="container">
+             <?php
+              $fs = FileSet::getByName('Healthcare Logos');
+              $fl = new FileList();
+              $fl->filterBySet($fs);
+              $fl->sortBy('fsDisplayOrder', 'asc');
+              $files = $fl->get();
+             
+              foreach($files as $f) {
+                $imagepath = $f->getRelativePath();
+                $description = $f->getDescription(); ?>
+                
+                <div>
+                <?php if($description == ''): ?>
+                    <img src='<?php echo $imagepath; ?>' />
+                <?php else: ?>
+    
+                <a href='<?php echo $description; ?>' target='_blank'>
+                    <img src='<?php echo $imagepath; ?>' />
+                </a>
+                <?php endif; ?>
+                </div>
+          <?php }
+        ?>
+        </div>
+    </section>
 
     <section class="company-description">
         <div class="container">
