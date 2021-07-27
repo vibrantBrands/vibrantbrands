@@ -15,6 +15,75 @@
     </div>
    <section class="website-section">  
         <div>
+            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/airport.html" data-lity data-lity-desc="Albany Airport">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/airport.png" alt="Albany Airport">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Albany Airport</h3>
+                    <p>The Vibrant team helped the airport take off, with a new look and messaging that aligns with convenience, safety, and innovation.</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/northeastern.html" data-lity data-lity-desc="Albany Airport">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/northeastern.jpeg" alt="Northeastern Insurance">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Northeastern Insurance</h3>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/sunmark.html" data-lity data-lity-desc="Sunmark">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/sunmark.png" alt="Sunmark">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Sunmark</h3>
+                    <p>"With Vibrant, we're separating ourselves from the pack and growing."</p>
+                </div>
+            </a>
+        </div>
+         <div>
+            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/usjha.html" data-lity data-lity-desc="USJHA">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/usjha.png" alt="USJHA thumbnail">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>USJHA</h3>
+                    <p></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/jolt.html" data-lity data-lity-desc="Jolt">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/jolt.png" alt="Jolt">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Jolt</h3>
+                    <p></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/belvedere.html" data-lity data-lity-desc="Belvedere">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/belvedere.png" alt="Belvedere">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Belvedere</h3>
+                    <p>"Vibrant always provides insights into marketing and positioning that we didn’t even know we should be paying attention to."</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/stcr.html" data-lity data-lity-desc="STCR">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/stcr.png" alt="STCR">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>STCR</h3>
+                    <p></p>
+                </div>
+            </a>
+        </div>
+        <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/pathfinder-village.html" data-lity data-lity-desc="Pathfinder Village">
                 <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/pv_img-grid_web.png" alt="Pathfinder Village thumbnail">
                 <div class="info">
@@ -55,16 +124,6 @@
             </a>
         </div>
         <div>
-           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/nonotuck.html" data-lity data-lity-desc="Nonotuck">
-                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/nonotuck_img-grid_web.png" alt="nonotuck thumbnail">
-                <div class="info">
-                    <div class="info-bg"></div>
-                    <h3>Nonotuck</h3>
-                    <p>"Vibrant built a great-looking website, but, more importantly, they helped us deliver our caregiving with love to more people in the communities we serve."</p>
-                </div>
-            </a>
-        </div>
-        <div>
            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/lisefcu.html" data-lity data-lity-desc="lisefcu">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/LIAFCU.jpg" alt="LISEFCU thumbnail">
                 <div class="info">
@@ -95,12 +154,12 @@
             </a>
         </div>
         <div>
-           <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/solutions.html" data-lity data-lity-desc="Solutions">
-                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/solutions_img-grid_web.png" alt="Solutions thumbnail">
+            <a href="<?php echo $this->getThemePath(); ?>/images/screenshots/nepa.html" data-lity data-lity-desc="NEPA">
+                <img src="<?php echo $this->getThemePath(); ?>/images/screen-thumbs/nepa.png" alt="NEPA thumbnail">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Solutions</h3>
-                    <p>"Convenience and accuracy are important to our members. Vibrant helped us create a website that makes banking with Solutions Credit Union easier."</p>
+                    <h3>NEPA</h3>
+                    <p>"With their support, we can focus on what we do best - serving our members."</p>
                 </div>
             </a>
         </div>

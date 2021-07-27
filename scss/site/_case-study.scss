@@ -7,11 +7,17 @@
 
     h1 {
     	font-size: $case-study-h1;
+    	margin-top: 40px;
     }
 
     h2 {
     	font-size: $case-study-h2;
     }
+
+    h3 {
+    	font-size: 24px;
+    }
+    
     ul {
     	font-size: 20px;
     }
@@ -26,7 +32,7 @@
 
     .container {
         text-align: left;
-        padding: 30px;
+        padding: 0 30px;
 
         @media only screen and (max-width: $lg-breakpoint) {
 			width: 90%;
@@ -97,6 +103,15 @@
 			}
 		}
 
+		&.cc-bg {
+			.tagline {
+				background: $case-study-cc-bg;
+			}
+			.client-info {
+				background: $case-study-lt-gray;
+			}
+		}
+
 		>div {
 			display: flex;
 			align-items: center;
@@ -114,11 +129,12 @@
 			}
 
 			&.tagline {
-				justify-content: center;
 				font-family: $header-font;
-				padding: 50px;
 				font-size: 2.8rem;
 				font-weight: 700;
+				justify-content: center;
+				line-height: 1.1em;
+				padding: 50px;
 
 				&.light-green {
 					background: $light-green;
@@ -132,14 +148,18 @@
 
 				@media only screen and (max-width: $lg-breakpoint) {
 					width: 90%;
-					padding: 50px;
+					padding: 20px 50px 50px;
+				}
+
+				@media only screen and (max-width: $md-breakpoint) {
+					width: 80%;
 				}
 			}
 
 			&.client-info {
 				color: $text-color;
 				font-family: $text-font;
-				padding: 20px 60px;
+				padding: 50px;
 				align-items: flex-start;
 				flex-direction: column;
 
@@ -246,6 +266,16 @@
 
 				@media only screen and (max-width: $lg-breakpoint) {
 					width: 90%;
+				}
+			}
+		}
+
+		&.st-peters{
+			img {
+				width: 600px;
+
+				@media only screen and (max-width: $md-breakpoint) {
+					width: 100%;
 				}
 			}
 		}
@@ -374,6 +404,11 @@
     			width: 100%;
     			height: auto;
     		}
+
+    		&.cc {
+    			background: url('../images/case-studies/ccag/website-bg.png');
+    			background-size: cover;
+    		}	
     	}
 
     	&.pathfinder {
@@ -442,9 +477,9 @@
     		img {
     			align-self: center;
 
-    			/*@media only screen and (max-width: $lg-breakpoint) {
-					width: auto;
-				}*/
+    			&.phone {
+    				max-width: 232px;
+    			}
 
 				&.nepa_tablet {
 					@media only screen and (max-width: $lg-breakpoint) {
@@ -470,10 +505,13 @@
     	margin: 180px 0;
     	height: 270px;
 
+    	h2 {
+    		margin-top: 20px;
+    	}
+
     	@media only screen and (max-width: $lg-breakpoint) {
 			margin: 0;
 		}
-
 
     	&.belvedere-bg {
     		height: 362px;
@@ -485,6 +523,16 @@
     		h2 {
     			margin-top: 35px;
     		}
+    	}
+
+    	&.airport-bg {
+    		color: white;
+    		background: #131243;
+    		margin: 0;
+
+    		@media only screen and (max-width: $lg-breakpoint) {
+				color: #131243;
+			}
     	}
 
 
@@ -573,6 +621,14 @@
 			}
 		}
 
+		&.cc {
+			margin: 30px 0;
+
+			img {
+				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			}
+		}
+
 		.container {
 			justify-content: space-between;
 			display: flex;
@@ -599,6 +655,15 @@
 					}
 				}
 			}
+		}
+	}
+
+	.cc-adcards {
+
+		img {
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			margin-top: 30px;
+			width: 95%;
 		}
 	}
 
@@ -761,6 +826,37 @@
 				margin-top: 60px;
 			}
 		}
+
+		&.cc {
+			justify-content: space-between;
+			padding: 25px 0 50px;
+
+			img {
+				margin-top: 25px;
+			}
+		}
+
+		&.albany-airport {
+			padding: 0;
+			align-items: center;
+
+			>div {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				@media only screen and (max-width: $lg-breakpoint) {
+					margin-top: 30px;
+				}
+			}
+
+			&:nth-child(2) {
+				@media only screen and (max-width: $lg-breakpoint) {
+					display: none;
+				}
+			}
+		}
 	}
 
 	.col4 {
@@ -898,6 +994,19 @@
 		}
 	}
 
+	.cc-marketing {
+		background: #eee;
+
+		img {
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
 	.full-width {
 		height: auto;
 		width: 100%;
@@ -924,6 +1033,10 @@
 			float: left;
 			width: 45%;
 			margin-right: 30px;
+
+			img {
+				width: 100%;
+			}
 
 			@media only screen and (max-width: $lg-breakpoint) {
 				width: 90%;
@@ -997,9 +1110,6 @@
 	.navy-bg {
 		background: $case-study-navy;
 	}
-	.aqua-bg {
-		background: $case-study-aqua;
-	}
 	.lt-aqua-bg {
 		background: $case-study-lt-aqua;
 	}
@@ -1014,6 +1124,12 @@
 	}
 	.cfds-dark-bg {
 		background: $case-study-cfds-dark-blue;
+	}
+	.airport-bg {
+		background: $case-study-aiport-bg;
+	}
+	.peters-bg {
+		background: $case-study-peters-bg;
 	}
 	.black-bg {
 		background: $black;
@@ -1086,6 +1202,155 @@
 	.bright-futures {
 		width: 110px;
 		height: auto;
+	}
+
+	.albany-evolution {
+		background: #14225A;
+		padding: 20px 0;
+
+		.container {
+			@include flex-col-layout();
+
+			>div {
+				padding: 20px 0;
+			}
+
+			.arrow {
+				@media only screen and (max-width: $lg-breakpoint) {
+					transform: rotate(90deg);
+				}
+			}
+		}
+
+		.albany-airport-logo {
+			width: 550px;
+			@media only screen and (max-width: $sm-breakpoint) {
+				width: 300px;
+			}
+		}
+	}
+
+	.airport-videos {
+		background: rgb(215,238,247);
+background: linear-gradient(180deg, rgba(215,238,247,1) 0%, rgba(241,251,255,1) 7%, rgba(241,251,255,1) 100%);
+		padding: 40px 0 130px;
+		margin-top: 40px;
+
+		.col2 {
+			justify-content: space-between;
+
+			>div {
+				padding-top: 30px;
+				position: relative;
+				width: 48%;
+
+				@include mobile-full-width();
+
+				img {
+					width: 100%;
+				}
+
+				>a {
+					&:hover {
+						.play {
+							opacity: .8;
+							transition: all .3s ease-out;
+							width: 150px;
+						}
+					}
+				}
+			}
+
+			.play {
+				@include translate-center();
+
+				position: absolute;
+				width: 100px;
+			}
+		}
+
+		h2 {
+			color: #18194a;
+			margin-bottom: 30px;
+			text-align: center;
+
+			.fa {
+				color: #43b6e8;
+			}
+		}
+	}
+
+	.airport-responsive-logos {
+		padding-bottom: 50px;
+	}
+
+	.airport-photo-block {
+		display: flex;
+		flex-wrap: wrap;
+
+		@include flex-col-layout($md-breakpoint);
+
+		>div {
+			width: 33.33%;
+
+			@include mobile-full-width();
+		}
+	}
+
+	.st-peters-tablet {
+		margin-top: -25px;
+	}
+
+	.peters-stats {
+		color: $black;
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+
+			@include flex-col-layout();
+
+			>div {
+				width: 47%;
+				margin-top: 15px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+
+				@include mobile-full-width();
+
+				.statblock {
+					font-size: 35px;
+					font-weight: bold;
+					line-height: 1.1em;
+
+					span {
+						color: $case-study-peters-bg;
+						font-size: 50px;
+					}
+
+					&.cc {
+						span {
+							color: $case-study-cc-bg;
+						}	
+					}
+				}
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&.fb {
+			background: url('../images/case-studies/sphp/commhosp-bg.png');
+			background-size: cover;
+
+			.container > div .statblock span {
+				color: #00659e;
+			}
+		}
 	}
 }
 

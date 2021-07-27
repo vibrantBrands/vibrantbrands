@@ -117,7 +117,7 @@
   <div class="gray-bg">
 
   <div class="container">
-  	<h2>Membership & Associations</h2>
+  	<h2>Memberships & Associations</h2>
   </div>
   	<div class="container partner-logos">
   		

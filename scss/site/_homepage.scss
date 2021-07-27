@@ -1,6 +1,4 @@
 
-
-.hero-video,
 .tagline,
 .specialties {
 	
@@ -10,7 +8,7 @@
 	justify-content: center;
 
 	h1 {
-		font-size: 3.6rem;
+		font-size: 3.3rem;
     	line-height: 3.9rem;
 
 		@media only screen and (max-width: $md-breakpoint) {
@@ -21,14 +19,23 @@
 }
 
 .hero-video {
-	position: relative;
-	height: 300px;
-	margin-top: 150px;
+	height: 1100px;
 	overflow: hidden;
+	width: 100%;
+	position: absolute;
+
+	img {
+		position: absolute;
+		display: none;
+	}
+
+	.loading {
+		display: block;
+	}
 
 	@media only screen and (max-width: $md-breakpoint) {
-		margin-top: 100px;
-		height: 400px;
+		//margin-top: 100px;
+		//height: 400px;
 	}
 
 	.video-container {
@@ -49,6 +56,7 @@
 		text-align: center;
 		position: absolute;
 		width: 100%;
+		z-index: 2;
 	}
 
 	h1, h2 {
@@ -56,8 +64,16 @@
 	}
 
 	h1 {
+		color: rgba(0, 0, 0, 0.05);
+    	background-clip: text;
+    	font-size: 8rem;
+    	line-height: 1.3em;
+    	-webkit-background-clip: text;
 		margin: 0;
-		text-shadow: 2px 2px 6px #000000;
+		font-style: italic;
+		font-weight: 800;
+
+		@include moving-masked-text($rainbow-gradient, 10s);
 
 		@media only screen and (max-width: $md-breakpoint) {
 			margin-top: 100px;
@@ -66,8 +82,119 @@
 	}
 
 	h2 {
-		margin: 10px auto 40px;
-		text-shadow: 2px 2px 6px #000000;
+		margin: 30px auto 10px;
+		font-style: italic;
+		font-weight: 800;
+	}
+	.ready {
+		@include translate-x-center(); 
+		top: 150px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			width: 85%;
+		}
+	}
+	.lift-off {
+		@include translate-x-center(); 
+		top: 220px;
+		width: 900px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			width: 95%;
+			top: 180px;
+		}
+	}
+
+	.helmet {
+		@include translate-x-center(); 
+
+		margin-left: -22px;
+		top: 180px;
+		width: 650px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			width: 300px;
+			margin-left: -10px;
+		}
+	}
+
+	.rocket {
+		@include translate-x-center(); 
+
+		margin-left: -85px;
+		top: 520px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			margin-left: -65px;
+			//top: 520px;
+
+		}
+	}
+	.gray {
+		left: -3.5%;
+		width: 110%;
+		top: 440px;
+
+		@media only screen and (max-width: $xl-breakpoint) {
+			top: 600px;
+		}
+		@media only screen and (max-width: $md-breakpoint) {
+			top: 480px;
+		}
+	}
+	.sky {
+		width: 105%;
+	}
+
+	.cloud1 {
+		left: 12%;
+		top: 430px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			top: 330px;
+			width: 60%;
+		}
+
+	}
+	.cloud2 {
+		left: 30%;
+		top: 540px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			top: 400px;
+			width: 80%;
+		}
+	}
+	.cloud3 {
+		left: 10%;
+		top: 370px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			top: 380px;
+			width: 100%;
+			left: 20%;
+		}
+	}
+	.cloud4 {
+		right: 15%;
+		top: 400px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			top: 230px;
+			width: 60%;
+		}
+	}
+	.cloud5 {
+		right: 32%;
+		top: 450px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			top: 280px;
+		}
+	}
+	.cloud6 {
+		right: 10%;
+		top: 380px;
 	}
 }
 
@@ -156,8 +283,15 @@ h2.featured {
 	margin-bottom: 50px;
 
 	h2 {
-		@include moving-masked-text($pink-gradient, 10s);
-		margin: 50px auto 30px;
+		@include moving-masked-text($rainbow-gradient, 30s);
+		margin: 10px 0 ;
+		font-style: italic;
+		font-weight: 800;
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			font-size: 1.5em;
+			padding: 0 40px;
+		}
 	}
 
 	.icons {
@@ -169,19 +303,16 @@ h2.featured {
 			width: 33.3%;
 			display: flex;
 			align-items: center;
+			justify-content: center;
 			margin: 30px auto;
 
 			@include mobile-full-width($md-breakpoint, 90%);
 
-			@media only screen and (max-width: $md-breakpoint) {
-			    justify-content: flex-start;
-			}
-			
 			color: $icon-text-color;
 			text-transform: uppercase;
 
 			a {
-				color: $icon-text-color;
+				color: $white;
 				display: flex;
 				align-items: center;
 				justify-content: flex-start;
@@ -198,7 +329,7 @@ h2.featured {
 			}
 
 			p {
-				color: $icon-text-color;
+				color: $white;
 				text-transform: uppercase;
 			}
 
@@ -325,6 +456,7 @@ h2.featured {
 
 		h3 {
 			text-align: center;
+			font-size: 24px;
 			width: 100%;
 			padding: 0;
 		}
@@ -440,6 +572,27 @@ h2.featured {
 	margin-bottom: 80px;
 	padding-top: 60px;
 
+	h1 {
+		color: $white;
+		display: flex;
+		justify-content: center;
+
+		.fas {
+			margin-left: 8px;
+			padding-top: 8px;
+		}
+
+
+		a {
+			color: $white;
+			text-decoration: none;
+
+			&:hover {
+				@include moving-masked-text($rainbow-gradient);
+			}
+		}
+	}
+
 	.container {
 		align-items: center;
 		display: flex;
@@ -460,7 +613,7 @@ h2.featured {
 
 			@include mobile-full-width($lg-breakpoint, 80%);
 
-			.date {
+			.blog-date {
 				font-style: italic;
 				margin-bottom: 20px;
 			}
@@ -491,6 +644,29 @@ h2.featured {
 		}
 	}
 }
+
+.page-template-homepage {
+
+	.services {
+		padding-top: 730px;
+
+		@media only screen and (max-width: $md-breakpoint) {
+			padding-top: 560px;
+		}
+
+		@media only screen and (max-width: $sm-breakpoint) {
+		padding-top: 460px;
+		}
+	}
+
+	.loading {
+		margin-top: 180px;
+
+		@include translate-x-center();
+	}
+
+}
+
 
 
 

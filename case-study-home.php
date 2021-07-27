@@ -24,13 +24,13 @@
             </a>
         </div>
         <div>
-            <a href="/featured-work/belvedere">
-                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/belvedere-hmpg-img-grid.png" alt="Belvedere Case Study">
+            <a href="/featured-work/albany-airport">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/albany-airport.png" alt="Albany Airport">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Belvedere Health Services</h3>
-                    <p>"Vibrant always provides insights into marketing and positioning that we didn’t even know we should be paying attention to."</p>
-                    <p class="cta-prompt">Click to visit <i class="fas fa-arrow-right"></i></p>
+                    <h3>Albany Airport</h3>
+                    <p>The Vibrant team helped the airport take off, with a new look and messaging that aligns with convenience, safety, and innovation.</p>
+                    <p class="cta-prompt">Click to visit <i class="fas fa-arrow-right"></i>
                 </div>
             </a>
         </div>
@@ -67,6 +67,28 @@
                 </div>
             </a>
     	</div>
+        <div>
+            <a href="/featured-work/country-club-auto-group">
+                <img src="/application/files/5316/2456/4008/cc-auto.jpeg" alt="Country Club Auto Group">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Country Club Auto Group</h3>
+                    <p>"For over a decade, Country Club Auto Group has worked with Vibrant to build our brand and develop our marketing program."</p>
+                    <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="/featured-work/belvedere">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/belvedere-hmpg-img-grid.png" alt="Belvedere Case Study">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Belvedere Health Services</h3>
+                    <p>"Vibrant always provides insights into marketing and positioning that we didn’t even know we should be paying attention to."</p>
+                    <p class="cta-prompt">Click to visit <i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+        </div>
     	<div>
             <a href="/featured-work/ne-pa">
         		<img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/Vibrant_nepa-thumbs_mcl082019.jpeg" alt="NEPA Case Study">
@@ -78,6 +100,16 @@
                 </div>
             </a>
     	</div>
+        <div>
+            <a href="/featured-work/st-peters-health-partners">
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/st-peters.png" alt="St. Peter's">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>St. Peter's Health</h3>
+                    <p>"Vibrant has proven a versatile partner able to meet our needs and help our marketing team deliver effective solutions."</p>
+                </div>
+            </a>
+        </div>
     	<div>
             <a href="/featured-work/sfcu-case-study">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/sfcu_thumbnail.png" alt="Sfcu Case Study">

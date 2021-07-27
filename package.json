@@ -28,6 +28,7 @@
   "dependencies": {
     "@chancedigital/animate.scss": "^3.7.0",
     "gulp-cli": "^1.4.0",
-    "gulp-install": "^1.1.0"
+    "gulp-install": "^1.1.0",
+    "rellax": "^1.12.1"
   }
 }

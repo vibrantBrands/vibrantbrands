@@ -6,11 +6,14 @@
 <div class="content-wrapper">
   <div class="container">
 	<div class="blog-list">
-		<h1>Blog</h1>
+		<?php
+            $a = new Area('Blog Title');
+            $a->display($c);
+        ?> 
       <?php  
 	  $pl = new PageList();
 	  $pl->filterByCollectionTypeHandle('blog_post');
-	  $pl->sortByDisplayOrder('alpha_asc'); // Sort alphebetically
+	  $pl->sortByDisplayOrderDescending(); // Sort alphebetically
 	 
 	  $pages = $pl->get(); 
 	  

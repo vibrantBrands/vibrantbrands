@@ -143,7 +143,7 @@
     <section class="company-description">
         <div class="container">
             <div>
-                <h2>What Our<br />Clients Say...</h2>
+                <h2>What Our Clients Say...</h2>
             </div>
             <div class="quotes">
                 <p>"Vibrant finds creative ways to showcase what’s great about our credit union. With their support, we can focus on what we do best--serving our members."<br />

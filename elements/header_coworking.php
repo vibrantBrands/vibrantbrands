@@ -20,7 +20,7 @@
 <body class="vibrant">
   <div class="<?php echo $c->getPageWrapperClass()?>">
 
-  <header>
+  <header class="header">
       <div class="toggle-wrapper">
         <div class="menu-toggle inactive">
           <div class="bar"></div>
@@ -52,17 +52,11 @@
   	<div class="logo-container">
       <a href='/'>
   		  <div class="logo">
-          <div>
-            <span class="vibrant">VIBRANT</span>
-          </div>
-          <div>
+          <div class="coworking">
             <img src="<?php echo $this->getThemePath(); ?>/images/vibrant-logo.png" alt="Vibrant Logo">
           </div>
-  		    <div>
-            <span class="brands">BRANDS</span>  
-          </div>
     		</div>
-        <div class="date">SINCE 2002</div>
+        <div class="top-date date">SINCE 2002</div>
       </a>
     </div>
     <div class="border"></div>

@@ -113,10 +113,13 @@ body.vibrant {
 				-webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
 				position: relative;
 
-				&:first-child {
-					left: 0px;	
-					height: 23px;
-					width: 145px;
+				&:first-child{
+
+					&:not(.coworking) {
+						left: 20px;	
+						height: 28px;
+						width: 145px;
+					}
 
 					@media only screen and (max-width: $sm-breakpoint) {
 						width: 115px;
@@ -124,7 +127,7 @@ body.vibrant {
 				}
 				&:nth-child(3) {
 				    left: 0px;
-				    height: 23px;
+				    height: 28px;
 					width: 145px;
 				}
 
@@ -156,6 +159,16 @@ body.vibrant {
 					margin-left: -140px;
 				}*/
 			}
+
+			/*&.coworking {
+				div {
+					&:first-child {
+						left: auto;
+						height: auto;
+						width: 145px;
+					}
+				}
+			}*/
 		}
 
 	.border {
@@ -168,18 +181,68 @@ body.vibrant {
 	}
 
 	.company-description {
-		background: url('../images/icons/hp-bg.png');
 		background-size: cover;
 		margin-bottom: 50px;
+		height: 300px;
+		overflow: hidden;
 		padding: 0;
+		position: relative;
+		text-align: center;
+
+		@media only screen and (max-width: $xl-breakpoint) {
+			height: 300px;
+		}
+		@media only screen and (max-width: $xl-breakpoint) {
+			height: 380px;
+		}
+		@media only screen and (max-width: $sm-breakpoint) {
+			height: 620px;
+		}
+
+		@media only screen and (max-width: $lg-breakpoint) {
+			background: url('../images/video-bg.jpeg');
+			background-size: cover;
+		}
+
+		.container {
+			margin: 0 auto;
+			text-align: center;
+			padding: 0 50px;
+
+			p {
+				text-align: center;
+			}
+		}
+
+		.video {
+			height: 300px;
+			overflow: hidden;
+			position: absolute;
+			width: 100%;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				display: none;
+			} 
+
+			>div {
+				margin-top: -340px;
+
+				@media only screen and (max-width: $xl-breakpoint) {
+					margin-top: -200px;
+				} 
+			}
+		}
 
 		h2 {
-			margin: 0;
+			margin: 60px 0 0 0;
 			width: 1700px;
 
-			@media only screen and (max-width: $md-breakpoint) {
-				margin: 50px 0 30px;
-				width: 100%;
+			@media only screen and (max-width: $xl-breakpoint) {
+				margin-top: 40px;
+			}
+			@media only screen and (max-width: $lg-breakpoint) {
+				margin-top: 0px;
+				text-align: center !important;
 			}
 		}
 
@@ -191,6 +254,7 @@ body.vibrant {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			padding: 0 30px;
 
 			@include flex-col-layout();
 
@@ -264,11 +328,33 @@ body.vibrant {
 		}
 	}
 
+	.subtle-link-airport {
+
+		a {
+			color: $case-study-aiport-bg;
+			text-decoration: none;
+		}
+	}
+
+	.subtle-link-peters {
+		color: $case-study-peters-bg;
+		
+		a {
+			color: $case-study-peters-bg;
+			text-decoration: none;
+		}
+	}
+
 	.subtle-link-white {
 
 		a {
 			color: #ffffff;
 			text-decoration: none;
+
+			@media only screen and (max-width: $lg-breakpoint) {
+				background: $black;
+				padding: 0 3px;
+			}
 
 			&:hover {
 				color: #cccccc;

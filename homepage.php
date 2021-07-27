@@ -2,16 +2,33 @@
 
 <?php $this->inc('elements/header.php'); ?>
 
+<div class="container">
+
+</div>
+
 <section class="hero-video">
-        <div class="textbox">
-            <h1>Let's Spark Something Incredible</h1>
-            <h2>Connect your brand with your audience</h2>
-        </div>
-        <div class="video-container">
-            <video muted autoplay>
+        <img src="<?php echo $this->getThemePath(); ?>/images/home/loading.gif" alt="loading" class="loading" />
+        <img src="<?php echo $this->getThemePath(); ?>/images/home/layer-17.jpg" alt="Sky Bg" class="sky" />
+        <img src="<?php echo $this->getThemePath(); ?>/images/home/lift-off.png" alt="Lift Off" class="lift-off" />
+        <img src="<?php echo $this->getThemePath(); ?>/images/home/helmet.gif" alt="Helmet" class="helmet" />
+        <img src="<?php echo $this->getThemePath(); ?>/images/home/cloud-1.png" alt="Cloud 1" class="cloud1 lax lax_preset_slideX:594:-360" />
+        <img src="<?php echo $this->getThemePath(); ?>/images/home/cloud-2.png" alt="Cloud 2" class="cloud2 lax lax_preset_slideX:594:-560" />
+        <img src="<?php echo $this->getThemePath(); ?>/images/home/cloud-3.png" alt="Cloud 3" class="cloud3 lax lax_preset_slideX:594:-860" />
+        <img src="<?php echo $this->getThemePath(); ?>/images/home/cloud-4.png" alt="Cloud 4" class="cloud4
+        lax lax_preset_slideX:594:360" />
+        <img src="<?php echo $this->getThemePath(); ?>/images/home/cloud-5.png" alt="Cloud 5" class="cloud5 lax lax_preset_slideX:594:760" />
+        <img src="<?php echo $this->getThemePath(); ?>/images/home/cloud-6.png" alt="Cloud 6" class="cloud6 lax lax_preset_slideX:594:860" />
+        <img src="<?php echo $this->getThemePath(); ?>/images/home/is-your-brand-ready-for.png" class="ready" alt="Ready" />
+        <img src="<?php echo $this->getThemePath(); ?>/images/home/layer-17.png" alt="Rocket" class="gray lax lax_preset_slideY:1000:-800" />
+
+              
+
+        <!-- <div class="video-container">
+            <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/542268588?badge=0autopause=0&amp;autoplay=1&amp;muted=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="VB_Header.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <!-- <video muted autoplay>
                 <source src="<?php echo $this->getThemePath(); ?>/video/VB_Header.mp4" type="video/mp4"> Your browser does not support the video tag.
-            </video>
-        </div>
+            </video>  
+        </div>  -->
 </section>
 
 
@@ -23,34 +40,34 @@
         ?>  
         <div class="icons">
             <div>
-                <a href="/services/brand-development">
+                <a href="/services/brand-development" data-aos="fade-up">
                     <img src="<?php echo $this->getThemePath(); ?>/images/icons/BD.png" alt="Brand Development" />
                     <p>Brand Development</p>
                 </a>
             </div>
             <div>
-                <a href="/services/digital-advertising">
+                <a href="/services/digital-advertising" data-aos="fade-up">
                     <img src="<?php echo $this->getThemePath(); ?>/images/icons/DA.png" alt="Digital Advertising" />
                     <p>Digital Advertising</p>
                 </a>
             </div>
             <div>
-                <a href="/services/website-development">
+                <a href="/services/website-development" data-aos="fade-up">
                     <img src="<?php echo $this->getThemePath(); ?>/images/icons/WD.png" alt="Website Development" />
                     <p>Website Development</p>
                 </a>
             </div>
             <div>
-                <a href="/video">
+                <a href="/video" data-aos="fade-up">
                     <img src="<?php echo $this->getThemePath(); ?>/images/icons/VP.png" alt="Video Production" />
                     <p>Video Production</p>
                 </a>
             </div>
-            <div>
+            <div data-aos="fade-up">
                     <img src="<?php echo $this->getThemePath(); ?>/images/icons/SM.png" alt="Social Media" />
                     <p>Social Media</p>
             </div>
-            <div>
+            <div data-aos="fade-up">
                     <img src="<?php echo $this->getThemePath(); ?>/images/icons/CW.png" alt="Content Writing" />
                     <p>Content Writing</p>
             </div>
@@ -58,14 +75,15 @@
     </section>
 </div>
 
-    <section class="company-description">
-        <div class="container">
-            <?php
-                $a = new Area('Company Description Text');
-                $a->display($c);
-            ?>  
-        </div>       
-    </section>
+<section class="company-description">
+        <div class="video">
+        <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/559081052?badge=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;muted=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="VB_Header.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+    <div class="container">
+        <h2>Brand Powered Marketing</h2>
+        <p>We provide a collaborative approach to branding and digital marketing campaigns. Since 2002, we’ve built an impressive team of creative, technical and consulting professionals. We are constantly cultivating the best in technology and media choices. We provide access to customizable data to keep campaigns on the cutting edge. Brand is foundational and the effects of brand powered marketing are exponential. Let's spark something incredible.</p>      
+    </div>
+</section>
 
 <div class="container">
     <?php
@@ -75,12 +93,34 @@
 
     <section class="clients">
         <div>
+            <a href="/featured-work/sunmark">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/sunmark_thumbnail.png" alt="Sunmark Case Study">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Sunmark</h3>
+                    <p>"With Vibrant, we’re separating ourselves from the pack and growing."</p>
+                    <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+        </div>
+        <div>
             <a href="/featured-work/cfds">
                 <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/cfds-hmpg-img-grid3.png" alt="CDFS Case Study">
                 <div class="info">
                     <div class="info-bg"></div>
                     <h3>Center for Disability Services</h3>
                     <p>"Vibrant helped us broadcast our message in a modern way, leading to amazing new opportunities for the future."</p>
+                    <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+        </div>
+         <div>
+            <a href="/featured-work/albany-airport">
+                <img src="<?php echo $this->getThemePath(); ?>/images/case-studies/albany-airport.png" alt="Albany Airport">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>Albany Airport</h3>
+                    <p>The Vibrant team helped the airport take off, with a new look and messaging that aligns with convenience, safety, and innovation.</p>
                     <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
@@ -96,17 +136,17 @@
                 </div>
             </a>
         </div>
-    	<div>
-            <a href="/featured-work/sunmark">
-        		<img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/sunmark_thumbnail.png" alt="Sunmark Case Study">
+         <div>
+            <a href="/featured-work/country-club-auto-group">
+                <img src="/application/files/5316/2456/4008/cc-auto.jpeg" alt="Country Club Auto Group">
                 <div class="info">
                     <div class="info-bg"></div>
-                    <h3>Sunmark</h3>
-                    <p>"With Vibrant, we’re separating ourselves from the pack and growing."</p>
+                    <h3>Country Club Auto Group</h3>
+                    <p>"For over a decade, Country Club Auto Group has worked with Vibrant to build our brand and develop our marketing program."</p>
                     <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
                 </div>
             </a>
-    	</div>
+        </div>
     	<div>
             <a href="/featured-work/united-hospice-rockland">
         		<img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/uhr_thumbnail.png" alt="United Hospice Of Rockland Case Study">
@@ -129,6 +169,17 @@
                 </div>
             </a>
     	</div>
+        <div>
+            <a href="/featured-work/st-peters-health-partners">
+                <img src="<?php echo $this->getThemePath(); ?>/images/video-thumbs/st-peters.png" alt="St. Peter's">
+                <div class="info">
+                    <div class="info-bg"></div>
+                    <h3>St. Peter's Health</h3>
+                    <p>"Vibrant has proven a versatile partner able to meet our needs and help our marketing team deliver effective solutions."</p>
+                    <p class="cta-prompt">View the story<i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+        </div>
     	<div>
             <a href="/featured-work/ne-pa">
         		<img src="<?php echo $this->getThemePath(); ?>/images/case-studies/thumbnails/Vibrant_nepa-thumbs_mcl082019.jpeg" alt="NEPA Case Study">
@@ -169,12 +220,12 @@
     </section>
 
      <section class="latest-news">
-        <h1>Latest News</h1>
+        <h1><a href="/blog">Insights and Inspiration</a><i class="fas fa-angle-right"></i></h1>
             <div class="container">
       <?php  
       $pl = new PageList();
       $pl->filterByCollectionTypeHandle('blog_post');
-      $pl->sortByDisplayOrder('alpha_asc'); // Sort alphebetically
+      $pl->sortByDisplayOrderDescending(); // Sort alphebetically
       $counter = 0;
      
       $pages = $pl->get(); 
@@ -194,7 +245,7 @@
                     echo $page->getCollectionName();
                 ?> 
             </h2>
-            <div class="date">
+            <div class="blog-date">
                 <small><?php 
                 $datePublic = $page->getCollectionDatePublicObject()->format('j F, Y');
                 echo $datePublic ?></small>
@@ -216,6 +267,12 @@
             
         </div>
     </section>
+     <div class="video" >
+        <?php
+            $a = new Area('About Us Video');
+            $a->display($c);
+        ?>  
+    </div> 
 </div>
 
 

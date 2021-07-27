@@ -8,6 +8,39 @@ $( document ).ready(function() {
 		easing: 'ease-out'
 	});
 
+	window.onload = function () {
+		$("body").niceScroll();
+		
+		$('.hero-video img').show();
+
+	    lax.init()
+
+	    // Add a driver that we use to control our animations
+	    lax.addDriver('scrollY', function () {
+	      return window.scrollY
+	    })
+
+	    // Add animation bindings to elements
+	    lax.addElements('.commercial-photo', {
+	      scrollY: {
+	        translateY: [
+	          [0, 400, 800],
+	          [0, '80', '100'],
+	        ]
+	      }
+	    })
+
+	    // Add animation bindings to elements
+	    lax.addElements('.commercial-photo-2', {
+	      scrollY: {
+	        translateY: [
+	            [0, 1000, 1200],
+	          [0, '-150', '-150'],
+	        ]
+	      }
+	    })
+	  };
+
 	var vibrant_functions = {
 		hashArray : ["branding","marketing","websites","video"],
 		init : function() {
